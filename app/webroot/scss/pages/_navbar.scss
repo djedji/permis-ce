@@ -1,0 +1,58 @@
+//========================================================
+// Navbar top pages
+//========================================================
+.navbar-top-page {
+    background: #2E83CC;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    > thead > tr > th {
+        border: none;
+        font-size: 16px;
+        padding: 14px 12px;
+
+        & > a {
+            color: #FFFFFF;
+            display: block;
+            font-size: 16px;
+
+            &:hover, &:focus, &:active {
+                color: #CDE9FF;
+            }
+
+            &.link-disabled {
+                color: #2E83CC;
+                cursor: default;
+            }
+        }
+    }
+}
+
+//========================================================
+// Navbar bottom pages
+//========================================================
+.navbar-bottom-page {
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+    & > thead > tr > th {
+        border: none;
+        font-size: 16px;
+        padding: 20px 12px;
+
+        & > a {
+            color: #A7A7A7;
+            display: block;
+            font-size: 18px;
+
+            &:hover, &:focus, &:active {
+                color: #757575;
+            }
+
+            &.link-disabled {
+                color: #ECECEC;
+                cursor: default;
+            }
+        }
+    }
+}

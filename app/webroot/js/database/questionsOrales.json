@@ -1,0 +1,833 @@
+{
+    "questionsOrales" : {
+        "fiches" : [
+            {
+                "title" : "- Conduite dans des conditions atmosphériques difficiles -",
+                "content" : [
+                    {
+                        "title" : "Conduite et Comportement",
+                        "content" : [
+                            {
+                                "title" : "Pluie",
+                                "content" : [
+                                    { "para" : "Manque de visibilité; distances de freinage x 2; Réduire la vitesse; Augmenter les distances de sécurité; Allumer les feux (feu de brouillard arrière interdit par temps de pluie); Utiliser les accessoires (essuie-glaces, ventilation)" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Brouillard",
+                                "content" : [
+                                    { "para" : "Idem pluie, si visibilité inférieur à 50 mètre -> vitesse = 50km/h, se guide a l'aide du marquage"},
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Vent",
+                                "content" : [
+                                    { "para" : "Risque d'écarts de trajectoire lors des dépassements ou des croisements (sur les ponts et à l'arrivée dans des zones dégagées; observer les manches à air; Réduire la vitesse; Augmenter les espacements latéraux; Danger pour les véhicules circulant à vide" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Neige et Verglas",
+                                "content" : [
+                                    { "para" : "Adhérence très réduite (neige) et quasi nulle (verglas); Rouler doucement et sens à coups; Respecter les barrières de dégel; S'informer sur les conditions de circulation; Utiliser les équipements autorisés; allumer les feux; Utiliser les commandes de chauffage et ventillation" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Nuit",
+                                "content" : [
+                                    { "para" : "Accidents plus graves que le jour -> dus à l'alcool, la vitesse, au manque de visibilité, à la fatigue; Acuité visuelle en baisse d'environ 1,5 dioptrie la nuit; champ visuel modifié latéralement et en vision centrale; sensibilité à l'éblouissement qui augmente avec l'âge (+50 % tous les 12 ans)" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Précautions à prendre",
+                        "content" : [
+                            {
+                                "title" : "Avant le départ",
+                                "content" : [
+                                    { "para" : "Etat, propreté, réglage et fonctionnement des feux; batterie; lot de bord (ampoule de rechange, fusibles, lampe de poche)" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Pendant le trajet",
+                                "content" : [
+                                    { "para" : "faire des pauses souvent; adapter l'allure selon les circonstances; ralentir plus fortement dans les virages; regarder vers l'accotement droit pour éviter l'éblouissement; se guider sur les marquages au sol si mauvaise visibilité; entre 2 heures et 5 heures du matin 'coup de pompe'" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Informations routières",
+                                "content" : [
+                                    { "para" : "Internet, Centre Régional ou National d'information Routières (CRIR ou CNIR), Gendarmerie, Radio" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Comportement en cas d'accident -",
+                "content" : [
+                    {
+                        "title" : "Gestes d'urgence",
+                        "content" : [
+                            {
+                                "title" : "Protéger les lieux",
+                                "content" : [
+                                    { "para" : "baliser à l'aide du triangle de présignalisation, éclairer les lieux; feux de détresse; port du gilet haute visibilité; ne pas se mettre en danger" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Alerter les secours",
+                                "content" : [
+                                    { "para" : "prendre tous les renseignements nécessaires (lieu précis, nombre de véhicules impliqués, risques -> transport de matières dangereuses, nombre de victime, état générale)"},
+                                    { "alertBox" : [ { "title" : "<strong>Numéros d'urgence :</strong>" }, { "content" : "<b>15 (SAMU)</b>, <b>17 (POLICE ou GENDARMERIE)</b>, <b>18 (POMPIERS)</b>, <b>112 (NUMERO UNIQUE)</b>" } ] }
+                                ]
+                            },
+                            {
+                                "title" : "Secourir",
+                                "content" : [
+                                    { "para" : "<strong>Les gestes à effectuer</strong> : couvrir les blessés, leur parler, les rassurer, position latérale de sécurité, aider à respirer" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Gestes dangereux",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "déplacer un blessé (sauf si nécessité absolue); donner à boire; enlever le casque d'un motard; effectuer des gestes non maitrisés" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Conduite à tenir",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "garder son calme; dégager la chaussée ou protéger les lieux; prévenir l'entreprise; remplir un constat amiable" },
+                                    { "para" : "Le constat amiable : document non obligatoire mais recommandé; valable dans toute l'Europe; le recto se remplit avec la partie adverse; coordonnées des conducteurs; présence de témoin; circonstances; indiquer le nombre de croix; signature; un feuillet pour chaque conducteur; verso complété individuellement; pout tous accidents matériels (5 jours ouvrés max pour envoie à l'assureur)" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Conduite en montagne ou Zones accidentées -",
+                "content" : [
+                    {
+                        "title" : "Dangers",
+                        "content" : [
+                            {
+                                "title" : "L'environnement",
+                                "content" : [
+                                    { "para" : "attention à la prise de vitesse dans les descentes; croisements difficiles ou impossibles, trajectoires en virages" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Les autres usagers",
+                                "content" : [
+                                    { "para" : "peuvent être surpris par la présence du véhciule" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Le véhicule",
+                                "content" : [
+                                    { "para" : "risque de surchauffe moteur en montée et de surchauffe des freins en descente" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Les conditions climatiques",
+                                "content" : [
+                                    { "para" : "Risques liés à la neige, au brouillard ou au verglas" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Précautions",
+                        "content" : [
+                            {
+                                "title" : "La conduite",
+                                "content" : [
+                                    { "para" : "adapter en permanence la vitesse en utilisant la boîte de vitesses, les freins et le ralentisseur (seul ou combiné); avertir dans les endroits sans visibilité" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Le véhicule",
+                                "content" : [
+                                    { "para" : "avoir des dispositifs antidérapants adaptés selon la réglementation" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "L'état de la route",
+                                "content" : [
+                                    { "para" : "ouverture/fermeture des cols; s'informer des conditions de circulation (CRIR ou CNIL, Gendarmerie, radio ...)" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Itinéraire",
+                                "content" : [
+                                    { "para" : "préférer les tunnels routiers" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Gestes et postures, Accidents du travail -",
+                "content" : [
+                    {
+                        "title" : "Gestes et postures à adopter",
+                        "content" : [
+                            {
+                                "title" : "Montée ou descente du véhicule",
+                                "content" : [
+                                    { "para" : "ne pas sauter; face à la cabine; 3 points d'appui; attention aux marches glissantes" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Saisir et porter un colis",
+                                "content" : [
+                                    { "para" : "plier les jambes (dos moins sollicité)" },
+                                    { "alertBox" : ""}
+                                ]
+                            },
+                            {
+                                "title" : "Nettoyage du véhicule",
+                                "content" : [
+                                    { "para" : "faire attention sur les aires de lavage (glissant); utiliser les poignées et marchepieds" },
+                                    { "alertBox" : ""}
+                                ]
+                            },
+                            {
+                                "title" : "Port des équipenemts de protection individuelle",
+                                "content" : [
+                                    { "para" : "obligatoire dans de nombreuses entreprises; gilet haute visibilité, lunettes, casques, gants, chaussures de sécurité" },
+                                    { "alertBox" : ""}
+                                ]
+                            },
+                            {
+                                "title" : "Position de conduite",
+                                "content" : [
+                                    { "para" : "doit être correctement réglée; retarde l'arrivée de la fatigue; permet d'agir plus rapidement et plus efficacement" },
+                                    { "alertBox" : ""}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Importance des accidents",
+                        "content" : [
+                            {
+                                "title" : "Accident du travail",
+                                "content" : [
+                                    { "para" : "pendant l'accomplissement du trvail" },
+                                    { "alertBox" : ""}
+                                ]
+                            },
+                            {
+                                "title" : "Accident de trajet",
+                                "content" : [
+                                    { "para" : "pendant le déplacement vers le lieu de travail ou vers le domicile; trajet habituel" },
+                                    { "alertBox" : ""}
+                                ]
+                            },
+                            {
+                                "title" : "Statistiques accidents du travail (2010)",
+                                "content" : [
+                                    { "para" : "<strong>Voyageurs</strong> : 75 000 salariés, 2900 accidents, 3 tués" },
+                                    { "para" : "<strong>Marchandises</strong> : 229 000 salariés, 18 000 accidents, 45 tués" },
+                                    { "alertBox" : ""}
+                                ]
+                            },
+                            {
+                                "title" : "Statistiques accidents du travail (2011)",
+                                "content" : [
+                                    { "para" : "<strong>Voyageurs</strong> : 0 conducteurs tué, 93 blessés" },
+                                    { "para" : "<strong>Marchandises</strong> : 60 conducteurs tués, 609 blessés" },
+                                    { "alertBox" : ""}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Dangers et Risques",
+                        "content" : [
+                            {
+                                "title" : "Risques à l'arrêt",
+                                "content" : [
+                                    { "para" : "13 fois plus de risques qu'en circulation; 10 000 accidents par an lors de l'accès à la cabine" },
+                                    { "alertBox" : ""}
+                                ]
+                            },
+                            {
+                                "title" : "Autres risques",
+                                "content" : [
+                                    { "para" : "manutention (hernies, ankylose ...); matières dangereuses (brûlures, intoxication respiratoire ...); conception du véhicule (chute, membre coincé ...)" },
+                                    { "alertBox" : ""}
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Chargement et Surcharge -",
+                "content" : [
+                    {
+                        "title" : "Chargement",
+                        "content" : [
+                            {
+                                "title" : "Précautions à prendre",
+                                "content" : [
+                                    { "para" : "<strong>Respect des capacités de chargement</strong> : PTAC, PTRA, nombre de passagers" },
+                                    { "para" : "<strong>Répartition du chargement</strong> : en fonction de l'ordre de livraison; du poids des envois; Equilibrage; arrimage; installation des voyageurs" },
+                                    { "para" : "<strong>Choix de l'ititnéraire en fonction</strong> : des consignes, du gabarit, des matières transportées, de la météo" },
+                                    { "para" : "<strong>Conduite</strong> : anticipation, souplesse, rationnelle" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Risques",
+                                "content" : [
+                                    { "para" : "Tenue de route; déport au freinage; Louvoiement; perte de motricité; Renversement dû à la force centrifuge, au ballant; Détérioration du véhicule; Endommagement de la voirie; revêtement; Barrière de dégel; Ouvrages d'art, Visibilité" },
+                                    { "para" : "<strong>Chute de pierre</strong> : obstacle pour les autres usagers; détérioration du revêtement" },
+                                    { "para" : "<strong>Assurance</strong> : risque de refus de garantie" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Surcharge",
+                        "content" : [
+                            {
+                                "title" : "Réglementation",
+                                "content" : [
+                                    { "para" : "Le poids réel ne doit jamais dépasser les maxima; indications sur plaques et certificat d'immatriculation; Surcharge interdite" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Réalité du transport",
+                                "content" : [
+                                    { "para" : "Repect parfois difficile; vrac; Rendement; Le conducteur doit refuser de partir s'il a connaissance de la surcharge (conducteur responsable)" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Sanctions",
+                        "content" : [
+                            {
+                                "title" : "Sanctions",
+                                "content" : [
+                                    { "para" : "Risques mécaniques; Risques dynamiques; Empêcher les pratiques illégales; Contrôle par les forces de l'order et 'coordination des transports'" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "1 amende de 4em classe par tranche de dépassement",
+                                "content" : [
+                                    { "para" : "si surcharge de plus de 5% amende, immobilisation et déchargement de l'excédent" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Le dépassement -",
+                "content" : [
+                    {
+                        "title" : "Précautions avant, pendant et après le dépassement",
+                        "content" : [
+                            {
+                                "title" : "Avant le dépassement",
+                                "content" : [
+                                    { "para" : "respect de la réglementation (panneau, marquage au sol); 3em voie interdite sur sens unique; dépassement interdit si une voie est enneigée" },
+                                    { "para" : "espace libre; largeur et distance; attention aux véhicules masqués" },
+                                    { "para" : "différence d'allure d'au moins 10 km/h sur voie à sens unique et 20 km/h minimum sur voie à double sens" },
+                                    { "para" : "inertie du véhicule; prévoire longue distance pour dépasser" },
+                                    { "para" : "visibilité (un peu meilleur du fait de la hauteur)" },
+                                    { "para" : "avertir (clignotants, klaxon, appel limineux)" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Pendant le dépassement",
+                                "content" : [
+                                    { "para" : "espace latéral (1 mètre en ville, 1 mètre 50 hors agglomération); risque de déséquilibre et d'accrochage" },
+                                    { "para" : "repecter les distances de sécurité; surveiller les rétroviseurs" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Après le dépassement",
+                                "content" : [
+                                    { "para" : "se rabattre en laissant une bonne distance de sécurité; aide possible par les autres conducteurs" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Dangers liés au dépassements",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "accrochage si espacement insuffisant; mauvaise appréciation des distances, des vitesses" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Etre dépassé",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "maintenir son allure; serrer à droite; Eventuellement faciliter la manoeuvre" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Dispositifs latéraux et arrière de protection",
+                        "content" : [
+                            {
+                                "title" : "Les dispositifs latéraux de protection",
+                                "content" : [
+                                    { "para" : "empêchent le passage d'usagers sous les roues arrière" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Les dispositifs anti-encastrement",
+                                "content" : [
+                                    { "para" : "Evite aux usagers derrière de s'encastrer sous le véhicule" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Dynamique du véhicule -",
+                "content" : [
+                    {
+                        "title" : "Vitesse",
+                        "content" : [
+                            {
+                                "title" : "Energie cinétique",
+                                "content" : [
+                                    { "para" : "Elant du véhicule qui augmente avec le carré de la vitesse (EC = masse x vitesse au carré)" },
+                                    { "para" : "<strong>Exemple</strong> : si vitesse x 2 -> énergie cinétique x 4, si vitesse x 3 -> énergie cinétique x 9 (40 tonnes à 90 km/h = 1280 tonnes)" },
+                                    { "para" : "distances de freinage et violence du choc dépendent de l'énergie cinétique; passagers non attachés ou marchandises mal arrimée = danger" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Centre de gravité",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "point de d'équilibre des masses; déterminé par constructeur; doit être situé le plus bas possible; varie en fonction du chargement (liquide, chargement très haut); attention au risque de renversement" },
+                                    { "para" : "<strong>Effet de ballant</strong> : dû à un chargement haut ou mobile (vrac, liquide)" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Force centrifuge",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "intervient en virage et entraîne le véhicule vers l'extérieur de la courbe" },
+                                    { "para" : "FC = (masse x vitesse au carré divisé par le rayon du virage)" },
+                                    { "para" : "<strong>exemple</strong>strong> : si vitesse x 2 -> force centrifuge x 4, si vitesse x 3 -> force centrifuge x 9" },
+                                    { "para" : "si la force centrifuge est trop importante, il y a risque de renversement" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Adaptation dans la conduite",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "réduire la vitesse; adopter une conduite souple; adapter l'allure en fonction (de la route, de la signalisation ...)" },
+                                    { "para" : "connaître les règles spécifiques (limitations de vitesse des véhicules lourds)" },
+                                    { "alertBox" : [{"title": "<strong>Limiteurs de vitesse :</strong>", "content" : "Bridage du véhicule à la construction et toute modification est considéré comme un <b>délit</b>" } ] }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Conduite d'un tracteur en solo",
+                        "content" : [
+                            {
+                                "title" : "Particularités",
+                                "content" : [
+                                    { "para" : "tracteurs routiers non prévus pour; tenue de route très instable" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Dangers",
+                                "content" : [
+                                    { "para" : "réactions brutales; adhérence médiocre" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Précautions à prendre",
+                                "content" : [
+                                    { "para" : "conduite souple, vitesse adaptée" },
+                                    { "alertBox" : [{ "title" : "<strong>Attention :</strong>", "content" : "Ne pas utiliser les ralentisseurs de vitesse sur route mouillée ou enneigée" }] }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Alcool, Stupéfiants, Médicaments -",
+                "content" : [
+                    {
+                        "title" : "Alcool",
+                        "content" : [
+                            {
+                                "title" : "Règle",
+                                "content" : [
+                                    { "para" : "<strong>Limites</strong> : 0,25 mg/l d'air expiré ou 0,50 g/l de sang" },
+                                    { "para" : "<strong>Absorption</strong> : 1 verre dose bar = 10g d'alcool pur, taux atteint plus rapidement ajeun qu'au cours du repas" },
+                                    { "para" : "<strong>Elimation</strong> : principalement par le foie, 0,10 à 0,15 g/l de sang par heure; aucun truc susceptible de faire baisser le taux plus rapidement, attendre est la meilleur des solutions" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Effets",
+                                "content" : [
+                                    { "para" : "ralentit la transmission de l'influx nerveux; inattention, perte de mémoire; fatigue; excès de confiance; prise de risque important; diminution de la peur; rétrécissement du champ visuel, augmentation des temps de réaction, gestes imprécis" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Sanctions",
+                                "content" : [
+                                    { "para" : "de 0,50 g/l de sang à 0,79 g/l de sang : contravention 135 €, 6 points en moins, immobilisation du véhicule, suspension permis" },
+                                    { "para" : "plus 0,79 g/l de sang : contravention 4500 €, 6 points en moins, immobilisation du véhicule, suspension permis pouvant aller jusqu'à 3 ans et risque de prison pouvant aller jusqu'à 2 ans" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Stupéfiants",
+                        "content" : [
+                            {
+                                "title" : "Effets",
+                                "content" : [
+                                    { "para" : "difficulté de concentration; temps de réaction allongé; contrôle des trajectoires imprécises; fausse sensation de sécurité ..." },
+                                    { "alertBox" : [{ "title" : "<strong>Attention :</strong>", "content" : "Risque d'accident x 1,8 et alcool + stupéfiant risque d'accident x 14" }] }
+                                ]
+                            },
+                            {
+                                "title" : "Sanctions",
+                                "content" : [
+                                    { "para" : "jusqu'à 4500 € d'amende, 6 points en moins, immobilisation du véhicule, suspension pouvant aller jusqu'à 3 ans voir annulation du permis de conduire, prison pouvant aller jusqu'à 2 ans" },
+                                    { "para" : "si stupéfiants + alcool, amende pouvant aller jusqu'à 9000 € et prison pouvant aller jusqu'à 3 ans" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Médicaments",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "risque d'état de somnolence ou de troubles de la vue; danger fortement augmenté si médicaments associés à l'alcool; demander conseil à son médecin (voir pictogramme : jaune, orange, rouge)" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Eco-conduite et Conduite citoyenne -",
+                "content" : [
+                    {
+                        "title" : "Eco-conduite",
+                        "content" : [
+                            {
+                                "title" : "Règles de base",
+                                "content" : [
+                                    { "para" : "connaissance des performances de son véhicule (couple/puissance/régime optimal); rouler doucement lorsque le moteur est froid" },
+                                    { "para" : "choisir le bon rapport de vitesse afin de rester dans la plage optimale; avantage sur le boîte de vitesse robotisées" },
+                                    { "para" : "anticiper et chercher les informations à l'avance" },
+                                    { "para" : "réguler sa vitesse de croisière; entretient du véhicule" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Conduite citoyenne",
+                        "content" : [
+                            {
+                                "title" : "Bruit",
+                                "content" : [
+                                    { "para" : "<strong>Les précautions à prendre</strong> : maintenir le dispositif d'échappement en état; Eviter les accélérations brutales; arrêter le moteur si arrêt prolongé; stationner les véhicules frigo à l'écart (bruit du moteur frigo génant)" },
+                                    { "para" : "<strong>Sanctions</strong> : amende, immobilisation du véhicule, mise en fourrière" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Pollution",
+                                "content" : [
+                                    { "para" : "<strong>Les précautions à prendre</strong> : pas de fumées teintées ou opaques à l'arrêt" },
+                                    { "para" : "<strong>Sanctions</strong> : amende, immobilisation du véhicule, mise en fourrière" },
+                                    { "para" : "<strong>Les moyens de lutte</strong> : normes euro 5 et 6; véhicules hybrides et électriques; nouveaux carburants; EGR; SCR; controle technique; limitations de vitesse abaissées lors des pics de pollution; transport combiné (rail-route)" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Porte-à-faux et Angles morts -",
+                "content" : [
+                    {
+                        "title" : "Connaissance du véhicule",
+                        "content" : [
+                            {
+                                "title" : "Connaissance du véhicule",
+                                "content" : [
+                                    { "para" : "distance entre axe de la roue avant ou arrière et extrémité avant ou arrière du véhicule; distance de l'axe de sellette à l'angle avant de la semi" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Situations particulières",
+                                "content" : [
+                                    { "para" : "virages accentués; changements de direction; manoeuvres; passages étroits" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Dangers",
+                                "content" : [
+                                    { "para" : "le porte-à-faux peut passer au-dessus des obstacles; risque d'accrochage ou de renversement de piétons, cyclistes" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Précautions",
+                                "content" : [
+                                    { "para" : "observer l'angle arrière opposé au braquage; observer régulièrement les rétroviseurs; danger pour train routier et véhicule articulé" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Les angles morts",
+                        "content" : [
+                            {
+                                "title" : "Connaissance du véhicule",
+                                "content" : [
+                                    { "para" : "zones de non visibilité au-delà des rétroviseurs sur les cotés et vers l'arrière; moins important sur véhicules modernes" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Situations particulières",
+                                "content" : [
+                                    { "para" : "dépassements; rabattements; changement de file; changements de direction; manoeuvres; freinages" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Dangers",
+                                "content" : [
+                                    { "para" : "ne pas voir les autres usagers; accrochage; danger lors de la cassure du véhicule si articulé" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Précautions",
+                                "content" : [
+                                    { "para" : "descendre du véhicule lors des manoeuvres; se faire guider; Equipements (caméra de recule, radar de recule); anticipation" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Comportement en tunnels et Passages à niveau -",
+                "content" : [
+                    {
+                        "title" : "Tunnels",
+                        "content" : [
+                            {
+                                "title" : "Conduire en sécurité",
+                                "content" : [
+                                    { "para" : "respecter la signalisation en place (vitesse, hauteur, largeur ...); les restrictions d'accès (matières dangereuses, polluantes ...); allumer les feux de croisement; respecter les distances de sécurité; Ecouter la radio (107 FM); consigne des gestionnaires du tunnel; demi-tours, manoeuvres interdites; pas de lunette teintée " },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "En cas d'arrêt",
+                                "content" : [
+                                    { "para" : "respecter les distances de sécurité; ne pas tenter de faire demi-tour; suivre les consignes ..." },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "En cas d'urgence (panne, incendit ...)",
+                                "content" : [
+                                    { "para" : "utiliser les niches de sécurité; allumer les feux de détresse; couper le moteur et laisser les clés sur le contact; avertir le poste de garde à l'aide des bornes d'appel d'urgence" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "En cas d'incendie",
+                                "content" : [
+                                    { "para" : "arrête immédiat; pas de demi-tour ou manoeuvre; allumer les feux de détresse; couper le moteur et laisser les clés sur le contact; aider les autres si possible; utiliser les extincteurs; regagner un abri de survie" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Passages à niveaux",
+                        "content" : [
+                            {
+                                "title" : "Différents types",
+                                "content" : [
+                                    { "para" : "sans barrière (rares mais très dangereux); avec barrières complète ou demi-barrières; feux rouge clignotant" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Données statistiques",
+                                "content" : [
+                                    { "para" : "18 000 passages à niveaux en France; pratiquement tous les accidents sont dus au non-respect du code de la route; 12 tués en 2011" },
+                                    { "alertBox" : "" }
+                                ]
+                            },
+                            {
+                                "title" : "Précautions",
+                                "content" : [
+                                    { "para" : "le gabarit des véhicules lourds peut rendre la traversée dangereuse; adapter l'allure en règle général 30 km/h; passer suffisamment rapidement; avoir suffisamment d'espace; ne pas s'arrêter sur les voies du fait de la circulation" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title" : "- Systèmes de sécurité et Aides à la conduite -",
+                "content" : [
+                    {
+                        "title" : "Définition",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "rôle d'information et d'aide à la conduite; Evite les situations dangeureuse" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Exemples et rôles",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "<strong>ABR</strong> : permet de freiner en conservant le contrôle de la trajectoire" },
+                                    { "para" : "<strong>ESP</strong> : rattrape les pertes d'adhérence en courbe par freinages indépends et ciblés des roues" },
+                                    { "para" : "<strong>AFU</strong> : amplifie le freinage d'urgence" },
+                                    { "para" : "<strong>ASR</strong> : antipatinage des roues" },
+                                    { "para" : "<strong>Limiteur de vitesse</strong> : intallé par constructeur sur les véhicules lourds et leur modification constitue un délit; permet de pas dépasser une vitesse programmée" },
+                                    { "para" : "<strong>Radar de distance</strong> : informe le conducteur sur la ditance qui le sépare de l'obstacle" },
+                                    { "para" : "<strong>Régulateur auto adaptatif</strong> : permet de programmer une vitesse de croisière qui s'adaptera en fonction des distances de sécurité" },
+                                    { "para" : "<strong>Avertisseur de changement de file</strong> : alerte le conducteur en cas de changement de file involontaire (sans clignotant notamment)" },
+                                    { "para" : "<strong>Détecteur de fatigue</strong> : surveille la tonicité du conducteur et l'invite à s'arrêter si besoin" },
+                                    { "para" : "<strong>Aide au démarrage en côte</strong> : retient le véhicule le temps de trouver le point de patinage" },
+                                    { "para" : "<strong>Aide au stationnement</strong> : radar alertant le conducteur d'un obstacle" },
+                                    { "para" : "<strong>Régulateur de vitesse</strong> : permet de programmer une vitesse de croisière et de la maintenir" },
+                                    { "para" : "<strong>Allumage automatique des feux</strong> : de croisement, des essuies-glaces" },
+                                    { "para" : "<strong>GPS</strong> : assiste le conducteur dans le choix et le suivi d'un itinéraire. Il doit être paramétré véhicule à l'arrêt" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Dangers",
+                        "content" : [
+                            {
+                                "title" : "",
+                                "content" : [
+                                    { "para" : "baisse de vigilance; excès de confiance; repousser les limites; prise de risques; danger en cas de défaillance des systèmes; réglage GPS doit être effectué à l'arrêt du véhicule" },
+                                    { "alertBox" : "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

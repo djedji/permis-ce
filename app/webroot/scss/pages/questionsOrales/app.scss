@@ -1,0 +1,171 @@
+@import "../../_imports-global";
+
+@import "../navbar";
+
+
+//==============================================================================
+// STYLE : article.fiche-questions-orales > div.page-header > h1
+// STYLE : article.containers-fiches-orales > h2
+// STYLE : article.containers-fiches-orales > section
+//==============================================================================
+
+.fiche-questions-orales {
+    & > .page-header {
+        margin-bottom: 0;
+        text-align: left;
+
+        & > h1 {
+            color: #565656;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #FFFFFF;
+
+            & > span {
+                color: #3093E0;
+                font-size: 34px;
+            }
+        }
+    }
+
+    & > .containers-fiches-orales {
+        background: #FFFCF7;
+        border: 1px solid #C3C3C3;
+        border-radius: 3px;
+        padding: 10px 20px 20px 20px;
+        margin-top: 40px;
+
+        & > h2 {
+            background: #CE515D;
+            color: #FFFFFF;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 15px 30px;
+            text-align: center;
+            margin-bottom: 40px;
+            border: 1px solid #BE5858;
+        }
+
+        & > section {
+            text-align: left;
+        }
+    }
+}
+
+//==============================================================================
+// STYLE : div.container-fiche-orale > h3
+// STYLE : div.container-fiche-orale > div
+// STYLE :
+//==============================================================================
+.container-fiche-orale {
+    text-align: left;
+
+    & > h3 {
+        background: #2E83CC;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 12px 16px;
+        border: 1px solid #2E7ACC;
+        text-shadow: none;
+        margin: 20px 0 0 0;
+
+        & > .glyph-chevron-right {
+            border-radius: 20px;
+            box-shadow: 0 0 2px #c0c0c0;
+            font-size: 16px;
+            padding: 8px;
+            margin-right: 16px;
+            color: #FFF;
+        }
+    }
+
+    & > div {
+        display: none;
+
+        & > h4 {
+            background: #E4E4E4;
+            border-left: 1px solid #E7E7E7;
+            border-top: 1px solid #E7E7E7;
+            border-right: 1px solid #D6D6D6;
+            border-bottom: 1px solid #D6D6D6;
+            color: #3A5DC9;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px 0 8px 60px;
+
+            &:first-child {
+                margin-top: 20px;
+            }
+
+            & > .glyph-bullet {
+                background: url('../../../img/bullet.png') no-repeat 0 0;
+                width: 12px;
+                height: 12px;
+                float: left;
+                margin-right: 10px;
+                margin-top: 4px;
+            }
+        }
+
+        & > ul {
+            background: #E7E7E7;
+            box-shadow: 0 0 3px #5E5E5E;
+            display: none;
+            margin: 30px 90px;
+            padding: 20px 30px;
+
+            & > li {
+                background: #BBBBBB;
+                border-left: 1px solid #ECECEC;
+                border-top: 1px solid #ECECEC;
+                box-shadow: 1px 1px 1px #707070;
+                color: #180000;
+                font-size: 16px;
+                font-weight: bold;
+                list-style: none;
+                margin: 8px 0;
+                padding: 8px 18px;
+                text-shadow: 0 1px 0 #D3D3D3;
+            }
+        }
+    }
+}
+
+//==============================================================================
+// STYLE : alert box
+//==============================================================================
+
+.alertBox {
+    background: red;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+    & > div {
+        background: #DDE8FF;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 6px;
+        padding: 12px;
+        border: 1px solid #E28787;
+
+        & > .alertBox-title {
+            color: #FF0000;
+            font-size: 18px;
+            margin-bottom: 3px;
+
+            & > strong {
+                color: #D12121;
+            }
+        }
+
+        & > p > b {
+            color: #3463A8;
+        }
+    }
+}
+
+/* rectif animation slide up */
+.container-fiche-orale > div > .db {
+    display: block;
+}

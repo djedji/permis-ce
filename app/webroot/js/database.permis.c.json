@@ -1,0 +1,1066 @@
+{
+    "questionsEcrites" : {
+        "fiches" : [
+            [
+                {
+                    "question" : "Le principal avantage du système de freinage antibloquant est-il de réduire les distances de freinage ?",
+                    "reponse"  : "Non",
+                    "page"     : "201"
+                },
+                {
+                    "question" : "Vous avez interrompu votre conduite pendant 1 h 15 min. Ce temps peut-il être pris en compte sur le calcul du temps de repos journalier ?",
+                    "reponse"  : "Non",
+                    "page"     : "154"
+                },
+                {
+                    "question" : "Un conducteur effectuant un transport de matières dangereuses dans un véhicule fourgon doit-il obligatoirement avoir suivi une formation particulière ?",
+                    "reponse"  : "Oui",
+                    "page"     : "92"
+                },
+                {
+                    "question" : "Votre véhicule (isolé) a un PTAC de 16 t. Sur route prioritaire à double sens, quelle est la vitesse maximale autorisée ?",
+                    "reponse"  : "80 Km/h",
+                    "page"     : "82"
+                },
+                {
+                    "question" : "Quelle est la charge utile d'un véhicule dont le PTAC est de 19t et le poids à vide de 7t ?",
+                    "reponse"  : "12 tonnes",
+                    "page"     : "18"
+                },
+                {
+                    "question" : "La lettre de voiture doit détailler la nature des marchandises transportées. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "121"
+                },
+                {
+                    "question" : "Le châssis d'un véhicule lourd est principalement constitué de longerons et de ... ?",
+                    "reponse"  : "Traverses",
+                    "page"     : "178"
+                },
+                {
+                    "question" : "Si, dans la même journée, vous conduisez un véhicule avec un chronotachygraphe à disque après avoir conduit un véhicule avec un chronotachygraphe numérique, devez-vous utiliser un disque vierge ?",
+                    "reponse"  : "Oui",
+                    "page"     : "150"
+                },
+                {
+                    "question" : "Ce signal m'indique un arrêt d'autobus. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "60",
+                    "img"      : { "src" : "04_01_17.png",  "alt" : "Autobus" }
+                },
+                {
+                    "question" : "Un chiffre doublé (exemple : 33) dans un rectangle du haut de la plaque orange placée à l'arrière du camion signifie : (Produit de nature à polluer les eaux). Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "133"
+                }
+            ],
+            [
+                {
+                    "question" : "Vous chargez du sable. Vous voulez connaître la charge maximale autorisée par essieu. Vous pouvez la trouver sur la plaque de tare et de surface. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "32"
+                },
+                {
+                    "question" : "Vous attendez votre tour pour décharger sans connaître le temps d'attente. Sur quel symbole deveez-vous positionner le sélecteur d'activité du chronotachygraphe ?",
+                    "reponse"  : "Autres tâches ou Marteau",
+                    "page"     : "139"
+                },
+                {
+                    "question" : "Certains éléments de la chaîne cinématique nécessitent d'être vidangés ou ... ?",
+                    "reponse"  : "Graissés",
+                    "page"     : "191"
+                },
+                {
+                    "question" : "Vous conduisez un camion neuf de 19t de PTAC. A quelle vitesse êtes-vous limité en agglomération, sur une portion de route relevée à 70 km/h ?",
+                    "reponse"  : "50 km/h",
+                    "page"     : "82"
+                },
+                {
+                    "question" : "Vous chargez du sable dans un véhicule isolé, quelle est la charge maximale autorisée sur l'essieu le plus chargé du groupe d'essieux moteur ?",
+                    "reponse"  : "11,5 tonnes",
+                    "page"     : "22"
+                },
+                {
+                    "question" : "La licence communautaire permet-elle d'effectuer des transports dans toute l'Union Européenne ?",
+                    "reponse"  : "Oui",
+                    "page"     : "118"
+                },
+                {
+                    "question" : "Ce signal concerne-t-il les véhicules affectés aux seuls transport de produits polluants ?",
+                    "reponse"  : "Oui",
+                    "page"     : "55",
+                    "img"      : { "src" : "03_01_27.png", "alt" : "Produits polluants"}
+                },
+                {
+                    "question" : "Après 3h de conduite continue, s'arrêter 10 min sur un parking est-il considéré comme une pause ?",
+                    "reponse"  : "Non",
+                    "page"     : "152"
+                },
+                {
+                    "question" : "Débrancher ou modifier les réglages du limiteur de vitesse peut entraîner une suspension du permis de conduire, même s'il n'y a pas eu d'excès de vitesse constaté. Vrai ou Fraux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "212"
+                },
+                {
+                    "question" : "Le constat amiable d'accident peut-il constituer une preuve de responsabilité ?",
+                    "reponse"  : "Oui",
+                    "page"     : "168"
+                }
+            ],
+            [
+                {
+                    "question" : "Quelle est la profondeur minimale (en millimètre - mm) des rainures principales d'un pneumatique de poids lourd ?",
+                    "reponse"  : "1 mm",
+                    "page"     : "38"
+                },
+                {
+                    "question" : "En règle générale, quelle est la durée minimale normale (non réduite) de repos hebdomadaire pour un conducteur de camion ?",
+                    "reponse"  : "45 heures",
+                    "page"     : "155"
+                },
+                {
+                    "question" : "Qu'aspire le moteur diesel lors du premier temps appelé admission ?",
+                    "reponse"  : "De l'air",
+                    "page"     : "186"
+                },
+                {
+                    "question" : "Vous conduisez un camion neuf de 26t de PTAC. A quelle vitesse êtes-vous limité sur autoroute ?",
+                    "reponse"  : "90 km/h",
+                    "page"     : "82"
+                },
+                {
+                    "question" : "Vous conduisez un camion comportant une caisse bâchée. Quelle peut-être sa largeur maximale ?",
+                    "reponse"  : "2,55 mètres",
+                    "page"     : "14"
+                },
+                {
+                    "question" : "Lors d'un contrôle sur route, dois-je présenter un justificatif de l'employeur pour le ou les jours non travaillés ?",
+                    "reponse"  : "Oui",
+                    "page"     : "158"
+                },
+                {
+                    "question" : "Vous avez perdu votre carte conducteur, pouvez-vous conduire en utilisant la carte entreprise que possède votre employeur ?",
+                    "reponse"  : "Non",
+                    "page"     : "143"
+                },
+                {
+                    "question" : "Par temps sec, ce signal me concerne-t-il ?",
+                    "reponse"  : "Oui",
+                    "page"     : "56",
+                    "img"      : { "src" : "01_30.png", "alt" : "Accotement meuble"}
+                },
+                {
+                    "question" : "En France, à partir de quelle quantité d'alcool pur par litre de sang un conducteur de camion encourt-il une sanction ?",
+                    "reponse"  : "0.50 g/l de sang ou 0.25 mg/l d'air",
+                    "page"     : "98"
+                },
+                {
+                    "question" : "Dans le transport routier, c'est pendant le travail, hors conduite, que l'on dénombre le plus fort taux d'accidents chez les condutcteurs ?",
+                    "reponse"  : "Oui",
+                    "page"     : "94"
+                }
+            ],
+            [
+                {
+                    "question" : "Au-delà de quel PTAC un extincteur à poudre de 6kg minimum, placé à l'extérieur, doit-il équiper un camion neuf ?",
+                    "reponse"  : "7,5 tonnes",
+                    "page"     : "36"
+                },
+                {
+                    "question" : "Le turbocompresseur a pour fonction de diminuer l'air admis dans les cylindres ?",
+                    "reponse"  : "Non",
+                    "page"     : "189"
+                },
+                {
+                    "question" : "Ce signal interdit-il de dépasser les seuls véhicules dont le PTAC dépasse 3,5t ?",
+                    "reponse"  : "Non",
+                    "page"     : "59",
+                    "img"      : { "src" : "03_01_11.png", "alt" : "Interdiction de dépasser"}
+                },
+                {
+                    "question" : "Vous conduisez un camion neuf de 19t de PTAC. A quelle vitesse êtes-vous limité sur route prioritaire ?",
+                    "reponse"  : "80 km/h",
+                    "page"     : "82"
+                },
+                {
+                    "question" : "Quelle est la longeur maximale d'un camion isolé de 2 essieux ?",
+                    "reponse"  : "12 mètres",
+                    "page"     : "16"
+                },
+                {
+                    "question" : "Lors d'un contrôle des temps de conduite et de repos sur la route, en plus de la journée en cours, sur quelle période devez-vous pouvoir présenter les données ?",
+                    "reponse"  : "Sur un période de 28 jours",
+                    "page"     : "158"
+                },
+                {
+                    "question" : "Le temps de conduite pour venir à l'entreprise le matin, avec votre véhicule perso, doit-il être ajouté au temps de conduite de votre véhicule lourd ?",
+                    "reponse"  : "Non",
+                    "page"     : "157"
+                },
+                {
+                    "question" : "Au bout de combien de jours, au maximum, l'entreprise doit-elle télécharger les données de votre carte conducteur ?",
+                    "reponse"  : "28 jours",
+                    "page"     : "144"
+                },
+                {
+                    "question" : "Je possède les catégories B, C et CE. Conduirre ma voiture personnelle après avoir pris de la drogue peut entraîner la perte de la catégorie B de mon permis de conduire uniquement. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "100"
+                },
+                {
+                    "question" : "En cas d'accident, les données du chronotachygraphe numérique peuvent-elles servir de preuve devant un tribunal ?",
+                    "reponse"  : "Oui",
+                    "page"     : "167"
+                }
+            ],
+            [
+                {
+                    "question" : "Où doit se trouver l'extincteur obligatoire sur un véhicule isolé neuf de transport de marchandises de plus de 7,5t : A l'intérieur ou à l'extérieur ?",
+                    "reponse"  : "A l'extérieur",
+                    "page"     : "36"
+                },
+                {
+                    "question" : "Votre véhicule est équipé d'un chronotachygraphe numérique. Vous avez perdu votre carte conducteur, combien de jours, au maximum, pouvez vous conduire sans carte ?",
+                    "reponse"  : "15 jours",
+                    "page"     : "143"
+                },
+                {
+                    "question" : "Le circuit d'alimentation d'un moteur diesel se compose, entre autres éléments, de deux pompes : l'une dite pompe d'injection haute pression, l'autre dit pompe ...?",
+                    "reponse"  : "D'alimentation",
+                    "page"     : "188"
+                },
+                {
+                    "question" : "Vous conduisez un camion de plus de 7,5t de PTAC. Quand finit l'interdiction de circulation en fin de semaine ?",
+                    "reponse"  : "Dimanche 22h00",
+                    "page"     : "65"
+                },
+                {
+                    "question" : "En règle générale, quel est le PTAC maximal d'un véhicule isolé comportant 2 essieux ?",
+                    "reponse"  : "19 tonnes",
+                    "page"     : "19"
+                },
+                {
+                    "question" : "Dans le cadre d'un transport public, peut-il y avoir une lettre de voiture (avec état récapitulatif) dans le véhicule pour plusieurs voyages ?",
+                    "reponse"  : "Oui",
+                    "page"     : "121"
+                },
+                {
+                    "question" : "En agglomération, ce signal est-il implanté 50 mètres avant le carrefour à sens giratoire ?",
+                    "reponse"  : "Oui",
+                    "page"     : "56",
+                    "img"      : { "src" : "02_02.png", "alt": "Sens giratoire"}
+                },
+                {
+                    "question" : "En double équipage, le temps passé sur la couchette d'un véhicule en circulation, est-il considéré comme repos journalier ?",
+                    "reponse"  : "Non",
+                    "page"     : "152"
+                },
+                {
+                    "question" : "Le non-respect des limitations de tonnage pour le passage sur les ponts peut-il entraîner une suspension du permis de conduire ?",
+                    "reponse"  : "Oui",
+                    "page"     : "212"
+                },
+                {
+                    "question" : "Sur autoroute, en cas d'accident, pour appeler les secours, vaut-il mieux utiliser la borne d'appel ou son téléphone portable ?",
+                    "reponse"  : "La borne d'appel",
+                    "page"     : "170"
+                }
+            ],
+            [
+                {
+                    "question" : "Quel type d'extincteur faut-il éviter d'utiliser pour éteindre les flammes d'un feu d'hydrocarbure ?",
+                    "reponse"  : "Un extincteur à eau",
+                    "page"     : "36"
+                },
+                {
+                    "question" : "Le conducteur doit pouvoir présenter les preuves de son activité pour la journée en cours et pour les ... jours précédents ?",
+                    "reponse"  : "28 jours",
+                    "page"     : "158"
+                },
+                {
+                    "question" : "Les filtres à curburant ou filtres principaux sont situés entre la pompe d'alimentation et la pompe d'injection haute pression. Vrai ou Fraux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "188"
+                },
+                {
+                    "question" : "Hors agglomération, sur une route à double sens, vous suivez un camion à 70 km/h. Quel intervalle de sécurité minimum devez-vous respecter ?",
+                    "reponse"  : "50 mètres",
+                    "page"     : "72"
+                },
+                {
+                    "question" : "Dans la définition du poids à vide, les différents réservoirs sont-ils remplis ?",
+                    "reponse"  : "Oui",
+                    "page"     : "18"
+                },
+                {
+                    "question" : "Dans le cadre du transport public, peut-il y avoir une seule lettre de voiture (avec état récapitulatif) dans le véhicule pour un transport comportant plusieurs destinataires dans la même journée ?",
+                    "reponse"  : "Oui",
+                    "page"     : "121"
+                },
+                {
+                    "question" : "Hors agglomération, ce signal est-il implanté 100 mètres avant le carrefour à sens giratoire ?",
+                    "reponse"  : "Non",
+                    "page"     : "56",
+                    "img"      : { "src" : "02_02.png", "alt" : "Sens giratoire"}
+                },
+                {
+                    "question" : "La réglementation sociale eropéenne s'applique-t-elle à un conducteur non salarié propriétaire de son véhicule ?",
+                    "reponse"  : "Oui",
+                    "page"     : "138"
+                },
+                {
+                    "question" : "Quel symbole devez-vous afficher sur l'écran du chronotachygraphe numérique lorsque vous nettoyez votre véhicule ?",
+                    "reponse"  : "Autres tâches ou marteau",
+                    "page"     : "139"
+                },
+                {
+                    "question" : "Que signifie une plaque de couleur orange, comportant 2 rectangles sans inscription, placée à l'arrière d'un camion ?",
+                    "reponse"  : "Transport de matières dangereuses",
+                    "page"     : "133"
+                }
+            ],
+            [
+                {
+                    "question" : "En cas de panne du chronotachygraphe, le délai maximal de remise en état, à compter de la panne, est fixé à ...?",
+                    "reponse"  : "1 semaine ou 7 jours",
+                    "page"     : "148"
+                },
+                {
+                    "question" : "Quand le repos journalier est fractionné, quelle doit être la durée minimale totale de ce repos ?",
+                    "reponse"  : "12 heures",
+                    "page"     : "154"
+                },
+                {
+                    "question" : "L'embrayage est un organe mécanique nécessaire au passage des vitesses sur les seules boîtes mécaniques ?",
+                    "reponse"  : "Non",
+                    "page"     : "180"
+                },
+                {
+                    "question" : "Votre camion, en charge, transporte des denrées périssables, avez-vous le droit de continuer votre trajet le samedi après 22h ?",
+                    "reponse"  : "Oui",
+                    "page"     : "65"
+                },
+                {
+                    "question" : "Quelle est la longueur maximale d'un camion isolé à 3 essieux ?",
+                    "reponse"  : "12 mètres",
+                    "page"     : "16"
+                },
+                {
+                    "question" : "Si le véhicule que je conduis est soumis à la taxe à l'essieu, lors d'un contrôle routier, faut-il présenter l'original ou la photocopie de l'attestation de paiement ?",
+                    "reponse"  : "L'original",
+                    "page"     : "119"
+                },
+                {
+                    "question" : "Ce signal interdit-il l'accès aux véhicules mesurant plus de 3,50 mètres de hauteur, chargement compris ?",
+                    "reponse"  : "Oui",
+                    "page"     : "57",
+                    "img"      : { "src" : "03_01_18.png", "alt" : "Hauteur 3,5m" }
+                },
+                {
+                    "question" : "Le conducteur peut-il bâcher ou débâcher son véhicule pendant une pause ?",
+                    "reponse"  : "Non",
+                    "page"     : "139"
+                },
+                {
+                    "question" : "Quelle est la catégorie du permis exigée pour conduire un tracteur 'en solo' de 10t de PTAC et de 38t de PTRA quand il circule non attelé d'une semi-remorque ?",
+                    "reponse"  : "Permis C",
+                    "page"     : "139"
+                },
+                {
+                    "question" : "Dans le transport, les accidents avec blessures du chauffeur sont plus nombreux en circulation que hors circulation. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "94"
+                }
+            ],
+            [
+                {
+                    "question" : "En règle générale, exist-il une commandes indépendante de frein de secours à l'intérieur des véhicules lourds neufs ?",
+                    "reponse"  : "Non",
+                    "page"     : "43"
+                },
+                {
+                    "question" : "La marche arrière sert à inverser les sens de rotation de l'arbre de transmission ?",
+                    "reponse"  : "Oui",
+                    "page"     : "181"
+                },
+                {
+                    "question" : "Circuler avec un seul pneu lisse ou détérioré peut entraîner l'immobilisation du véhicule jusqu'à son remplacement. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "38"
+                },
+                {
+                    "question" : "Au-dessous de quelle hauteur libre d'un pont celle-ci sera-t-elle signalée ?",
+                    "reponse"  : "4,30 mètres",
+                    "page"     : "15"
+                },
+                {
+                    "question" : "En règle générale, le chargemnet peut-il dépasser l'aplomb du véhicule ?",
+                    "reponse"  : "Non",
+                    "page"     : "126"
+                },
+                {
+                    "question" : "Suite au contrôle technique périodique, lorsque le véhicule est refusé sans inderdiction de circuler, dans quel délai maximum la contre-visite doit-elle être effectuée pour éviter une visite technique complète ?",
+                    "reponse"  : "1 mois",
+                    "page"     : "49"
+                },
+                {
+                    "question" : "Quel symbole devez-vous afficher sur l'écran du chronotachygraphe numérique lorsque vous partez déjeuner ?",
+                    "reponse"  : "Pause, repos ou le symbole lit",
+                    "page"     : "139"
+                },
+                {
+                    "question" : "Quelle est la durée maximale autorisée de conduite continue pour un conducteur de camion ?",
+                    "reponse"  : "4 h 30 min",
+                    "page"     : "152"
+                },
+                {
+                    "question" : "Le poids indiqué dans ce signal concerne-t-il le poids maximal autorisé que peut comporter l'essieu ?",
+                    "reponse"  : "Non",
+                    "page"     : "57",
+                    "img"      : { "src" : "03_01_21.png", "alt" : "Essieu 2,5t"}
+                },
+                {
+                    "question" : "Pour diminuer les risques d'accident, lors de la montée ou de la descente d'un camion, de combien de points d'appui le conducteur doit-il se servir ?",
+                    "reponse"  : "3",
+                    "page"     : "94"
+                }
+            ],
+            [
+                {
+                    "question" : "En règle générale, à quelle vitesse doit être réglé le limiteur de vitesse d'un camion neuf ?",
+                    "reponse"  : "90 km/h",
+                    "page"     : "37"
+                },
+                {
+                    "question" : "Un pont court permet d'obtenir un couple plus important et une vitesse du véhicule plus faible. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "185"
+                },
+                {
+                    "question" : "Dans une entreprise, le chargement est effectué par un manutentionnaire. Une fois terminé, vous appartient-il d'effectuer le contrôle d'arrimage de la charge avant de démarrer ?",
+                    "reponse"  : "Oui",
+                    "page"     : "115"
+                },
+                {
+                    "question" : "En agglomération, vous suivez un camion. Quel intervalle de sécurité minimum devez-vous respecter ?",
+                    "reponse"  : "Distance parcourue en 2 secondes",
+                    "page"     : "72"
+                },
+                {
+                    "question" : "Le poids réel d'un véhicule peut-il être égal à son PTAC ?",
+                    "reponse"  : "Oui",
+                    "page"     : "18"
+                },
+                {
+                    "question" : "Suite au contrôle technique périodique, quelle lettre figure sur le certificat d'immatriculation lorsque le véhicule est refusé sans interdiction de circuler ?",
+                    "reponse"  : "La lettre S",
+                    "page"     : "119"
+                },
+                {
+                    "question" : "Quel symbole devez-vous afficher sur l'écran du chronotachygraphe lors des vérifications du véhicule avant le départ ?",
+                    "reponse"  : "Autres tâches ou marteau",
+                    "page"     : "139"
+                },
+                {
+                    "question" : "Un premier arrêt de 15 min sur un parking peut-il être considéré comme une pause ?",
+                    "reponse"  : "Oui",
+                    "page"     : "152"
+                },
+                {
+                    "question" : "Mon véhicule a un poids à vide de 5 tonnes et un PTAC de 12 tonnes. Ce signal me concerne-t-il ?",
+                    "reponse"  : "Oui",
+                    "page"     : "55",
+                    "img"      : { "src" : "03_01_38.png", "alt" : "Interdiction de vitesse 70 km/h pour les plus de 5,5tonnes" }
+                },
+                {
+                    "question" : "Le nombre 33 dans le rectangle du haut de la plaque orange placée à l'arrière d'un camion signifie : 'produit très inflammable'. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "133"
+                }
+            ],
+            [
+                {
+                    "question" : "Est-il autorisé de monter des pneus de types différents sur un même essieu, roues jumelées ou non (en dehors de la roue de secours), sur un véhicule récent ?",
+                    "reponse"  : "Non",
+                    "page"     : "39"
+                },
+                {
+                    "question" : "Le mécanisme de direction comprend une bielle pendante. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "194"
+                },
+                {
+                    "question" : "Sur cette chaussée la hauteur des arbres est susceptible d'être inférieure à 4,30 m. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "56",
+                    "img"      : { "src" : "01_31.png", "alt" : "Arbres inclinés" }
+                },
+                {
+                    "question" : "En général, un véhicule tracteur en solo est-il soumis aux mêmes limitations de vitesse que s'il est attelé ?",
+                    "reponse"  : "Oui",
+                    "page"     : "83"
+                },
+                {
+                    "question" : "En règle général, quel est PTAC maximal d'un véhicule isolé de 3 essieux ?",
+                    "reponse"  : "26 tonnes",
+                    "page"     : "19"
+                },
+                {
+                    "question" : "Vous effecuez un transport sous convention T.I.R. Les portes du véhicule doivent-elles être scellés ?",
+                    "reponse"  : "Oui",
+                    "page"     : "117"
+                },
+                {
+                    "question" : "Quelle est la durée de validité de votre carte conducteur ? ",
+                    "reponse"  : "5 ans",
+                    "page"     : "143"
+                },
+                {
+                    "question" : "Si vous avez à imprimer un ticket à partir d'un chronotachygraphe numérique, devez-vous inscrire votre nom sur le ticket, si votre carte conducteur est insérée dans l'appareil au moment de l'impression ?",
+                    "reponse"  : "Non",
+                    "page"     : "146"
+                },
+                {
+                    "question" : "Après l'obtention (hors diplômes professionnels) de votre premier permis de conduire du groupe lourd, quelle foramtion devez-vous effectuer avant de pouvoir condiurie un véhicule dans le cadre de transport public de marchandises ?",
+                    "reponse"  : "FIMO (Formation initiale minimale obligatoire",
+                    "page"     : "91"
+                },
+                {
+                    "question" : "En moyenne, il y a plus d'accidents graves impliquant un poids lourd les samedis et veilles de jours fériés que les jours de semaine. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "165"
+                }
+            ],
+            [
+                {
+                    "question" : "Dans un camion neuf, le conducteur doit-il obligatoirement attacher sa ceinture de sécurité ?",
+                    "reponse"  : "Oui",
+                    "page"     : "41"
+                },
+                {
+                    "question" : "Quel type de suspension équipe généralement les véhicules lourds permettant de régler la hauteur du véhicule",
+                    "reponse"  : "Suspension pneumatique",
+                    "page"     : "193"
+                },
+                {
+                    "question" : "Cette limitation de vitesse peut-elle concerner les véhicules autres que les trains routiers, trains double et véhicules articulés ?",
+                    "reponse"  : "Oui",
+                    "page"     : "55",
+                    "img"      : { "src" : "03_01_39.png", "alt" : "Limitation de vitesse avec panonceau" }
+                },
+                {
+                    "question" : "Sur le périphérique parisien, les camions peuvent circuler à 80 km/h. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "82"
+                },
+                {
+                    "question" : "Quelle est la charge utile d'un véhicule dont le PTAC est de 32t et le poids à vide de 9t ?",
+                    "reponse"  : "23 tonnes",
+                    "page"     : "18"
+                },
+                {
+                    "question" : "Quel est le document, lié à l'entreprise, qui doit se trouver dans un camion, de plus de 6t de PMA (poids maximum autorisé) et de plus de 3,5t de charge utile, qui effectue un transport de marchandises pour le compte d'autrui ?",
+                    "reponse"  : "Copie conforme de la licence communautaire",
+                    "page"     : "118"
+                },
+                {
+                    "question" : "Un conducteur peut-il demander une copie papier des données numériques, liées à son activité, qui sont conservées dans l'entreprise ?",
+                    "reponse"  : "Oui",
+                    "page"     : "159"
+                },
+                {
+                    "question" : "Le conducteur d'un véhicule de dépannage, est-il soumis à la réglementation sociale européenne, dans un rayon de 100 km autour de son point d'attache ?",
+                    "reponse"  : "Non",
+                    "page"     : "138"
+                },
+                {
+                    "question" : "Avec le permis C, quel est le PTAC maximum de la remorque que vous pouvez atteler derrière votre camion ?",
+                    "reponse"  : "750 kg",
+                    "page"     : "88"
+                },
+                {
+                    "question" : "Une plaque orange sans aucune inscription, placée à l'arrière d'un camion signifie qu'il s'agit d'un transport de matières dangereuses circulant à vide. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "133"
+                }
+            ],
+            [
+                {
+                    "question" : "Une pierre coincé entre des roues jumelées peut entrainer l'éclatement d'un pneumatique. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "39"
+                },
+                {
+                    "question" : "Vous avez fait une coupure de 4h (repos), quelle sera, au minimum, la durée de la période de repos suivante pour être en règle vis-à-vis du repos journalier ?",
+                    "reponse"  : "9 heures",
+                    "page"     : "154"
+                },
+                {
+                    "question" : "Le recreusage des pneumatiques est-il une opération qui peut s'effectuer uniquement par un spécialiste ?",
+                    "reponse"  : "Oui",
+                    "page"     : "196"
+                },
+                {
+                    "question" : "Ce signal concerne uniquement les véhicules affectés au transport de marchandises excédant 3500 kg de PTAC ?",
+                    "reponse"  : "Non",
+                    "page"     : "55",
+                    "img"      : { "src" : "03_01_40.png", "alt" : "Interdiction tourner à gauche poid lourd" }
+                },
+                {
+                    "question" : "Quelle charge maximale autorisée peut supporter un essieu isolé ?",
+                    "reponse"  : "13 tonnes",
+                    "page"     : "22"
+                },
+                {
+                    "question" : "La licence de transport intérieur permet d'effectuer des transports de tout tonnage à conditions de rester en France. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "118"
+                },
+                {
+                    "question" : "Sur un ticket imprimé à partir du chronotachygraphe numérique, peut-on trouver les temps de conduite et les temps passés aux autres tâches ?",
+                    "reponse"  : "Oui",
+                    "page"     : "147"
+                },
+                {
+                    "question" : "Vous conduisez un camion neuf de 19t de PTAC. A quelle vitesse êtes-vous limité sur route prioritaire ?",
+                    "reponse"  : "80 km/h",
+                    "page"     : "82"
+                },
+                {
+                    "question" : "Un conducteur ramenant, à vide, un camion citerne de carburant, non dégazé, doit-il obligatoirement avoir suivi une formation particulière ?",
+                    "reponse"  : "Oui",
+                    "page"     : "92"
+                },
+                {
+                    "question" : "Quand je circule en Espagne, quel numéro de téléphone est-il conseillé d'utiliser par appeler les secours à partir d'un portable ?",
+                    "reponse"  : "112",
+                    "page"     : "170"
+                }
+            ],
+            [
+                {
+                    "question" : "Vous chargez du gravier. Vous voulez connaître la charge maximale autorisée par essieu. Vous pouvez la trouver sur la plaque du constructeur. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "32"
+                },
+                {
+                    "question" : "Lorsque le condurcteur serre le frein de parc, le cylindre de frein à ressort se remplit d'air. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "200"
+                },
+                {
+                    "question" : "La descente dangereuse annoncée possède-t-elle un dénivelé de 100 mètres par chaque kilomètre parcouru ?",
+                    "reponse"  : "Oui",
+                    "page"     : "56",
+                    "img"      : { "src" : "03_01_41.png", "alt" : "Descente dangereuse"}
+                },
+                {
+                    "question" : "Je conduis un camion de 26t de PTAC et de 10t de PV. Pour emprunter une route où une barrière de dégel à 12t avec mention demi-charge autorisée, est en place, quel doit être le poids maximum de mon changement ?",
+                    "reponse"  : "8 tonnes",
+                    "page"     : "64"
+                },
+                {
+                    "question" : "Vous conduisez un camion comportant une caaisse réfrigérée. Quelle peut être sa largeur maximale ?",
+                    "reponse"  : "2,60 mètres",
+                    "page"     : "15"
+                },
+                {
+                    "question" : "Effectuer un transport sous le régime TIR permet de simplifier les formalités douanières. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "117"
+                },
+                {
+                    "question" : "Vous avez fait une coupure de 2h, quelle sera, au minimum, la durée (non réduite) de la période de repos que vous devrez prendre à la fin de votre journée de travail pour être en règle vis-à-vis du repos journalier ?",
+                    "reponse"  : "11 heures",
+                    "page"     : "154"
+                },
+                {
+                    "question" : "Pendant une pause, êtes-vous autorisé à décharger le véhicule ?",
+                    "reponse"  : "Non",
+                    "page"     : "139"
+                },
+                {
+                    "question" : "En cas d'excès de vitesse de 42 km/h, je pourrai repartir si je reconnais l'infraction ?",
+                    "reponse"  : "Non",
+                    "page"     : "212"
+                },
+                {
+                    "question" : "Citez un type d'extincteur couramment utilisé pour éteindre une voiture en flamme ?",
+                    "reponse"  : "Poudre ou mouse ou CO²",
+                    "page"     : "36"
+                }
+            ],
+            [
+                {
+                    "question" : "Après une utilisation intense, quel type de ralentisseur peut provoquer un incendie dès l'arrêt ?",
+                    "reponse"  : "Ralentisseur électrique",
+                    "page"     : "23"
+                },
+                {
+                    "question" : "Vous vous arrêtez pour faire le plein de carburant. Sur quel symbole devez-vous positionner le sélecteur d'activité du chronotachygraphe ?",
+                    "reponse"  : "Autre tâches ou Marteau",
+                    "page"     : "139"
+                },
+                {
+                    "question" : "Le circuit de freinage européen rend le freinage de l'essieu avant indépendant du freinage de l'essieur arrière. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "197"
+                },
+                {
+                    "question" : "Ce signal concerne-t-il les véhicules affectés au transport de produits dangereux ou au transport de produits explosifs ?",
+                    "reponse"  : "Produits explosifs",
+                    "page"     : "55",
+                    "img"      : { "src" : "03_01_25.png", "alt" : "Produits explosifs"}
+                },
+                {
+                    "question" : "Vous conduisez un véhicule isolé à 2 essieux. Est-il possible d'être en surcharge sur l'essieu arrière si le poids réel ne dépasse pas le PTAC ?",
+                    "reponse"  : "Oui",
+                    "page"     : "126"
+                },
+                {
+                    "question" : "Comment appelle-t-on les transports exécutés à titre non onéreux servant à transporter les marchandises de sa propre entreprise ?",
+                    "reponse"  : "Compte propre ou privé",
+                    "page"     : "114"
+                },
+                {
+                    "question" : "Vous conduisez sans vous arrêter depuis 8h ce matin. Il est 12h40. Etes-vous en infraction ?",
+                    "reponse"  : "Oui",
+                    "page"     : "152"
+                },
+                {
+                    "question" : "Vous conduisez un camion neuf de 19t de PTAC. A quelle vitesse êtes-vous limité sur route à sens unique prioritaire ?",
+                    "reponse"  : "80 km/h",
+                    "page"     : "82"
+                },
+                {
+                    "question" : "Si je perds tous les points de mon permis de conduire à la suite d'infractions commises au volant de ma voiture personnelle, pourrai-je continuer à conduire mon camion ?",
+                    "reponse"  : "Non",
+                    "page"     : "101"
+                },
+                {
+                    "question" : "Le modèle allemand, italien, ou espagnol d'un constat européen d'accident, comporte-t-il les mêmes rubriques que le modèle français ?",
+                    "reponse"  : "Oui",
+                    "page"     : "168"
+                }
+            ],
+            [
+                {
+                    "question" : "Dans un camion neuf, le passager doi-il obligatoirement attacher sa ceinture de sécurité ?",
+                    "reponse"  : "Oui",
+                    "page"     : "41"
+                },
+                {
+                    "question" : "Le dispositif antiblocage de roues (ABS), peut-il fonctionner en même temps que le ou les dispositifs ralentisseurs ?",
+                    "reponse"  : "Oui",
+                    "page"     : "201"
+                },
+                {
+                    "question" : "Cette signalisation de présignalisation peut annoncer une barrière de dégel : Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "63",
+                    "img"      : { "src" : "10_02_25.png", "alt" : "Déviation"}
+                },
+                {
+                    "question" : "Vous conduisez un tracteur solo de 19t de PTAC et 38t de PTRA. A quelle vitesse êtes-vous limité sur non route prioritaire ?",
+                    "reponse"  : "60 km/h",
+                    "page"     : "83"
+                },
+                {
+                    "question" : "Quelle est la majoration maximale autorisée du PTAC pour un véhicule équipé d'un dispositif ralentisseur de 400 kg ?",
+                    "reponse"  : "400 kg",
+                    "page"     : "23"
+                },
+                {
+                    "question" : "Suite au contrôle technique périodique, quelle lettre figure sur le certificat d'immatriculation lorsque le véhicule est accepté ?",
+                    "reponse"  : "A",
+                    "page"     : "119"
+                },
+                {
+                    "question" : "Après 2 heures de conduite, quelle est la durée minimale d'un premier arrêt pouvant être pris en compte comme pause ?",
+                    "reponse"  : "15 min",
+                    "page"     : "152"
+                },
+                {
+                    "question" : "Vous rentrez chez vous le soir avec le camion de l'entreprise. Le matin, le temps de conduite pour vous rendre au dépôt est-il compté comme du temps de conduite ?",
+                    "reponse"  : "Oui",
+                    "page"     : "157"
+                },
+                {
+                    "question" : "Sur une route à double sens limitée à 70 Km/h, lors d'un contrôle routier, votre carte conducteur indique que vous rouliez à 80 km/h. Pouvez-vous être sanctioné ?",
+                    "reponse"  : "Oui",
+                    "page"     : "212"
+                },
+                {
+                    "question" : "Le signal de détresse peut-il remplacer le triangle de présignalisation pour un véhicule de d'un PTAC de plus de 3,5t ?",
+                    "reponse"  : "Non",
+                    "page"     : "30"
+                }
+            ],
+            [
+                {
+                    "question" : "Au delà de quel PTAC les véhicules de transport de marchandises doivent-ils être équipés d'un dispositif complémentaire de signalisation arrière ?",
+                    "reponse"  : "6 tonnes",
+                    "page"     : "29"
+                },
+                {
+                    "question" : "En règle générale, quelle est la durée minimale normale (non réduite) obligatoire de repos journalier lorsque celui-ci n'est pas fractionné ?",
+                    "reponse"  : "11 heures",
+                    "page"     : "154"
+                },
+                {
+                    "question" : "En principe, le ralentisseur hydraulique est situé sur ...?",
+                    "reponse"  : "La transmission ou arbre de transmission",
+                    "page"     : "203"
+                },
+                {
+                    "question" : "Ce signal concerne-t-il uniquement les véhicules isolés ?",
+                    "reponse"  : "Non",
+                    "page"     : "57",
+                    "img"      : { "src" : "03_01_15.png", "alt" : "Longueur"}
+                },
+                {
+                    "question" : "Vous transportez du béton liquide. Votre camion (isolé) comporte 4 essieux. Lors de la pesée avant de partir, le ticket annonce 30,5t. Avez-vous le droit de prendre la route ?",
+                    "reponse"  : "Oui",
+                    "page"     : "18"
+                },
+                {
+                    "question" : "Pour un camion carrossé dans un atelier agréé, quel est le délai maximal pour le présenter à la première visite technique ?",
+                    "reponse"  : "1 an ou 12 mois",
+                    "page"     : "48"
+                },
+                {
+                    "question" : "Vous avez interrompu votre conduite pendant 45 min. Ce temps peut-il être pris en compte pour le calcul du temps de repos journalier ?",
+                    "reponse"  : "Non",
+                    "page"     : "154"
+                },
+                {
+                    "question" : "Vous conduisez un tracteur solo de 19t de PTAC et 38t de PTRA. A quelle vitesse êtes-vous limité sur route prioritaire ?",
+                    "reponse"  : "80 km/h",
+                    "page"     : "83"
+                },
+                {
+                    "question" : "Lors d'un contrôle sur la route, est-il obligatoire de pouvoir présenter votre carte de qualification conducteur (CQC) ?",
+                    "reponse"  : "Oui",
+                    "page"     : "91"
+                },
+                {
+                    "question" : "Dans une longue descente, en cas de rupture de freins, si j'utilise une voie de détresse, le véhicule que je conduis sera-t-il gravement endommagé ?",
+                    "reponse"  : "Non",
+                    "page"     : "60"
+                }
+            ],
+            [
+                {
+                    "question" : "Vous suivez un véhicule dont les dispositifs réfléchissants sont triangulaires. Ce véhicule est problablement un véhicule isolé. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "31"
+                },
+                {
+                    "question" : "La rémunération mensuelle d'un conducteur salarié peut être calculée en fonction de la charge transportée pendant le mois. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "157"
+                },
+                {
+                    "question" : "Parmi les types de graissage moteur, il existe le graissage par pression. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "191"
+                },
+                {
+                    "question" : "Je circule avec un véhicule mesurant 2,30m de large. A hauteur de ce signal, puis-je continuer sur cette route ?",
+                    "reponse"  : "Oui",
+                    "page"     : "57",
+                    "img"       : { "src" : "03_01_42.png", "alt" : "2 mètre 30"}
+                },
+                {
+                    "question" : "En règle générale, de quelle longueur maximale un chargement muni d'un signalisation réglementaire peut-il dépasser l'arrière du véhicule ?",
+                    "reponse"  : "3 mètres",
+                    "page"     : "126"
+                },
+                {
+                    "question" : "Comment s'appelle le document qui doit accompagner la marchandise lors de tout transport pour compte d'autrui ?",
+                    "reponse"  : "Lettre de voiture",
+                    "page"     : "121"
+                },
+                {
+                    "question" : "Vous conduisez un tracteur solo de 19t de PTAC et 38t de PTRA. A quelle vitesse êtes-vous limité sur route à sens unique prioritaire ?",
+                    "reponse"  : "80 km/h",
+                    "page"     : "83"
+                },
+                {
+                    "question" : "Pendant une pause, êtes-vous autorisé à ranger le chargement du véhicule ?",
+                    "reponse"  : "Non",
+                    "page"     : "139"
+                },
+                {
+                    "question" : "Quelle est la catégorie de permis exigée pour conduire un véhicule de transport en commun comportant 45 places circulant à vide ?",
+                    "reponse"  : "Permis D",
+                    "page"     : "88"
+                },
+                {
+                    "question" : "En cas d'accident dans lequel votre véhicule est en cause, les forces de l'ordre peuvent-elles saisir votre carte conducteur ?",
+                    "reponse"  : "Oui",
+                    "page"     : "167"
+                }
+            ],
+            [
+                {
+                    "question" : "Le circuit électrique alimentant le chronotachygraphe est-il indépendant du circuit d'alimentant le coupe-batterie ?",
+                    "reponse"  : "Oui",
+                    "page"     : "37"
+                },
+                {
+                    "question" : "La rémunération mensuelle d'un conducteur salarié peut être calculée en fonction de la distance parcourue pendant le mois. Vrai ou Faux ?",
+                    "reponse"  : "Faux",
+                    "page"     : "157"
+                },
+                {
+                    "question" : "Au delà de quel taux de surcharge (en pourcentage %) le camion pourra-t-il être immobilisé, jusqu'au déchargement de l'excédent ?",
+                    "reponse"  : "5 %",
+                    "page"     : "100"
+                },
+                {
+                    "question" : "Ce signal m'annonce-t-il une voie de détresse qui sera située sur ma gauche ?",
+                    "reponse"  : "Non",
+                    "page"     : "60",
+                    "img"      : { "src" : "05_51.png", "alt" : "Voie de détresse" }
+                },
+                {
+                    "question" : "Vous conduisez un camion de 2,50m de large ne comportant pas de caisse réfrigérée. Votre chargement peut-il atteindre 2,60m de large ?",
+                    "reponse"  : "Non",
+                    "page"     : "14"
+                },
+                {
+                    "question" : "Faut-il un seul certificat d'immatriculation pour un ensemble de véhicules constitué d'un camion de 19t de PTAC auquel on a attelé une bétonnière sur roues de 400 kg ?",
+                    "reponse"  : "Oui",
+                    "page"     : "211"
+                },
+                {
+                    "question" : "Une huile multigrade classée SAE 20 W 40 peut-être utilisée uniquement en hiver ?",
+                    "reponse"  : "Non",
+                    "page"     : "191"
+                },
+                {
+                    "question" : "Si, dans la même journée, vous conduisez un véhicule avec un chronotachygraphe numérique après avoir conduit un véhicule avec un chronotachygraphe à disque, devez-vous conserver le disque avec vous ?",
+                    "reponse"  : "Oui",
+                    "page"     : "150"
+                },
+                {
+                    "question" : "Un véhicule isolé de 26t de PTAC doit comporter à l'arrière un ou des disque(s) de limitation de vitesse. Quelle(s) est ou sont la ou les vitesse(s) indiquée(s) à l'arrière de ce camion ?",
+                    "reponse"  : "80 km/h - 90 km/h",
+                    "page"     : "34"
+                },
+                {
+                    "question" : "Avec votre véhicule, vous avez détérioré des panneaux de signalisation. Devez-vous obligatoirement le signaler à votre compagnie d'assurance ?",
+                    "reponse"  : "Oui",
+                    "page"     : "168"
+                }
+            ],
+            [
+                {
+                    "question" : "Quelle est la périodicité des vérifications techniques obligatoires pour les chronotachygraphes ?",
+                    "reponse"  : "2 ans",
+                    "page"     : "148"
+                },
+                {
+                    "question" : "Le contrôle et le remplissage du circuit de refroidissement s'effectuent plutôt moteur chaud ou moteur froid ?",
+                    "reponse"  : "Moteur à Froid",
+                    "page"     : "190"
+                },
+                {
+                    "question" : "Je circule, à vide, avec un véhicule de 5 tonnes de poids à vide et de 15 tonnes de PTAC. A hauteur de ce signal, puis-je passer ?",
+                    "reponse"  : "Non",
+                    "page"     : "57",
+                    "img"      : { "src" : "03_01_19.png", "alt" : "Poids"}
+                },
+                {
+                    "question" : "Au-delà de quel tonnage les camions sont-ils concernés par les interdictions de circuler de fin de semaine ?",
+                    "reponse"  : "7,5 tonnes",
+                    "page"     : "65"
+                },
+                {
+                    "question" : "Le chargement d'un véhicule peut-il dépasser 4 mètre de haut ?",
+                    "reponse"  : "Oui",
+                    "page"     : "15"
+                },
+                {
+                    "question" : "Que signifie la mention TIR placée sur une plaque à l'arrière du véhicule ?",
+                    "reponse"  : "Transport international routier",
+                    "page"     : "117"
+                },
+                {
+                    "question" : "Vous conduisez sans vous arrêter depuis 8 h 40 min ce matin. Il est 12 h 40 min. Etes-vous en infraction ?",
+                    "reponse"  : "Non",
+                    "page"     : "152"
+                },
+                {
+                    "question" : "Si vous avez à imprimer un ticket à partir d'un chronotachygraphe numérique, devez-vous inscrire votre nom sur le ticket, si votre carte conducteur est retirée de l'appareil au moment de l'impression ?",
+                    "reponse"  : "Non",
+                    "page"     : "146"
+                },
+                {
+                    "question" : "En cas de récidive de grand excès de vitesse, une supenseion du permis de conduire peut être assortie d'un permis limité à la conduite professionnelle (permis blanc) si l'infraction a été commise avec la voiture personnelle du chauffeur ?",
+                    "reponse"  : "Faux",
+                    "page"     : "212"
+                },
+                {
+                    "question" : "Les accidents corporels entre un poids lourd et une voiture sont majoritairement des accidents avec des véhicules circulant dans le même sens. Vrai ou Faux ?",
+                    "reponse"  : "Vrai",
+                    "page"     : "164"
+                }
+            ],
+            [
+                {
+                    "question" : "En cas d'obligation, une paire de chaînes à neige doit être montée sur les roues motrices ou sur les roues directrices ?",
+                    "reponse"  : "Les roues motrices du véhicule",
+                    "page"     : "40"
+                },
+                {
+                    "question" : "En règle générale, les véhicules lourds utilisent deux batteries de 12 volts montées en ... ?",
+                    "reponse"  : "Série",
+                    "page"     : "205"
+                },
+                {
+                    "question" : "Ce signal peut-il concerner les véhicules transportant une faible quantité de produits polluants ?",
+                    "reponse"  : "Non",
+                    "page"     : "55",
+                    "img"       : { "src" : "03_01_26.png", "alt" : "Produits polluants"}
+                },
+                {
+                    "question" : "Vous conduisez un camion de plus de 7,5t de PTAC. En règle générale, quand débute l'interdiction de circulation en fin de semaine ?",
+                    "reponse"  : "Samedi à 22 heures",
+                    "page"     : "65"
+                },
+                {
+                    "question" : "Vous transportez du béton liquide. Votre camion (isolé) comporte 4 essieux. Lors de la pesée avant de partir, le ticket annonce 32,8t. Avez-vous le droit de prendre la route ?",
+                    "reponse"  : "Non",
+                    "page"     : "18"
+                },
+                {
+                    "question" : "La dernière visite technique de votre camion date de 8 mois. Etes-vous en infraction en le conduisant ?",
+                    "reponse"  : "Non",
+                    "page"     : "48"
+                },
+                {
+                    "question" : "Vous venez d'obtenir votre permis C, pouvez-vous conduire un véhicule équipé d'un chronotachygraphe numérique avant d'avoir reçu votre carte conducteur ?",
+                    "reponse"  : "Non",
+                    "page"     : "143"
+                },
+                {
+                    "question" : "Après 4 h 30 de conduite continue, quelle est la durée minimale de la pause que vous devez respecter ?",
+                    "reponse"  : "45 min",
+                    "page"     : "152"
+                },
+                {
+                    "question" : "Après l'obtention (hors diplômes professionnels) de votre premier permis de conduire du groupe lourd, devez-vous obligatoirement suivre une Formation Initiale Minimale Obligatoire (FIMO) pour le transport de biens dans des buts privés ?",
+                    "reponse"  : "Non",
+                    "page"     : "91"
+                },
+                {
+                    "question" : "Si une partie de votre chargement est tombée sur la chaussée, par quel dispositif obligatoire devez-vous prévenir les autres usagers ?",
+                    "reponse"  : "Un triangle de présignalisation",
+                    "page"     : "30"
+                }
+            ]
+        ]
+    }
+}

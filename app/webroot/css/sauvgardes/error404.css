@@ -1,0 +1,62 @@
+html {
+    background: none;
+}
+body {
+    background: none;
+    margin: 0;
+}
+.container {
+    box-shadow: none;
+}
+.col-xs-12 {
+    background: none;
+}
+#errorPageContainer {
+    background: #F7F7F7;
+    border: 1px solid #BEBEBE;
+    padding: 36px 40px;
+    border-radius: 10px;
+    margin: 4em auto;
+    width: 38em;
+    position: relative;
+    box-shadow: 0 0 10px #CECECE;
+    padding: 36px 70px;
+}
+#icon-warning {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+h1 {
+    border-bottom: 1px solid #C4C4C4;
+    font-size: 160%;
+    margin: 0 0 0.6em;
+}
+#errorShortDesc > p {
+    border-bottom: 1px solid #C4C4C4;
+    font-size: 130%;
+    overflow: auto;
+    padding-bottom: 1em;
+    white-space: pre-wrap;
+}
+#errorLongDesc {
+    font-size: 110%;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+ul > li, ol > li {
+    margin-bottom: 0.5em;
+}
+ul {
+    list-style: square outside none;
+}
+#errorLongDesc > p {
+}
+#errorTryAgain {
+    margin-top: 2em;
+}

@@ -1,0 +1,778 @@
+
+/* ========================================================================= */
+/* Global */
+/* ========================================================================= */
+
+body {
+    /*background: url('../img/bg.jpg') repeat 0 0;*/
+    background: #919191;
+    position: relative;
+}
+
+.container {
+    width: 1170px;
+    /*box-shadow: 0 0 15px #2d2d2d;*/
+    box-shadow: 0 0 15px #747474;
+    background: #fefefe;
+    padding-bottom: 10px;
+}
+#container-bottom {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.main-title {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    box-shadow: none;
+
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #565656;
+    text-shadow: 1px 1px 0 #FFF;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+
+/* ========================================================================= */
+/* Page Home */
+/* ========================================================================= */
+
+.title-questions {
+    text-align: center;
+    background: #2E83CC;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    color: #ffffff;
+    font-size: 36px;
+    border: 1px solid #5c5c5c;
+    position: relative;
+}
+.container-fiches {
+    background: white;
+    height: 127px;
+    margin-bottom: 50px;
+    margin-right: 15px;
+    padding: 0;
+    text-align: center;
+    width: 100.5px;
+    float: left;
+    border: 1px solid #DFDFDF;
+    box-shadow: 0 0 6px #DDD inset;
+    border-radius: 3px;
+}
+.container-fiches:nth-child(10n + 10) {
+     margin-right: 0;
+ }
+.container-fiches > a {
+    display: block;
+    width: 79px;
+    margin: 10px auto;
+    background: url('../../img/page.png');
+    padding: 30px 0 18px 0;
+    height: 104px;
+}
+.container-fiches > a > span {
+    display: block;
+    font-weight: bold;
+}
+
+.container-fiches > a:hover, .container-fiches > a:focus {
+    text-decoration: none;
+    color: #2180D1;
+    background: url('../../img/page-hover.png');
+}
+.container-fiches > a.fiche-done {
+    text-decoration: none;
+    box-shadow: none;
+    color: #2180D1;
+    background: #e0e0ca;
+}
+
+.home-container-fiches-orales {
+    width: 560px;
+    border: 1px solid #c3c3c3;
+    margin-right: 15px;
+    display: inline-block;
+    padding: 10px 20px 20px 20px;
+    vertical-align: top;
+    border-radius: 3px;
+    position: relative;
+    margin-top: 20px;
+    background: rgb(255, 252, 247);
+}
+
+.home-container-fiches-orales:nth-child(odd) {
+    margin-right: 0px;
+}
+
+.home-container-fiches-orales > h1 {
+    border-bottom: 1px solid #dadada;
+    font-size: 16px;
+    padding: 8px 0 8px 8px;
+    margin-top: 0;
+    font-weight: bold;
+}
+.home-container-fiches-orales > div {
+    display: block;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #F3F3F3;
+}
+.home-container-fiches-orales.fiche-oral-clone > div {
+    cursor: default;
+}
+.home-container-fiches-orales.cls-hover {
+    text-decoration: none;
+    border: 1px solid #0077ff;
+    box-shadow: 0 0 8px #575757;
+}
+.rct {
+    margin-top: -11px ;
+}
+.home-container-fiches-orales > div > h2 {
+    background: #CE515D;
+    color: #FFFFFF;
+    font-size: 19px;
+    padding: 12px 0;
+    text-align: center;
+}
+.home-container-fiches-orales > div > h3 {
+    background: #2E83CC;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0;
+    padding: 8px 0 8px 16px;
+}
+.home-container-fiches-orales > div > h4 {
+    background: #E4E4E4;
+    color: #3A5DC9;
+    padding: 8px 0 8px 60px;
+    font-size: 14px;
+    font-weight: bold;
+    border-left: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    border-right: 1px solid #D6D6D6;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.glyph-chevron-right {
+    background: #2254D5;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 4px 8px;
+    margin-right: 12px;
+}
+
+.glyph-bullet {
+    background: url('../../img/bullet.png') no-repeat 0 0;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+/* ========================================================================= */
+/* Page Home Button Navbar */
+/* ========================================================================= */
+
+.navbar-home {
+    text-align: center;
+}
+
+.navbar-home > div {
+    position: relative;
+    width: 474px;
+    height: 29px;
+    margin: 0 auto;
+}
+
+.navbar-home > div > button {
+    width: 155px;
+    height: 29px;
+    padding: 0;
+    margin: 0;
+
+    border-radius: 0 0 6px 6px;
+    font-size: 18px;
+    line-height: 1.33;
+    /*padding: 2px 40px;*/
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-weight: 400;
+    display: inline-block;
+    cursor: pointer;
+    background: #2f8ad4;
+    border-top: none;
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+    border-bottom: 1px solid #838383;
+    color: white;
+
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all: .1s linear;
+    transition: all .1s linear;
+}
+
+.navbar-home > div > button:hover {
+    background: #2f9de9;
+}
+
+.navbar-home > div > button:active, .navbar-home > div > button:visited {
+    background: #2f8ad4;
+}
+
+.navbar-home-bottom {
+    margin-bottom: 0;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.navbar-home-bottom > span {
+    background: #5f5f5f;
+    border-radius:27px;
+    color:white;
+    font-size: 27px;
+    padding: 7px 9px 11px 14px;
+    cursor: pointer;
+}
+
+.navbar-home-bottom > span:hover {
+    background: #2d2d2d;
+}
+
+/* ========================================================================= */
+/* Page Fiche Questions Ecrites */
+/* ========================================================================= */
+
+.fiche-questions-ecrites > .page-header {
+    margin-bottom: 0;
+}
+.fiche-questions-ecrites > .page-header > h1 {
+    font-weight: bold;
+    color: #565656;
+    text-shadow: 1px 1px 0 #FFF;
+}
+.fiche-questions-ecrites > .page-header > h1 > span {
+    color: #3093E0;
+    font-size: 34px;
+}
+.fiche-ecrites strong {
+    color: #8F0E0E;
+}
+
+/**********************************************************/
+/* navbar page questions écrites */
+/**********************************************************/
+
+.fqe-navbar-top {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: #2E83CC;
+}
+.fqe-navbar-bottom {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.fqe-navbar-top th > a {
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+.fqe-navbar-bottom th > a {
+    font-size: 18px;
+    color: #565656;
+    display: block;
+}
+
+/* top */
+.fqe-navbar-top th > a:hover, .fqe-navbar-top th > a:focus {
+    color: #9ae2ff;
+    text-decoration: none;
+}
+.fqe-navbar-top .disabled {
+    color: #9ae2ff;
+    cursor: default;
+}
+.fqe-navbar-top .disabled:hover, .fqe-navbar-top .disabled:focus {
+    text-decoration: none;
+    color: #9ae2ff;
+}
+
+/* bottom */
+.fqe-navbar-bottom th > a:hover, .fqe-navbar-bottom th > a:focus  {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+.fqe-navbar-bottom .disabled {
+    color: #bbbbbb;
+}
+.fqe-navbar-bottom:hover .disabled, .fqe-navbar-bottom:focus .disabled {
+    text-decoration: none;
+    color: #bbbbbb;
+    cursor: default;
+}
+
+.header > h2 {
+    background: #2E83CC;
+    padding: 6px;
+    color: white;
+    position: relative;
+}
+.col-xs-12 > .header > h2 {
+    background: #2E83CC;
+}
+.header > h2 > a {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 6px;
+}
+.table > tbody {
+    background: rgb(228, 228, 228);
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #f7f7f7;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: none;
+    border-bottom: none;
+    padding: 20px 12px;
+    font-size: 16px;
+}
+.table > tbody > tr > td.table-num {
+    vertical-align: middle;
+    font-size: 12px;
+}
+.table-num > span {
+    display: block;
+    /*background: #747474;*/
+    background: #2E83CC;
+    border-radius: 50px;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.table-response > input {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+}
+.table-response > .default-response {
+    margin-top: 15px;
+    font-weight: bold;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: rgb(169, 255, 176);
+    background: #3488D6;
+    border: 1px solid #86a1cc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.table-response > .reponse-input{
+    border-left: 1px solid #b0b0b0;
+    border-top: 1px solid #b0b0b0;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.table-response > .reponse-input:focus {
+    box-shadow: 0 0 8px #919191;
+}
+
+.table-reponse > #score > span {
+    display: inline-block;
+    background: #E75F5F;
+    padding: 5px 15px;
+    margin-right: 10px;
+    color: white;
+}
+.table-reponse > #score > span:first-child {
+    background: #51b856
+}
+.table-reponse > #score > span:last-child {
+    background: #3488D6;
+}
+.table > tbody > tr.table-reponse > td {
+    background: #d2dbff;
+    padding: 40px 0px;
+}
+
+.table-reponse > #score > span > .num {
+    background: #DBDBDB;
+    color: #252525;
+    padding: 0 8px;
+}
+
+/* ========================================================================= */
+/* Page Questions Orales */
+/* ========================================================================= */
+
+.fiche-questions-orales > .page-header {
+    text-align: left;
+    margin-bottom: 0;
+}
+.fiche-questions-orales > .page-header > h1 {
+    font-weight: bold;
+    color: #565656;
+    text-shadow: 1px 1px 0 #FFF;
+}
+.fiche-questions-orales > .page-header > h1 > span {
+    color: #3093E0;
+    font-size: 34px;
+}
+.container-fiches-orales {
+    border: 1px solid #c3c3c3;
+    padding: 10px 20px 20px 20px;
+    border-radius: 3px;
+    background: rgb(255, 252, 247);
+
+}
+.container-fiches-orales > h2 {
+    background: #CE515D;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.container-fiche-orale {
+    text-align: left;
+}
+.container-fiche-orale > .fiche-orale > h3 {
+    background: #2E83CC;
+    color: #FFFFFF;
+    font-size: 24px;
+    padding: 12px 16px;
+    font-weight: bold;
+    margin: 50px 0 0 0;
+    cursor: pointer;
+}
+.fiche-orale > h3 > .glyph-chevron-right {
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 8px;
+    box-shadow: 0 0 3px black;
+}
+.fiche-orale > div {
+    display: none;
+}
+.fiche-orale > div > h4 {
+    background: #E4E4E4;
+    color: #3A5DC9;
+    padding: 8px 0 8px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    border-right: 1px solid #D6D6D6;
+    border-bottom: 1px solid #D6D6D6;
+    cursor: pointer;
+}
+.fiche-orale > div > h4:first-child {
+    margin-top: 10px;
+}
+.fiche-orale > div > .container-para {
+    padding: 20px 30px;
+    background: rgb(231, 231, 231);
+    box-shadow: 0 0 3px rgb(94, 94, 94);
+    margin: 30px 90px;
+    display: none;
+}
+.fiche-orale > div > .container-para.db {
+    display: block;
+}
+.fiche-orale > div > .alertBox {
+    display: none;
+}
+
+.fiche-orale > div > .container-para > li {
+    background: #BBBBBB;
+    list-style: none;
+    margin: 8px 0;
+    padding: 8px 18px;
+    /*color: #200B0B;*/
+    color: #180000;
+
+    font-weight: bold;
+    text-shadow: 0 1px 0 lightgrey;
+    font-size: 16px;
+    border-left: 1px solid #F7F7F7;
+    border-top: 1px solid #F7F7F7;
+    box-shadow: 1px 1px 1px #393939;
+}
+.fiche-orale > div > .container-para > li:nth-child(n2 + 2) {
+    background: #6d5a5a;
+}
+.fiche-orale strong {
+    color: #8F0E0E;
+}
+.fiche-orale > div  > .alertBox {
+    background: #ff0000;
+    margin: 20px 88px 30px 88px;
+}
+.fiche-orale > div > .alertBox > div {
+    margin-left: 6px;
+    background: #DDE8FF;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.fiche-orale > div > .alertBox > div > .alertBox-title {
+    color: red;
+    font-size: 18px;
+}
+
+/* ========================================================================= */
+/* Animation tooltip sur fiche questions orales page home */
+/* ========================================================================= */
+
+.fiche-oral-clone {
+    position: absolute;
+    z-index: 10000;
+    opacity: 0;
+}
+
+
+.tooltip-btn {
+    display: none;
+    position: fixed;
+    top: 18px;
+    left: 24px;
+    text-align: right;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.wrapper-tooltip {
+    background: white;
+}
+
+/*===================================================================================*/
+        /*  ANIMATION TOOLTIP PAGE HOME  */
+/*===================================================================================*/
+
+.overlay {
+    background: rgba(0,0,0,.6);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1170px;
+    z-index: 1000;
+}
+
+.containers-tooltip {
+    background: none;
+    margin: 0 auto;
+    position: absolute;
+    min-height: 284px;
+    z-index: 10000;
+}
+.container-tooltip {
+    background: white;
+    margin: 0 auto;
+    padding: 20px;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 0 8px #494949;
+}
+.container-tooltip > div {
+    background: #5FA6E7;
+    width: 100%;
+    position: relative;
+    padding: 30px;
+    /*overflow: hidden;*/
+}
+
+
+
+/**********************************************************/
+/* tooltip global */
+/**********************************************************/
+
+
+/**********************************************************/
+/* tooltip find */
+/**********************************************************/
+/*.container-findTooltip {*/
+    /*position: absolute;*/
+    /*top: 80px;*/
+    /*display: none;*/
+    /*width: 1000px;*/
+    /*min-height: 400px;*/
+    /*background: none;*/
+    /*left: 172px;*/
+    /*display: block;*/
+/*}*/
+
+/*.find-tooltip {*/
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*background: white;*/
+    /*border: 6px solid white;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*box-shadow: 0 0 8px #000000;*/
+/*}*/
+
+/*.find-tooltip > div {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: #2E83CC;*/
+/*}*/
+
+
+
+/* button blue close tooltip score */
+/*.btn-closeTooltip {*/
+    /*-moz-box-shadow:inset 0px 1px 0px 0px #468EEB;*/
+    /*-webkit-box-shadow:inset 0px 1px 0px 0px #468EEB;*/
+    /*box-shadow:inset 0px 1px 0px 0px #468EEB;*/
+    /*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1JSIgc3RvcC1jb2xvcj0iIzNkOTRmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTYyZDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);*/
+
+    /*background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));*/
+    /*background:-moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);*/
+    /*background:-webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);*/
+    /*background:-o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);*/
+    /*background:-ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);*/
+
+    /*background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);*/
+    /*background-color:#3d94f6;*/
+    /*-moz-border-radius:6px;*/
+    /*-webkit-border-radius:6px;*/
+    /*border-radius:6px;*/
+    /*border:1px solid #337fed;*/
+    /*display:inline-block;*/
+    /*cursor:pointer;*/
+    /*color:#ffffff;*/
+    /*font-size:15px;*/
+    /*font-weight:bold;*/
+    /*padding:6px 24px;*/
+    /*text-decoration:none;*/
+    /*text-shadow:0px 1px 0px #1570cd;*/
+/*}*/
+/*.btn-closeTooltip:hover {*/
+    /*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1JSIgc3RvcC1jb2xvcj0iIzFlNjJkMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzZDk0ZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);*/
+
+    /*background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6));*/
+    /*background:-moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);*/
+    /*background:-webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);*/
+    /*background:-o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);*/
+    /*background:-ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);*/
+    /*background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);*/
+    /*background-color:#1e62d0;*/
+/*}*/
+/*.btn-closeTooltip:active {*/
+    /*position:relative;*/
+    /*top:1px;*/
+/*}*/
+
+
+
+
+
+
+.container-btn-resetTooltip {
+    text-align: right;
+}
+
+/**********************************************************/
+/* tooltip find */
+/**********************************************************/
+
+.form-control > option > span {
+    background: none repeat scroll 0 0 #6eafff;
+    margin-top: 6px;
+    padding: 6px 12px;
+    color: white;
+    display: block;
+}
+
+.table.table-find {
+    margin: 0;
+    box-shadow: 0 2px 8px rgb(114, 142, 184);
+}
+
+.table-find > tbody {
+    background: #FBFBFB;;
+}
+
+
+.table.table-find > tbody > tr > td {
+    font-size: 16px;
+    text-align: center;
+    color: #616161;
+    text-shadow: 0 0 1px rgb(226, 226, 226);
+    border: 1px solid #dcdcdc;
+    padding: 16px 36px;
+    background: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table.table-find > tbody > tr > td:hover {
+    background: #CDE7FF;
+}
+
+/* animation dans tooltip find */
+.tooltip-animation-find {
+    position: absolute;
+    width: 960px;
+    height: 1400px;
+    top: 0;
+    left: 0;
+    background: #f5f5f5;
+}
+
+/* second tooltip pour animation find */
+.containers-tooltip-find {
+    background: none;
+    margin: 0 auto;
+    position: absolute;
+    min-height: 284px;
+    z-index: 10000;
+}
+.container-tooltip-find {
+    background: white;
+    margin: 0 auto;
+    padding: 20px;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 0 8px #494949;
+}
+.container-tooltip-find > div {
+    background: #5FA6E7;
+    width: 100%;
+    position: relative;
+    padding: 30px;
+    /*overflow: hidden;*/
+}

@@ -1,0 +1,109 @@
+//=====================================================
+// navbar top page home
+//=====================================================
+
+#ajax-cacheLoader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 155px;
+    height: 29px;
+//    background: rgba(255,255,255,.4);
+    text-align: center;
+}
+
+.navbar-top-home {
+    text-align: center;
+
+    & > div {
+        height: 29px;
+        margin: 0 auto;
+        position: relative;
+        width: 474px;
+
+        & > button {
+            @include btn-blue();
+            @include border-radius(0 0 6px 6px);
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 400;
+            height: 29px;
+            line-height: 1.33;
+            margin: 0;
+            padding: 0;
+            width: 155px;
+            border-top: none;
+        }
+    }
+}
+
+//=====================================================
+// button animation jquery top page
+//=====================================================
+.navbar-bottom-home {
+    margin-bottom: 0;
+    padding: 25px 0;
+    text-align: center;
+
+    & > span {
+        background: #5F5F5F;
+        border-radius: 27px;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 10px 11px 14px 14px;
+
+        &:hover, :focus {
+            background: #2d2d2d;
+        }
+    }
+}
+
+/* animation btn reset */
+.animated {
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-3px);
+        -ms-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(3px);
+        -ms-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}

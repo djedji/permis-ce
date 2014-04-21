@@ -1,0 +1,140 @@
+@import "../../_imports-global";
+
+@import "../navbar";
+
+
+//=========================================================
+// réctification font-size input
+//=========================================================
+.form-control {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+//=========================================================
+// CSS fiches questions écrites
+//=========================================================
+.fiche-questions-ecrites {
+
+    & > .page-header {
+        margin-bottom: 0;
+
+        & > h1 {
+            color: #565656;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #FFFFFF;
+
+            & > span {
+                color: #3093E0;
+                font-size: 34px;
+            }
+        }
+    }
+
+    & > table {
+        & > thead > tr > th {
+            border-bottom: none;
+            font-size: 16px;
+            padding: 20px 12px;
+        }
+
+        & > tbody > tr > .table-num {
+            vertical-align: middle;
+            padding: 20px 0px 20px 13px;
+
+            & > span {
+                background: #2E83CC;
+                @include border-radius(20px);
+                color: #FFFFFF;
+                display: block;
+                font-weight: bold;
+                padding: 6px 9px 6px 8px;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+        & > tbody > tr > td {
+            border: none;
+            vertical-align: middle;
+            padding: 20px 12px;
+            line-height: 1.6;
+            color: #4D4D4D;
+            font-size: 15px;
+            font-weight: bold;
+            position: relative;
+
+            & > .table-img-panneau {
+                display: block;
+                width: 60px;
+                height: 68px;
+                vertical-align: top;
+                float: left;
+            }
+
+            & > .default-response {
+                display: block;
+                padding: 6px 12px;
+                width: 100%;
+                background: #3488D6;
+                border: 1px solid #318ACF;
+                @include border-radius(4px);
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+                color: #A9FFB0;
+                font-size: 14px;
+                font-weight: bold;
+                height: 34px;
+                line-height: 1.42857;
+                margin-top: 15px;
+                opacity: .9;
+            }
+        }
+
+        & tbody > tr:nth-child(odd) > td {
+            background-color: #ECF2F8;
+        }
+    }
+}
+
+/* table-response > span#score*/
+#score {
+    padding: 40px 0;
+    font-size: 14px;
+}
+#score > span {
+    background: none repeat scroll 0 0 #E75F5F;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 7px 15px;
+    border: 1px solid #CBCFE0;
+
+    & > .num {
+        background: none repeat scroll 0 0 #DBDBDB;
+        color: #252525;
+        display: inline-block;
+        text-align: center;
+    }
+
+    &:first-child {
+        background: none repeat scroll 0 0 #51B856;
+    }
+
+    &:last-child {
+        background: none repeat scroll 0 0 #3488D6;
+    }
+}
+
+
+/* Button de la page questions écrites */
+/* button voir réponses, home et next */
+.btn-page-q-e {
+    @include btn-blue();
+    display: inline-block;
+    padding: 6px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #CBCFE0;
+}
+

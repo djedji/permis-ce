@@ -1,0 +1,22 @@
+@mixin btn-blue() {
+    background: $bg-btn-blue;
+    border: 1px solid $border-color-btn-blue;
+    color: $color-font-btn-blue;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 0 0 1px #4265A5;
+    @include single-transition(all, .2s, linear);
+
+    &:hover {
+        outline: none;
+        background: $bg-btn-blue-hover;
+        color: white;
+    }
+
+    &:focus, &:active, &:visited {
+        outline: none;
+        background: $bg-btn-blue;
+    }
+}

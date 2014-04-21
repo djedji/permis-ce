@@ -1,0 +1,40 @@
+html {
+  background: $bg-global;
+}
+
+body {
+  background: $bg-global;
+  color: $color-font-global;
+  position: relative;
+}
+
+.container {
+    background: #FEFEFE;
+    box-shadow: 0 0 15px #747474;
+    width: 1170px;
+    padding-bottom: 16px;
+}
+
+#container-bottom {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+#main-title {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: rgba(0, 0, 0, 0);
+    border-bottom: none;
+    box-shadow: none;
+    color: #565656;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow: 0 0 2px #FFFFFF;
+}
