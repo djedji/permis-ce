@@ -2,6 +2,44 @@
 
 @import "../navbar";
 
+//=========================================================
+// animation pulse box shadow input
+//=========================================================
+@-webkit-keyframes pulse {
+    0% { box-shadow: 0 0 8px rgba(63,144,255,0) }
+    25% { box-shadow: 0 0 8px rgba(63,144,255,.2) }
+    50% { box-shadow: 0 0 8px rgba(63,144,255,.5) }
+    75% { box-shadow: 0 0 8px rgba(63,144,255,.8) }
+    100% { box-shadow: 0 0 8px rgba(63,144,255,1) }
+}
+@-moz-keyframes pulse {
+    0% { box-shadow: 0 0 8px rgba(63,144,255,0) }
+    25% { box-shadow: 0 0 8px rgba(63,144,255,.2) }
+    50% { box-shadow: 0 0 8px rgba(63,144,255,.5) }
+    75% { box-shadow: 0 0 8px rgba(63,144,255,.8) }
+    100% { box-shadow: 0 0 8px rgba(63,144,255,1) }
+}
+@-o-keyframes pulse {
+    0% { box-shadow: 0 0 8px rgba(63,144,255,0) }
+    25% { box-shadow: 0 0 8px rgba(63,144,255,.2) }
+    50% { box-shadow: 0 0 8px rgba(63,144,255,.5) }
+    75% { box-shadow: 0 0 8px rgba(63,144,255,.8) }
+    100% { box-shadow: 0 0 8px rgba(63,144,255,1) }
+}
+@-ms-keyframes pulse {
+    0% { box-shadow: 0 0 8px rgba(63,144,255,0) }
+    25% { box-shadow: 0 0 8px rgba(63,144,255,.2) }
+    50% { box-shadow: 0 0 8px rgba(63,144,255,.5) }
+    75% { box-shadow: 0 0 8px rgba(63,144,255,.8) }
+    100% { box-shadow: 0 0 8px rgba(63,144,255,1) }
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 8px rgba(63,144,255,0) }
+    25% { box-shadow: 0 0 8px rgba(63,144,255,.2) }
+    50% { box-shadow: 0 0 8px rgba(63,144,255,.5) }
+    75% { box-shadow: 0 0 8px rgba(63,144,255,.8) }
+    100% { box-shadow: 0 0 8px rgba(63,144,255,1) }
+}
 
 //=========================================================
 // réctification font-size input
@@ -15,6 +53,7 @@
 // CSS fiches questions écrites
 //=========================================================
 .fiche-questions-ecrites {
+    position: relative;
 
     & > .page-header {
         margin-bottom: 0;
@@ -76,17 +115,55 @@
                 display: block;
                 padding: 6px 12px;
                 width: 100%;
-                background: #3488D6;
-                border: 1px solid #318ACF;
+                background: #CFE8FF;
+                border: 1px solid #B2C8DB;
                 @include border-radius(4px);
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-                color: #A9FFB0;
-                font-size: 14px;
-                font-weight: bold;
+                box-shadow: 0 0 0;
+                color: #2C73C0;
+                font-weight: 600;
                 height: 34px;
                 line-height: 1.42857;
                 margin-top: 15px;
-                opacity: .9;
+                opacity: .1;
+
+                &:focus {
+                    background: #CFE8FF;
+                    border: 1px solid #B2C8DB;
+                }
+            }
+
+            & > input {
+                opacity: .2;
+
+                &.pulse {
+                    -webkit-animation: pulse 1.4s 6 alternate; /* Safari 4+ */
+                    -moz-animation:    pulse 1.4s 6 alternate; /* Fx 5+ */
+                    -o-animation:      pulse 1.4s 6 alternate; /* Opera 12+ */
+                    animation:         pulse 1.4s 6 alternate; /* IE 10+ */
+                }
+            }
+
+            & > .op-default {
+                opacity: 1;
+            }
+
+            & > .input-disabled:focus {
+                box-shadow: none;
+                border: 1px solid #CCCCCC;
+            }
+
+            & > .bg-error {
+                background: #ffe3e3;
+                border: 1px solid #FDC2C2;
+                box-shadow: 0 0 0;
+                opacity: 1;
+            }
+
+            & > .bg-success {
+                background: #CFFFD6;
+                border: 1px solid #AFF3C8;
+                box-shadow: 0 0 0;
+                opacity: 1;
             }
         }
 
@@ -106,14 +183,20 @@
     color: #FFFFFF;
     display: inline-block;
     margin-right: 10px;
-    padding: 7px 15px;
+    padding: 4px 0;
     border: 1px solid #CBCFE0;
+    width: 47px;
+    text-align: center;
 
-    & > .num {
-        background: none repeat scroll 0 0 #DBDBDB;
-        color: #252525;
-        display: inline-block;
-        text-align: center;
+    &.num {
+        width: 168px;
+
+        & > b {
+            color: #D2D2D2;
+            display: inline-block;
+            text-align: center;
+            width: 70px;
+        }
     }
 
     &:first-child {
@@ -136,5 +219,47 @@
     font-weight: bold;
     color: white;
     border: 1px solid #CBCFE0;
+}
+
+// temps
+.time-top-q-e {
+    height: 28px;
+    position: absolute;
+    right: 0;
+    top: 71px;
+    width: 150px;
+//    background: red;
+    & > p {
+
+        & > span {
+            &:first-child {
+                color: #96BFEB;
+                font-weight: bold;
+            }
+//            &.time-q-e {
+//
+//            }
+        }
+    }
+}
+.time-bottom-q-e {
+    height: 28px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    width: 150px;
+//    background: red;
+    & > p {
+
+        & > span {
+            &:first-child {
+                color: #96BFEB;
+                font-weight: bold;
+            }
+            &.time-q-e {
+
+            }
+        }
+    }
 }
 

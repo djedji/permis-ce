@@ -35,7 +35,7 @@
                 },
                 {
                     "question" : "Le châssis d'un véhicule lourd est principalement constitué de longerons et de ... ?",
-                    "reponse"  : "Traverses",
+                    "reponse"  : ["Traverses", "traverse"],
                     "page"     : "178"
                 },
                 {
@@ -62,7 +62,7 @@
                 },
                 {
                     "question" : "Quand le repos journalier est fractionné, quelle doit être la durée minimale totale de ce repos ?",
-                    "reponse"  : ["12 heures", "12 h", "12h"],
+                    "reponse"  : ["12 heures", "12 h", "12h", "12heure", "12 heure"],
                     "page"     : "154"
                 },
                 {
@@ -77,7 +77,7 @@
                 },
                 {
                     "question" : "Je dois conduire un train routier de 32 tonnes de PTRA dont la somme des PTAC est de 38 tonnes. Quel doit être le poids maximum du train routier lors d'une pesée sur bascule ?",
-                    "reponse"  : ["32 tonnes", "32 t", "32t"],
+                    "reponse"  : ["32 tonnes", "32 t", "32t", "32tonnes", "32tonne", "32tonnes"],
                     "page"     : "21"
                 },
                 {
@@ -88,7 +88,7 @@
                 },
                 {
                     "question" : "Certains éléments de la chaîne cinématique nécessitent d'être vidangés ou ... ?",
-                    "reponse"  : ["Graissés", "Graisser", "Graissé"],
+                    "reponse"  : ["Graissés", "Graisser", "Graissé", "graissées", "graissée"],
                     "page"     : "191"
                 },
                 {
@@ -126,17 +126,17 @@
                 },
                 {
                     "question" : "Je conduis un véhicule articulé de 38 tonnes de PTRA pesant 14 tonnes à vide. Pour emprunter une route où une barrière de dégel à 12 tonnes avec mention demi-charge autorisée est en place, quel doit être le poids maximum de mon chargement ?",
-                    "reponse"  : ["12 tonnes", "12t", "12 t"],
+                    "reponse"  : ["12 tonnes", "12t", "12 t", "12tonne", "12 tonnes", "12 tonne"],
                     "page"     : "64"
                 },
                 {
                     "question" : "Quelle est la charge utile d'un véhicule dont le PTAC est de 26 tonnes et le poids à vide de 7 tonnes ?",
-                    "reponse"  : ["19 tonnes", "19t", "19 t"],
+                    "reponse"  : ["19 tonnes", "19t", "19 t", "19tonne", "19 tonne", "19tonnes"],
                     "page"     : "18"
                 },
                 {
                     "question" : "Suite au contrôle technique périodique, lorsque le véhicule est refusé sans interdiction de circuler, dans quel délai maximum la contre-visite doit-elle être effectuée pour éviter une visite technique complète ?",
-                    "reponse"  : "1 mois",
+                    "reponse"  : ["1 mois", "1mois"],
                     "page"     : "49"
                 },
                 {
@@ -146,7 +146,7 @@
                 },
                 {
                     "question" : "Quelle est, en heures, la durée maximale autorisée de conduite par période de deux semaines consécutives ?",
-                    "reponse"  : ["90 heures", "90h", "90 h"],
+                    "reponse"  : ["90 heures", "90h", "90 h", "90heures", "90heure", "90 heure"],
                     "page"     : "153"
                 },
                 {
@@ -168,7 +168,7 @@
                 },
                 {
                     "question" : "Un chauffeur à conduit 20 heures la semaine précédente. Selon la réglementation sociale européenne, combien d'heures maximum peut-il conduire la semaine en cours ?",
-                    "reponse"  : ["56 heures", "56h", "56 h"],
+                    "reponse"  : ["56 heures", "56h", "56 h", "56heures", "56heure", "56 heure"],
                     "page"     : "153"
                 },
                 {
@@ -189,11 +189,12 @@
                 {
                     "question" : "Ce signal interdit-il de dépasser les seuls véhicules dans le PTAC dépasse 3,5 tonnes ?",
                     "reponse"  : "Non",
-                    "page"     : "59"
+                    "page"     : "59",
+					"img"      : { "src" : "03_01_11.png", "alt": "Interdiction de dépasser" }
                 },
                 {
                     "question" : "La somme des PTAC d'un train routier est de 45 tonnes et son PTRA est de 40 tonnes. Quel poids réel ne faut-il pas dépasser ?",
-                    "reponse"  : ["40 tonnes", "40t", "40 t"],
+                    "reponse"  : ["40 tonnes", "40t", "40 t", "40tonnes", "40 tonne", "40tonne"],
                     "page"     : "21"
                 },
                 {
@@ -215,7 +216,7 @@
             [
                 {
                     "question" : "En général, de combien d'extincteur(s) doit être équipé un véhicule articulé neuf ?",
-                    "reponse"  : "2",
+                    "reponse"  : ["2", "2extincteur", "2 extincteur", "2extincteurs", "2 extincteurs"],
                     "page"     : "36"
                 },
                 {
@@ -231,7 +232,7 @@
                 },
                 {
                     "question" : "En cas de remorquage occasionnel d'un véhicule isolé de transport de marchandises, quelle est la longueur maximale autorisée de l'ensemble constitué ?",
-                    "reponse"  : ["30 mètres", "30 m", "30m", "30mètres"],
+                    "reponse"  : ["30 mètres", "30 m", "30m", "30mètres", "30metres", "30 metres", "30metre", "30 metre", "30 mètre", "30mètre"],
                     "page"     : "132"
                 },
                 {
@@ -246,7 +247,7 @@
                 },
                 {
                     "question" : "Quel sera le Poids Maximal Autorisé (PMA) pour le véhicule articulé suivant :&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Tracteur PTRA : 38 tonnes et Poids à vide : 10 tonnes&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Semi-remorque PTAC : 22 tonnes et Poids à vide : 7 tonnes ?",
-                    "reponse"  : ["32 tonnes", "32t", "32 t"],
+                    "reponse"  : ["32 tonnes", "32t", "32 t", "32tonnes", "32tonne", "32tonne"],
                     "page"     : "21"
                 },
                 {
@@ -273,7 +274,7 @@
                 },
                 {
                     "question" : "Un chauffeur a conduit 40 heures la semaine précédente. Selon la réglementation sociale européenne, combien d'heures maximum peut-il conduire la semaine en cours ?",
-                    "reponse"  : ["50 heures", "50 h", "50h"],
+                    "reponse"  : ["50 heures", "50 h", "50h", "50heure", "50 heure", "50heures"],
                     "page"     : "153"
                 },
                 {
@@ -288,7 +289,7 @@
                 },
                 {
                     "question" : "Quel sera le Poids Maximal Autorisé (PMA) pour l'ensemble suivant :&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Porteur remorqueur PTRA : 44 tonnes et PTAC : 26 tonnes&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Remorque PTAC : 26 tonnes et Poids à vide : 7 tonnes ?",
-                    "reponse"  : ["44 tonnes", "44 t", "44t"],
+                    "reponse"  : ["44 tonnes", "44 t", "44t", "44tonne", "44 tonne", "44tonnes"],
                     "page"     : "21"
                 },
                 {
@@ -326,7 +327,7 @@
                 },
                 {
                     "question" : "En règle générale, quelle est la durée maximale de conduite journalière autorisée en respectant les temps de repos ?",
-                    "reponse"  : ["9 heures", "9h", "9 h", "9heures"],
+                    "reponse"  : ["9 heures", "9h", "9 h", "9heures", "9heure", "9 heure"],
                     "page"     : "153"
                 },
                 {
@@ -337,7 +338,7 @@
                 },
                 {
                     "question" : "Hors agglomération, sur une route à double sens, vous suivez un camion à 70 km/h. Quel intervalle de sécurité minimum devez-vous respecter ?",
-                    "reponse"  : ["50 mètres", "50m", "50 metres", "50 metre", "50 m"],
+                    "reponse"  : ["50 mètres", "50 m", "50m", "50mètres", "50metres", "50 metres", "50metre", "50 metre", "50 mètre", "50mètre"],
                     "page"     : "72"
                 },
                 {
@@ -352,7 +353,7 @@
                 },
                 {
                     "question" : "Quel sera le Poids Maximal Autorisé (PMA) pour l'ensemble suivant :&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Porteur remorqueur PTRA : 44 tonnes et PTAC 26 tonnes&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Remorque PTAC : 14 tonnes et Poids à vide : 5 tonnes ?",
-                    "reponse"  : ["40 tonnes", "40 t", "40t"],
+                    "reponse"  : ["40 tonnes", "40 t", "40t", "40tonnes", "40tonne", "40 tonne"],
                     "page"     : "21"
                 },
                 {
@@ -379,7 +380,7 @@
                 },
                 {
                     "question" : "En régle générale, quelle est la durée minimale normale (non réduite) obligatoire de repos journalier lorsque celui-ci n'est pas fractionné ?",
-                    "reponse"  : ["11 heures", "11h", "11 h", "11heure", "11heures"],
+                    "reponse"  : ["11 heures", "11h", "11 h", "11heure", "11heures", "11 heure"],
                     "page"     : "154"
                 },
                 {
@@ -463,7 +464,7 @@
                 },
                 {
                     "question" : "Quelle est la durée maximale autorisée de conduite continue pour un conducteur de camion ?",
-                    "reponse"  : ["4 h 30", "4 heures 30", "4h30", "4heure30", "4 h 30 min", "4h30min"],
+                    "reponse"  : ["4 h 30", "4 heures 30", "4h30", "4heure30", "4 h 30 min", "4h30min", "4 heure 30", "4 heures 30 min", "4heure30min", "4heures30min", "4 heure 30 min"],
                     "page"     : "152"
                 },
                 {
@@ -495,7 +496,7 @@
                 },
                 {
                     "question" : "Vous conduisez un ensemble routier neuf de 40 tonnes de PTRA. A quelle vitesse êtes-vous limité sur route à sens unique prioritaire ?",
-                    "reponse"  : ["80 kmlh", "80km/h"],
+                    "reponse"  : ["80 km/h", "80km/h"],
                     "page"     : "83"
                 },
                 {
@@ -591,7 +592,7 @@
                 },
                 {
                     "question" : "Votre véhicule est équipé d'un chronotachygraphe numérique. Vous avez perdu votre carte conducteur, combien de jours, au maximum, pouvez-vous conduire sans carte ?",
-                    "reponse"  : ["15 ou 15 jours", "15", "15jours", "15 jours"],
+                    "reponse"  : ["15 ou 15 jours", "15", "15jours", "15 jours", "15jour", "15 jour", "15j", "15 j"],
                     "page"     : "143"
                 },
                 {
@@ -602,7 +603,7 @@
                 },
                 {
                     "question" : "Vous conduisez un véhicule de 38 tonnes de PTRA. En règle générale, quand débute l'interdiction de circulation en fin de semaine ?",
-                    "reponse"  : ["Samedi 22 heures", "Samedi 22h", "Samedi 22h", "Samedi 10h du soir", "Samedi 10 heures du soir", "Samedi 10heures du soir"],
+                    "reponse"  : ["Samedi 22 heures", "Samedi 22h", "Samedi 22 h", "Samedi 10h du soir", "Samedi 10 heures du soir", "Samedi 10heure du soir"],
                     "page"     : "65"
                 },
                 {
@@ -617,7 +618,7 @@
                 },
                 {
                     "question" : "Mon camion de 20 tonnes de PTAC est chargé au maximum. Son PTRA est de 40 tonnes, si je dois atteler une remorque de 26 tonnes de PTAC, quel doit être le poids réel maximal de la remorque ?",
-                    "reponse"  : ["20 tonnes", "20t", "20tonnes", "20 tonne", "20 t"],
+                    "reponse"  : ["20 tonnes", "20t", "20tonnes", "20 tonne", "20 t", "20tonne"],
                     "page"     : "21"
                 },
                 {
@@ -761,7 +762,7 @@
                 },
                 {
                     "question" : "Je conduis un camion de 26 tonnes de PTAC et de 10 tonnes de PV. Pour emprunter une route où une barrière de dégel à 12 tonnes avec mention demi-charge autorisée, est en place, quel doit être le poids maximum de mon chargement ?",
-                    "reponse"  : ["8 tonnes", "8t", "8 t", "8tonnes"],
+                    "reponse"  : ["8 tonnes", "8t", "8 t", "8tonnes", "8tonne", "8 tonne"],
                     "page"     : "64"
                 },
                 {
@@ -814,7 +815,7 @@
                 },
                 {
                     "question" : "Vous avez déchargé des produits périssables le samedi à 22h30. A combien de kilomètres au maximum doit se trouver votre entreprise pour pouvoir rentrer à vide ?",
-                    "reponse"  : ["150 km", "150km", "150"],
+                    "reponse"  : ["150 km", "150km"],
                     "page"     : "65"
                 },
                 {
@@ -1056,7 +1057,7 @@
                 },
                 {
                     "question" : "Pour diminuer les risques d'accident, lors de la montée ou de la descente d'un camion, de combien de points d'appui le conducteur doit-il se servir ?",
-                    "reponse"  : ["3 points d'appui", "3", "3 point d'appui", "3 points d appui", "3points d'appui"],
+                    "reponse"  : ["3 points d'appui", "3", "3 point d'appui", "3 points d appui", "3points d'appui", "3point d'appui"],
                     "page"     : "94"
                 }
             ]

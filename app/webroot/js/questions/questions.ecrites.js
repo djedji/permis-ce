@@ -4,15 +4,16 @@ $(document).ready(function() {
     var $btnResponse = $("#btn-toggleResp");
     var $responseUser = $('.response-user');
     var $score = $("span > .num", "#score");
-//    var $reponseIn = document.getElementsByClassName('default-response');
     var $reponseIn = $('.default-response');
     var reponseUser = document.getElementsByClassName('response-user');
     var resIn, resOut = [];
     var _nbFiches;
-
+    var newFiche = true;
     var pattern = /fiche\-([0-9]+)/i;
     var currentIndexFiche = window.location.pathname;
     var matches = currentIndexFiche.match(pattern);
+    var _windowHasEventKeyup = true, sauvegarde_index = [];
+
 
     function write_cookie(valCookie) {
         var readCookie = read_cookie(valCookie);
@@ -47,13 +48,52 @@ $(document).ready(function() {
         return r;
     }
 
-    // bug click button response/supprimer
-    $btnResponse.mouseenter(function() {
-        $(this).css( { 'background':  '#2f9de9' } );
-    })
-        .mouseleave(function() {
-            $(this).css( { 'background':  '#2F8AD4' } );
+//    // bug click button response/supprimer
+//    $btnResponse.mouseenter(function() {
+//        $(this).css( { 'background':  '#2f9de9' } );
+//    })
+//        .mouseleave(function() {
+//            $(this).css( { 'background':  '#2F8AD4' } );
+//        });
+
+    function start_window_keyup() {
+        $(window).on('keyup', function(event) {
+            _windowHasEventKeyup = true;
+            switch(event.which) {
+                case 80 : // touch p
+                    change_page('prev');
+                    break;
+                case 83 : // touch s
+                    change_page('next');
+                    break;
+                case 72 : // touch s
+                    window.location.href = './fiche-21';
+                    break;
+            }
         });
+    }
+
+    function change_page(flag) {
+        var url, numFiche, numFicheIsNum, nameFiche;
+        url = window.location.pathname;
+        url = url.trim();
+        url = url.split('/');
+        numFiche = url[url.length-1];
+        numFiche = numFiche.split('-');
+        nameFiche = numFiche[0];
+        numFiche = numFiche[1] || 1;
+        numFicheIsNum = $.isNumeric(numFiche);
+
+        if(flag == "next") {
+            if( numFicheIsNum && (numFiche > 0) && (nameFiche == 'fiche') ) {
+                window.location.href = './fiche-' + (++numFiche);
+            }
+        } else {
+            if( numFicheIsNum && (numFiche < 20) && (nameFiche == 'fiche') ) {
+                window.location.href = './fiche-' + (--numFiche);
+            }
+        }
+    }
 
     function init(currentFiche) {
         $btnResponse.click(function(event) {
@@ -74,7 +114,9 @@ $(document).ready(function() {
                 });
 
                 compareRes(resIn, resOut);
+                start_window_keyup();
             } else {
+                $('html, body').stop().animate({ 'scrollTop' : 0 }, 900, 'easeOutQuart');
                 $self.text('Voir Réponses');
                 resIn = null;
                 resOut = [];
@@ -94,6 +136,7 @@ $(document).ready(function() {
                 });
                 _timeStamp = new Date().getTime();
 
+                newFiche = true;
             }
         });
     }
@@ -136,8 +179,8 @@ $(document).ready(function() {
                 $reponseIn.eq(index).val(resTempIn);
 
                 if(resTempOut == resTempIn.toLowerCase()) {
-                    $elem.addClass('bg-success');
                     bonneReponse++;
+                    $elem.addClass('bg-success');
                 } else {
                     mauvaiseReponse++;
                     $elem.addClass('bg-error');
@@ -151,13 +194,13 @@ $(document).ready(function() {
             switch(index) {
                 case 0 :
                     $(this).text(bonneReponse);
-                break;
+                    break;
                 case 1 :
                     $(this).text(mauvaiseReponse);
-                break;
+                    break;
                 case 2 :
                     $(this).text(score + ' / ' + nbQuestions);
-                break;
+                    break;
             }
         });
 
@@ -188,4 +231,76 @@ $(document).ready(function() {
                 });
         }, 1000);
     }
+
+
+    //==========================================================================
+    // Gestion btn clavier enter in input for next
+    //==========================================================================
+
+    (function() {
+
+        function ajust_pos_input(that) {
+            var $self = that;
+            var $window = $(window);
+            var posMiddle = ($(window).height() / 2) + (($(window).height() / 2) / 2);
+            var posTopTarget = $self.offset().top;
+            var windowScrollTop = $window.scrollTop();
+            if(posTopTarget > posMiddle) {
+//                $('html, body').animate( { 'scrollTop' : (windowScrollTop+80) + 'px' }, 100, 'linear');
+                $(window).scrollTop(windowScrollTop+140);
+            }
+        }
+
+        function push_sauvegardeIndex($self, lgt_responseUser, focus_bool) {
+            var $window = $(window);
+            var numElem = $self.attr('tabindex');
+
+            if(_windowHasEventKeyup) { $window.off('keyup'); _windowHasEventKeyup = false; }
+
+            ajust_pos_input($self);
+//            $responseUser.eq(numElem).focus();
+            if(focus_bool) $responseUser.eq(numElem).focus();
+//            else $responseUser.eq(--numElem).focus();
+console.log($responseUser.eq(numElem));
+            if(sauvegarde_index.indexOf(numElem) == -1 && (numElem <= $responseUser.length)) {
+                sauvegarde_index.push(numElem);
+                console.log(sauvegarde_index)
+                if( sauvegarde_index.length == lgt_responseUser ) {
+                    sauvegarde_index = [];
+                    newFiche = false;
+                    $btnResponse.trigger('click');
+                }
+            }
+        }
+
+        $responseUser.keydown(function(event) {
+            var $self = $(this);
+            var lgt_responseUser = $responseUser.length;
+
+            if(newFiche) {
+                if(event.which == 13) {
+                    push_sauvegardeIndex($self, lgt_responseUser, true);
+                }
+
+                if(event.which == 9) {
+                    push_sauvegardeIndex($self, lgt_responseUser);
+                }
+            }
+        });
+
+        $responseUser.click(function(event) {
+            var $self = $(this);
+            if($self.attr("tabindex") == 1) {
+                start_keybord = true;
+            }
+            if(_windowHasEventKeyup) { $(window).off('keyup'); _windowHasEventKeyup = false; }
+        });
+
+    })();
+
+    //================================================================================
+    // Gestion clavier touch h pour home and touch s for suivant and p for précédente
+    //================================================================================
+
+    start_window_keyup();
 });

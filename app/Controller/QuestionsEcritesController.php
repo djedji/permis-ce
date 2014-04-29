@@ -27,9 +27,18 @@
                 $fiches = $this->AppModel->questionsEcrites();
                 $this->autoLayout = null;
                 $this->autoRender = null;
-                echo json_encode($fiches);
+                $numFiche = $this->request->query['numFiche'];
+                if( ($numFiche >= 0) && ($numFiche <= 20) ) {
+                    $fiche = $fiches[$numFiche];
+                    if(!empty($fiche))
+                        echo json_encode($fiche);
+                    else
+                        echo json_encode(array("numFicheError" => $numFiche));
+                } else {
+                    echo json_encode(array("numFicheError" => $numFiche));
+                }
             } else {
-                $this->redirect('/');
+                echo json_encode(array("ajaxError" => true));
             }
         }
     }

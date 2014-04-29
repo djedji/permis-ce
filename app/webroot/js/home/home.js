@@ -137,8 +137,13 @@ $(document).ready(function() {
                         else tpl_score += '<td><span class="pst-green">'+valueCookie[index].b+'</span></td>';
                         if(valueCookie[index].s == 0) tpl_score += '<td><span class="pst-default">--</span></td>';
                         else tpl_score += '<td><span class="pst-blue">'+valueCookie[index].s+'</span></td>';
-                        temp_timing = valueCookie[index].t.split('.');
-                        tpl_score += '<td><span class="pst-timing">' + temp_timing[0] + ' min ' + temp_timing[1] + ' s</span></td>';
+                        if(valueCookie[index].t == -1) {
+                            tpl_score += '<td><span class="pst-timing"> 00 min 00 s</span></td>';
+                        } else {
+                            temp_timing = valueCookie[index].t.split('.');
+                            tpl_score += '<td><span class="pst-timing">' + temp_timing[0] + ' min ' + temp_timing[1] + ' s</span></td>';
+                        }
+
                         tpl_score += '</tr>';
                         score_total += valueCookie[index].s;
                         score_partial = i * 10;

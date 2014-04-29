@@ -1,6 +1,6 @@
 <?php
 
-    Router::connect('/questions-ecrites/questionsEcrites', array('controller' => 'questionsEcrites', 'action' => 'ajax'));
+    Router::connect('/questions-ecrites/ajax-questionsEcrites/*', array('controller' => 'questionsEcrites', 'action' => 'ajax'));
     Router::connect('/home-questionsEcrites', array('controller' => 'homes', 'action' => 'ajax'));
 
     Router::connect('/questions-ecrites/:slug-:id',

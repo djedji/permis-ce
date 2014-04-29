@@ -14,6 +14,7 @@
 
 <div class="row pl20 pr20">
     <article class="col-xs-12 fiche-questions-ecrites">
+        <div class="time-top-q-e"><p><span>Temps : </span><span class="time-q-e">00 min 00 s</span></p></div>
         <div class="page-header">
             <h1>Interrogation écrite : <span><?php echo $ficheName; ?></span></h1>
         </div>
@@ -48,9 +49,14 @@
                                 }
                             ?>
                         </td>
-                        <td class="table-response">
-                            <input type="text" name="responseUser" class="response-user form-control" tabindex="<?php echo $i; ?>">
-                            <input type="text" name="defaultResponse" class="default-response" readonly/>
+                        <td class="table-response <?php if($i == 1) { echo ' start-q-e'; } ?>">
+                            <?php if($i == 1): ?>
+                                <input type="text" name="responseUser" class="response-user form-control op-default pulse" tabindex="<?php echo $i; ?>">
+                                <input type="text" name="defaultResponse" class="default-response" readonly/>
+                            <?php else: ?>
+                                <input type="text" name="responseUser" class="response-user form-control input-disabled" tabindex="<?php echo $i; ?>">
+                                <input type="text" name="defaultResponse" class="default-response" readonly/>
+                            <?php endif; ?>
                         </td>
                         <td>
                             Page : <span style="color: #118EF8; font-weight:bold;"><?php echo $fiche->page; ?></span>
@@ -60,20 +66,20 @@
                 <?php endforeach; ?>
             <tr class="table-reponse">
                 <td></td>
-                <td id="score"><span>Bonne(s) Réponse(s) : <b class="num" style="width: 29px;">--</b></span><span>Mauvaise(s) Réponse(s) : <b class="num" style="width: 29px;">--</b></span><span>Score : <b class="num" style="width: 56px;">-- / 10</b></span></td>
+                <td id="score"><span>0</span><span>0</span><span class="num">Score : <b>-- / 10</b></span></td>
                 <td>
-                    <button style="width:130px;margin-right: 6px;" type="button" id="btn-toggleResp" class="btn-page-q-e">Voir Réponses</button>
+                    <button style="width:130px;margin-right: 6px;" type="button" id="btn-toggleResp" class="btn-page-q-e" tabindex="11">Voir Réponses</button>
                     <?php if($numCurrentFiche < 20): ?>
-                        <a style="width:120px;" class="btn-page-q-e" href="<?php echo $this->Html->url(array('controller' => 'questionsEcrites', 'action' => 'index', 'slug' => 'fiche', 'id' => ( (($numCurrentFiche+1) < 20) ? ($numCurrentFiche+1) : 20 ) )); ?>">Suivante <span class="glyphicon glyphicon-chevron-right" style="font-size: 14px;"></span></a>
+                        <a tabindex="12" style="width:120px;" class="btn-page-q-e" href="<?php echo $this->Html->url(array('controller' => 'questionsEcrites', 'action' => 'index', 'slug' => 'fiche', 'id' => ( (($numCurrentFiche+1) < 20) ? ($numCurrentFiche+1) : 20 ) )); ?>">Suivante <span class="glyphicon glyphicon-chevron-right" style="font-size: 14px;"></span></a>
                     <?php endif; ?>
                 </td>
                 <td>
-                    <a style="width:82px;" class="btn-page-q-e" href="<?php echo $this->Html->url(array('controller' => 'homes', 'action' => 'index')); ?>">Home</a>
+                    <a tabindex="13" style="width:82px;" class="btn-page-q-e" href="<?php echo $this->Html->url(array('controller' => 'homes', 'action' => 'index')); ?>">Home</a>
                 </td>
             </tr>
             </tbody>
         </table>
-        
+        <div class="time-bottom-q-e"><p><span>Temps : </span><span class="time-q-e">00 min 00 s</span></p></div>
     </article>
 </div>
 
@@ -95,4 +101,5 @@
 </div>
 <?php $this->end(); ?>
 
-<?php $this->Html->script('questions/questions.ecrites', array('inline' => false)); ?>
+<?php $this->Html->script('questions/question.ecrite', array('inline' => false)); ?>
+
