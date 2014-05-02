@@ -292,16 +292,21 @@ function template_questions_find(data, tpl_chap) {
     var r = [];
     // boucle chapitres
     var lgt_data = data.length;
-    var lgt_page, tpl;
+    var lgt_page, tpl, q;
 
     for(var i = 0; i < lgt_data; i++) {
         lgt_page = data[i].length;
         // pour chaque chapitre faire template
         tpl = '<div class="page-header"><p class="current-chapitre">Chapitre n ° : </p><h1>' + tpl_chap[i].name + '</h1></div>';
-        tpl += '<table class="table"><thead><tr><th>Questions</th><th style="width: 170px;">Réponses</th><th style="width: 120px;">Page n°</th></tr></thead><tbody>';
+        tpl += '<table class="table"><thead><tr><th>Questions</th><th style="width: 160px;">Réponses</th><th style="width: 114px;">Page n°</th></tr></thead><tbody>';
             for(var j = 0; j < lgt_page; j++) {
                 tpl += '<tr>';
-                    tpl += '<td>' + data[i][j].question + '</td>';
+                    // replace &lt et &gt
+                    q = data[i][j].question;
+                    q = q.replace(/&lt;/gi, "<");
+                    q = q.replace(/&gt;/gi, ">");
+                    // end replace
+                    tpl += "<td>" + q + "</td>";
                     if($.isArray(data[i][j].reponse)) tpl += '<td><span>' + data[i][j].reponse[0] + '</span></td>';
                     else tpl += '<td><span>' + data[i][j].reponse + '</span></td>';
                     tpl += '<td class="txtac"><b>' + data[i][j].page + '</b></td>';
