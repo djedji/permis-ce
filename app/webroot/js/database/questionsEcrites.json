@@ -4,17 +4,17 @@
             [
                 {
                     "question" : "Après une utilisation intense, quel type de ralentisseur peut provoquer un incendie dès l'arret ?",
-                    "reponse"  : ["Ralentisseur électrique", "Ralentisseur electrique"],
+                    "reponse"  : ["Ralentisseur électrique", "Ralentisseurelectrique", "ralentisseurélectrique", "électrique", "electrique"],
                     "page"     : "23"
                 },
                 {
                     "question" : "En règle générale, quelle est la durée minimale normale (non réduite) de repos hebdomadaire pour un conducteur de camions ?",
-                    "reponse"  : ["45 heures", "45h", "45heures", "45 h"],
+                    "reponse"  : ["45 heures", "45h", "45heures", "45heure"],
                     "page"     : "155"
                 },
                 {
                     "question" : "Combien de certificat(s) d'immatriculation est/sont attribuée(s) à un véhicule articulé ?",
-                    "reponse"  : "2",
+                    "reponse"  : ["2", "2certificats", "2certificat"],
                     "page"     : "211"
                 },
                 {
@@ -62,7 +62,7 @@
                 },
                 {
                     "question" : "Quand le repos journalier est fractionné, quelle doit être la durée minimale totale de ce repos ?",
-                    "reponse"  : ["12 heures", "12 h", "12h", "12heure", "12 heure"],
+                    "reponse"  : ["12 heures", "12h", "12heure", "12heures"],
                     "page"     : "154"
                 },
                 {
@@ -77,7 +77,7 @@
                 },
                 {
                     "question" : "Je dois conduire un train routier de 32 tonnes de PTRA dont la somme des PTAC est de 38 tonnes. Quel doit être le poids maximum du train routier lors d'une pesée sur bascule ?",
-                    "reponse"  : ["32 tonnes", "32 t", "32t", "32tonnes", "32tonne", "32tonnes"],
+                    "reponse"  : ["32 tonnes", "32t", "32tonnes", "32tonne"],
                     "page"     : "21"
                 },
                 {
@@ -98,7 +98,7 @@
                 },
                 {
                     "question" : "Au-delà de quel taux de surcharge (en pourcentage - %) le camion pourra-t-il être immobilisé, jusqu'au déchargement de l'excédent ?",
-                    "reponse"  : ["5 %", "5%", "5 pour cent", "5pourcent", "5 pourcent"],
+                    "reponse"  : ["5 %", "5%", "5pourcent", "5pourcents"],
                     "page"     : "100"
                 },
                 {
@@ -126,32 +126,32 @@
                 },
                 {
                     "question" : "Je conduis un véhicule articulé de 38 tonnes de PTRA pesant 14 tonnes à vide. Pour emprunter une route où une barrière de dégel à 12 tonnes avec mention demi-charge autorisée est en place, quel doit être le poids maximum de mon chargement ?",
-                    "reponse"  : ["12 tonnes", "12t", "12 t", "12tonne", "12 tonnes", "12 tonne"],
+                    "reponse"  : ["12 tonnes", "12t", "12tonne", "12tonnes"],
                     "page"     : "64"
                 },
                 {
                     "question" : "Quelle est la charge utile d'un véhicule dont le PTAC est de 26 tonnes et le poids à vide de 7 tonnes ?",
-                    "reponse"  : ["19 tonnes", "19t", "19 t", "19tonne", "19 tonne", "19tonnes"],
+                    "reponse"  : ["19 tonnes", "19t", "19tonne", "19tonnes"],
                     "page"     : "18"
                 },
                 {
                     "question" : "Suite au contrôle technique périodique, lorsque le véhicule est refusé sans interdiction de circuler, dans quel délai maximum la contre-visite doit-elle être effectuée pour éviter une visite technique complète ?",
-                    "reponse"  : ["1 mois", "1mois"],
+                    "reponse"  : ["1 mois", "1mois", "1moi"],
                     "page"     : "49"
                 },
                 {
                     "question" : "Qu'aspire le moteur diesel lors du premier temps appelé admission ?",
-                    "reponse"  : ["De l'air", "air"],
+                    "reponse"  : ["De l'air", "air", "del'air", "delair"],
                     "page"     : "186"
                 },
                 {
                     "question" : "Quelle est, en heures, la durée maximale autorisée de conduite par période de deux semaines consécutives ?",
-                    "reponse"  : ["90 heures", "90h", "90 h", "90heures", "90heure", "90 heure"],
+                    "reponse"  : ["90 heures", "90h", "90heures", "90heure"],
                     "page"     : "153"
                 },
                 {
                     "question" : "Quelle est la catégorie du permis exigée pour conduire un véhicule de transport en commum articulé comportant 60 places circulant à vide ?",
-                    "reponse"  : ["Permis D", "D", "Le permis D"],
+                    "reponse"  : ["Permis D", "D", "LepermisD", "permisd"],
                     "page"     : "88"
                 },
                 {
@@ -168,7 +168,7 @@
                 },
                 {
                     "question" : "Un chauffeur à conduit 20 heures la semaine précédente. Selon la réglementation sociale européenne, combien d'heures maximum peut-il conduire la semaine en cours ?",
-                    "reponse"  : ["56 heures", "56h", "56 h", "56heures", "56heure", "56 heure"],
+                    "reponse"  : ["56 heures", "56h", "56heures", "56heure"],
                     "page"     : "153"
                 },
                 {
@@ -194,7 +194,7 @@
                 },
                 {
                     "question" : "La somme des PTAC d'un train routier est de 45 tonnes et son PTRA est de 40 tonnes. Quel poids réel ne faut-il pas dépasser ?",
-                    "reponse"  : ["40 tonnes", "40t", "40 t", "40tonnes", "40 tonne", "40tonne"],
+                    "reponse"  : ["40 tonnes", "40t", "40tonnes", "40tonne"],
                     "page"     : "21"
                 },
                 {
@@ -216,7 +216,7 @@
             [
                 {
                     "question" : "En général, de combien d'extincteur(s) doit être équipé un véhicule articulé neuf ?",
-                    "reponse"  : ["2", "2extincteur", "2 extincteur", "2extincteurs", "2 extincteurs"],
+                    "reponse"  : ["2", "2extincteur", "2extincteurs"],
                     "page"     : "36"
                 },
                 {
@@ -232,22 +232,22 @@
                 },
                 {
                     "question" : "En cas de remorquage occasionnel d'un véhicule isolé de transport de marchandises, quelle est la longueur maximale autorisée de l'ensemble constitué ?",
-                    "reponse"  : ["30 mètres", "30 m", "30m", "30mètres", "30metres", "30 metres", "30metre", "30 metre", "30 mètre", "30mètre"],
+                    "reponse"  : ["30 mètres", "30m", "30mètres", "30metres", "30metres", "30metre"],
                     "page"     : "132"
                 },
                 {
                     "question" : "Le circuit d'alimentation d'un moteur diesel se compose, entre autres éléments, de deux pompes : l'une dites pompe d'injection haute pression, l'autre dite pompe ... ?",
-                    "reponse"  : ["D'alimentaion", "alimentation"],
+                    "reponse"  : ["D'alimentaion", "alimentation", "d'alimentation", "dalimentation"],
                     "page"     : "188"
                 },
                 {
                     "question" : "Suite au contrôle technique périodique, quelle lettre figure sur le certificat d'immatriculation lorsque le véhicule est refusé avec interdiction de circuler ?",
-                    "reponse"  : ["La lettre R", "R", "lettre R"],
+                    "reponse"  : ["La lettre R", "R", "lettreR", "lalettreR"],
                     "page"     : "119"
                 },
                 {
                     "question" : "Quel sera le Poids Maximal Autorisé (PMA) pour le véhicule articulé suivant :&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Tracteur PTRA : 38 tonnes et Poids à vide : 10 tonnes&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Semi-remorque PTAC : 22 tonnes et Poids à vide : 7 tonnes ?",
-                    "reponse"  : ["32 tonnes", "32t", "32 t", "32tonnes", "32tonne", "32tonne"],
+                    "reponse"  : ["32 tonnes", "32t", "32tonnes", "32tonne"],
                     "page"     : "21"
                 },
                 {
@@ -268,28 +268,28 @@
             ],
             [
                 {
-                    "question" : "Les disques de limitation de vitesse apposés à l'arrière d'un remorque sont-ils identiques à ceux placés à l'arrière du camion ?",
+                    "question" : "Les disques de limitation de vitesse apposés à l'arrière d'une remorque sont-ils identiques à ceux placés à l'arrière du camion ?",
                     "reponse"  : "Non",
                     "page"     : "34"
                 },
                 {
                     "question" : "Un chauffeur a conduit 40 heures la semaine précédente. Selon la réglementation sociale européenne, combien d'heures maximum peut-il conduire la semaine en cours ?",
-                    "reponse"  : ["50 heures", "50 h", "50h", "50heure", "50 heure", "50heures"],
+                    "reponse"  : ["50 heures", "50h", "50heure", "50heures"],
                     "page"     : "153"
                 },
                 {
                     "question" : "Si le véhicule que je conduis est soumis à la taxe à l'essieu, lors d'un contrôle routier, faut-il présenter l'original ou la photocopie de l'attestation de paiement ?",
-                    "reponse"  : ["L'original", "original"],
+                    "reponse"  : ["L'original", "original", "loriginal"],
                     "page"     : "119"
                 },
                 {
                     "question" : "Si les disques à l'arrière d'un camion (isolé), de 38 tonnes de PTRA, sont '80 - 90', quels sont les disques placés à l'arrière de la remorque lorsque le train routier est formé ?",
-                    "reponse"  : ["60 - 80 - 90", "60 80 90", "60/80/90"],
+                    "reponse"  : ["60 - 80 - 90", "608090", "60/80/90", "60-80-90"],
                     "page"     : "34"
                 },
                 {
                     "question" : "Quel sera le Poids Maximal Autorisé (PMA) pour l'ensemble suivant :&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Porteur remorqueur PTRA : 44 tonnes et PTAC : 26 tonnes&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Remorque PTAC : 26 tonnes et Poids à vide : 7 tonnes ?",
-                    "reponse"  : ["44 tonnes", "44 t", "44t", "44tonne", "44 tonne", "44tonnes"],
+                    "reponse"  : ["44 tonnes", "44t", "44tonne", "44tonnes"],
                     "page"     : "21"
                 },
                 {
@@ -305,7 +305,7 @@
                 },
                 {
                     "question" : "Après 2 heures de conduite, quelle est la durée minimale d'un premier arrêt pouvant être pris en compte comme pause ?",
-                    "reponse"  : ["15 min", "15mn", "15min", "15 mn"],
+                    "reponse"  : ["15 min", "15mn", "15min", "15mn", "15minutes", "15minute"],
                     "page"     : "152"
                 },
                 {
@@ -322,12 +322,12 @@
             [
                 {
                     "question" : "Comment appelle-t-on le dispositif qui assure le freinage pratiquement simultané de tous les véhicules d'un ensemble ?",
-                    "reponse"  : ["Le frein continu ou Le frein principal ou Le frein de service", "Le frein continu", "frein continu", "Le frein principal", "frein principal", "Le frein de service", "frein de service"],
+                    "reponse"  : ["Le frein continu ou Le frein principal ou Le frein de service", "Lefreincontinu", "freincontinu", "Lefreinprincipal", "freinprincipal", "Lefreindeservice", "freindeservice"],
                     "page"     : "44"
                 },
                 {
                     "question" : "En règle générale, quelle est la durée maximale de conduite journalière autorisée en respectant les temps de repos ?",
-                    "reponse"  : ["9 heures", "9h", "9 h", "9heures", "9heure", "9 heure"],
+                    "reponse"  : ["9 heures", "9h", "9heures", "9heure"],
                     "page"     : "153"
                 },
                 {
@@ -338,7 +338,7 @@
                 },
                 {
                     "question" : "Hors agglomération, sur une route à double sens, vous suivez un camion à 70 km/h. Quel intervalle de sécurité minimum devez-vous respecter ?",
-                    "reponse"  : ["50 mètres", "50 m", "50m", "50mètres", "50metres", "50 metres", "50metre", "50 metre", "50 mètre", "50mètre"],
+                    "reponse"  : ["50 mètres", "50m", "50mètres", "50mètre", "50metres", "50metre"],
                     "page"     : "72"
                 },
                 {
@@ -348,12 +348,12 @@
                 },
                 {
                     "question" : "Quelle est la périodicité des visites techniques auxquelles sont soumis les véhicules de transport de marchandises de plus de 3,5 tonnes de PTAC ?",
-                    "reponse"  : ["12 mois ou 1 an", "12 mois", "12mois", "1 an", "1an"],
+                    "reponse"  : ["12 mois ou 1 an", "12mois", "12moi", "1an"],
                     "page"     : "48"
                 },
                 {
                     "question" : "Quel sera le Poids Maximal Autorisé (PMA) pour l'ensemble suivant :&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Porteur remorqueur PTRA : 44 tonnes et PTAC 26 tonnes&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Remorque PTAC : 14 tonnes et Poids à vide : 5 tonnes ?",
-                    "reponse"  : ["40 tonnes", "40 t", "40t", "40tonnes", "40tonne", "40 tonne"],
+                    "reponse"  : ["40 tonnes", "40t", "40tonnes", "40tonne"],
                     "page"     : "21"
                 },
                 {
@@ -380,12 +380,12 @@
                 },
                 {
                     "question" : "En régle générale, quelle est la durée minimale normale (non réduite) obligatoire de repos journalier lorsque celui-ci n'est pas fractionné ?",
-                    "reponse"  : ["11 heures", "11h", "11 h", "11heure", "11heures", "11 heure"],
+                    "reponse"  : ["11 heures", "11h", "11heure", "11heures"],
                     "page"     : "154"
                 },
                 {
                     "question" : "Suite au contrôle technique périodique, quelle lettre figure sur le certificat d'immatriculation lorsque le véhicule est accepté ?",
-                    "reponse"  : ["La lettre A ou A", "lettre A", "A"],
+                    "reponse"  : ["La lettre A ou A", "lettreA", "A", "lalettrea"],
                     "page"     : "119"
                 },
                 {
@@ -406,7 +406,7 @@
                 },
                 {
                     "question" : "Quel est le PTRA maximal d'un véhicule articulé comportant 4 essieux ?",
-                    "reponse"  : ["38 tonnes", "38t", "38 t", "38tonnes", "38 tonne", "38tonne"],
+                    "reponse"  : ["38 tonnes", "38t", "38tonnes", "38tonne"],
                     "page"     : "20"
                 },
                 {
@@ -464,7 +464,7 @@
                 },
                 {
                     "question" : "Quelle est la durée maximale autorisée de conduite continue pour un conducteur de camion ?",
-                    "reponse"  : ["4 h 30", "4 heures 30", "4h30", "4heure30", "4 h 30 min", "4h30min", "4 heure 30", "4 heures 30 min", "4heure30min", "4heures30min", "4 heure 30 min"],
+                    "reponse"  : ["4 h 30", "4h30min", "4h30", "4heures30minutes", "4heures30minute", "4heure30minutes", "4heure30minute"],
                     "page"     : "152"
                 },
                 {
@@ -517,7 +517,7 @@
                 },
                 {
                     "question" : "Après 4h30 de conduite continue, quelle est la durée minimale de la pause que vous devez respecter ?",
-                    "reponse"  : ["45 min", "45mn", "45min", "45 mn"],
+                    "reponse"  : ["45 min", "45mn", "45min", "45mn"],
                     "page"     : "152"
                 },
                 {
@@ -550,22 +550,22 @@
                 },
                 {
                     "question" : "Le véhicule porteur-remorque d'un train routier a un PTRA de 38 tonnes. Quelles sont les vitesses indiqués à l'arrière de la remorque ?",
-                    "reponse"  : ["60 - 80 - 90", "60 km/h - 80 km/h - 90 km/h", "60km/h - 80km/h -90 km/h", "60-80-90", "60 80 90"],
+                    "reponse"  : ["60 - 80 - 90", "608090", "60-80-90", "60/80/90"],
                     "page"     : "34"
                 },
                 {
                     "question" : "Quel type de suspension équipe généralement les véhicules lourds permettant de régler la hauteur du véhicule ?",
-                    "reponse"  : ["La suspension pneumatique", "suspension pneumatique"],
+                    "reponse"  : ["La suspension pneumatique", "suspensionpneumatique", "pneumatique", "lasuspensionpneumatique"],
                     "page"     : "193"
                 },
                 {
                     "question" : "En transport public, à bord de votre véhicule, vous devez posséder l'original ou une copie conforme de la licence communautaire de transport ?",
-                    "reponse"  : ["Une copie conforme", "copie conforme", "la copie conforme de la licence communautaire", "copie conforme de la licence communautaire"],
+                    "reponse"  : ["Une copie conforme", "copieconforme", "lacopieconformedelalicencecommunautaire", "unecopieconformedelalicencecommunautaire"],
                     "page"     : "118"
                 },
                 {
                     "question" : "Quand j'attelle une semi-remorque porte-voitures à mon tracteur, quelle longueur ne doit pas dépasser le véhicule articulé ainsi constitué ?",
-                    "reponse"  : ["16 m 50", "16 mètres 50", "16 mètre 50", "16m50", "16metres50", "16mètres50", "16metre50"],
+                    "reponse"  : ["16 m 50", "16m50", "16mètres50", "16mètre50", "16metres50", "16metre50"],
                     "page"     : "17"
                 },
                 {
@@ -575,7 +575,7 @@
                 },
                 {
                     "question" : "Quelle est la périodicité des Foramtions Continues Obligatoires des conducteurs routiers ?",
-                    "reponse"  : ["5 ans ou Quinquennale", "5 ans", "5ans", "Quinquennale"],
+                    "reponse"  : ["5 ans ou Quinquennale", "5ans", "Quinquennale"],
                     "page"     : "91"
                 },
                 {
@@ -592,7 +592,7 @@
                 },
                 {
                     "question" : "Votre véhicule est équipé d'un chronotachygraphe numérique. Vous avez perdu votre carte conducteur, combien de jours, au maximum, pouvez-vous conduire sans carte ?",
-                    "reponse"  : ["15 ou 15 jours", "15", "15jours", "15 jours", "15jour", "15 jour", "15j", "15 j"],
+                    "reponse"  : ["15 ou 15 jours", "15", "15jours", "15jour", "15j"],
                     "page"     : "143"
                 },
                 {
@@ -603,7 +603,7 @@
                 },
                 {
                     "question" : "Vous conduisez un véhicule de 38 tonnes de PTRA. En règle générale, quand débute l'interdiction de circulation en fin de semaine ?",
-                    "reponse"  : ["Samedi 22 heures", "Samedi 22h", "Samedi 22 h", "Samedi 10h du soir", "Samedi 10 heures du soir", "Samedi 10heure du soir"],
+                    "reponse"  : ["Samedi 22 heures", "samedi22h", "samedi22heures", "samedi22heure", "samedi10hdusoir", "samedi10heuresdusoir", "samedi10heuredusoir"],
                     "page"     : "65"
                 },
                 {
@@ -618,7 +618,7 @@
                 },
                 {
                     "question" : "Mon camion de 20 tonnes de PTAC est chargé au maximum. Son PTRA est de 40 tonnes, si je dois atteler une remorque de 26 tonnes de PTAC, quel doit être le poids réel maximal de la remorque ?",
-                    "reponse"  : ["20 tonnes", "20t", "20tonnes", "20 tonne", "20 t", "20tonne"],
+                    "reponse"  : ["20 tonnes", "20t", "20tonnes", "20tonne"],
                     "page"     : "21"
                 },
                 {
@@ -645,7 +645,7 @@
                 },
                 {
                     "question" : "Vous attendez votre tour pour décharger sans connaître le temps d'attente. Sur quel symbole devez-vous positionner le sélecteur d'activité du chronotachygraphe ?",
-                    "reponse"  : ["Marteau ou autres tâches", "Marteau", "autres tâches", "autre tâche", "autre tache", "autres taches"],
+                    "reponse"  : ["Marteau ou autres tâches", "marteau", "marteauouautrestâches", "marteauouautrestâche", "marteauouautretâches", "marteauouautretâche", "marteauouautrestaches", "marteauouautrestache", "marteauouautretaches", "marteauouautretache", "autrestâches", "autretâches", "autrestâche", "autretâche", "autrestaches", "autretaches", "autrestache", "autretache"],
                     "page"     : "139"
                 },
                 {
@@ -666,7 +666,7 @@
                 },
                 {
                     "question" : "Lors de la mise en circulation d'un véhicule de transport de marchandises de plus de 3,5 tonnes, vendu carrossé, quel est le délai maximal autorisé pour le présenter à la première visite technique ?",
-                    "reponse"  : ["1 an ou 12 mois", "1 an", "1an", "12mois", "12 mois"],
+                    "reponse"  : ["1 an ou 12 mois", "1an", "12mois", "12moi"],
                     "page"     : "48"
                 },
                 {
@@ -698,12 +698,12 @@
                 },
                 {
                     "question" : "Un chauffeur a conduit 50 heures la semaine précédente. Selon la réglementation sociale européenne, combien d'heures maximum peut-il conduire la semaine en cours ?",
-                    "reponse"  : ["40 heures", "40h", "40 h", "40 heure", "40heure", "40heures"],
+                    "reponse"  : ["40 heures", "40h", "40heure", "40heures"],
                     "page"     : "153"
                 },
                 {
                     "question" : "Ce signal concerne-t-il les véhicules affectés au transport de produits dangereux ou au transport de produits explosifs ?",
-                    "reponse"  : ["Produits explosifs", "Explosifs", "produit explosif", "explosif"],
+                    "reponse"  : ["Produits explosifs", "produitsexplosifs", "produitsexplosif", "produitexplosifs", "produitexplosif", "explosifs", "explosif"],
                     "page"     : "55",
                     "img"      : { "src" : "03_01_25.png", "alt" : "Produits explosifs"}
                 },
@@ -733,7 +733,7 @@
                     "page"     : "152"
                 },
                 {
-                    "question" : "En cas de récidive de grand excès de vitesse, une suspension du permis de conduire peut être assortie d'un permis limité à la conduite professionnelle (permis blanc) si l'infraction a été commise avec la voiture presonnelle du chauffeur. Vrai ou Faux ?",
+                    "question" : "En cas de récidive de grand excès de vitesse, une suspension du permis de conduire peut être assortie d'un permis limité à la conduite professionnelle (permis blanc) si l'infraction a été commise avec la voiture personnelle du chauffeur. Vrai ou Faux ?",
                     "reponse"  : "Faux",
                     "page"     : "212"
                 },
@@ -751,7 +751,7 @@
                 },
                 {
                     "question" : "Vous avez fait une coupure de 4 heures (repos), quelles sera, au minimum, la durée de la période de repos suivante pour être en règle vis-à-vis du repos journalier ?",
-                    "reponse"  : ["9 heures", "9h", "9heures", "9heure", "9 heure"],
+                    "reponse"  : ["9 heures", "9h", "9heures", "9heure"],
                     "page"     : "154"
                 },
                 {
@@ -762,12 +762,12 @@
                 },
                 {
                     "question" : "Je conduis un camion de 26 tonnes de PTAC et de 10 tonnes de PV. Pour emprunter une route où une barrière de dégel à 12 tonnes avec mention demi-charge autorisée, est en place, quel doit être le poids maximum de mon chargement ?",
-                    "reponse"  : ["8 tonnes", "8t", "8 t", "8tonnes", "8tonne", "8 tonne"],
+                    "reponse"  : ["8 tonnes", "8t", "8tonnes", "8tonne"],
                     "page"     : "64"
                 },
                 {
                     "question" : "Vous chargez du sable dans une semi-remorque, quelle peut-être la charge maximale autorisée sur l'essieu le plus chargé du groupe d'essieux arrière ?",
-                    "reponse"  : ["10,5 tonnes", "10,5tonnes", "10,5t", "10,5 t", "10,500t", "10,500tonnes", "10,500 tonnes", "10t500", "10 t 500", "10 tonnes 500"],
+                    "reponse"  : ["10,5 tonnes", "10t5", "10t500", "10,500t", "10.500t", "10tonnes500", "10tonne500", "10,5tonnes", "10.5tonnes", "10,5tonne", "10.5tonne"],
                     "page"     : "22"
                 },
                 {
@@ -820,7 +820,7 @@
                 },
                 {
                     "question" : "En principe, le ralentisseur hydraulique est situé sur ... ?",
-                    "reponse"  : [ "L'arbre de transmission", "transmission", "La transmission", "arbre de transmission"],
+                    "reponse"  : [ "L'arbre de transmission", "l'arbredetransmission", "larbredetransmission", "arbredetransmission", "transmission"],
                     "page"     : "203"
                 },
                 {
@@ -830,7 +830,7 @@
                 },
                 {
                     "question" : "Vous conduisez un train routier. Quelle peut être sa longueur maximale ?",
-                    "reponse"  : ["18,75 mètres", "18,75m", "18,75 m", "18,75mètres", "18,75metres", "18,75metre", "18,75 metres"],
+                    "reponse"  : ["18,75 mètres", "18m75", "18mètres75", "18mètre75", "18metres75", "18metre75"],
                     "page"     : "17"
                 },
                 {
@@ -873,12 +873,12 @@
                 },
                 {
                     "question" : "Quel sera le poids maximal d'un ensemble composé de :&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Porteur PTRA : 44 tonnes et PTAC : 26 tonnes&lt;br&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Remorque PTAC : 26 tonnes et Poids à vide de 7 tonnes ?",
-                    "reponse"  : ["44 tonnes", "44t", "44 t", "44 tonne", "44tonnes", "44tonne"],
+                    "reponse"  : ["44 tonnes", "44t", "44tonnes", "44tonne"],
                     "page"     : "21"
                 },
                 {
                     "question" : "Comment appelle-t-on les transports exécutés à titre onéreux pour le compte d'un client ?",
-                    "reponse"  : ["Publics ou Compte d'autrui", "publics", "compte d'autrui", "pour le compte d'autrui"],
+                    "reponse"  : ["Publics ou Compte d'autrui", "transportpublic", "transportpublics", "transportpourlecomptedautrui", "transportpourlecompted'autrui", "pourlecompted'autrui", "pourlecomptedautrui", "compted'autrui", "comptedautrui", "public", "publics"],
                     "page"     : "114"
                 },
                 {
@@ -887,7 +887,7 @@
                     "page"     : "191"
                 },
                 {
-                    "question" : "La rémunération mensuelle d'un conducteur salarié peut être calculée en fonction de la distance parcourue pendant le mois ?",
+                    "question" : "La rémunération mensuelle d'un conducteur salarié peut être calculée en fonction de la distance parcourue pendant le mois. Vrai ou Faux ?",
                     "reponse"  : "Faux",
                     "page"     : "157"
                 },
@@ -905,12 +905,12 @@
             [
                 {
                     "question" : "Si les disques à l'arrière du tracteur d'un véhicule articulé '60 - 80 - 90', quels sont les disques placés à l'arrière de la semi-remorque ?",
-                    "reponse"  : ["60 - 80 - 90", "60km/h - 80 km/h - 90 km/h", "60 80 90", "60km/h 80km/h 90km/h", "60 km/h 80 km/h 90 km/h"],
+                    "reponse"  : ["60 - 80 - 90", "608090", "60-80-90", "60/80/90"],
                     "page"     : "34"
                 },
                 {
                     "question" : "Vous vous arrêtez pour faire le plein de carburant. Sur quel symbole devez-vous positionner le sélecteur d'activité du chronotachygraphe ?",
-                    "reponse"  : ["Autres tâches ou Marteau", "autres taches", "autres tâches", "autre tache", "autre tâche", "marteau"],
+                    "reponse"  : ["Autres tâches ou Marteau", "marteau", "marteauouautrestâches", "marteauouautrestâche", "marteauouautretâches", "marteauouautretâche", "marteauouautrestaches", "marteauouautrestache", "marteauouautretaches", "marteauouautretache", "autrestâches", "autretâches", "autrestâche", "autretâche", "autrestaches", "autretaches", "autrestache", "autretache"],
                     "page"     : "139"
                 },
                 {
@@ -921,7 +921,7 @@
                 },
                 {
                     "question" : "Vous conduisez un camion de plus de 7,5 tonnes de PTAC. Quand finit l'interdiction de circulation en fin de semaine ?",
-                    "reponse"  : ["Dimanche 22 heures", "Dimanche 22h", "Dimanche 22heures", "Dimanche 22heure", "Dimanche 10h du soir", "Dimanche 10 heures du soir", "Dimanche 10 h du soir"],
+                    "reponse"  : ["Dimanche 22 heures", "Dimanche22h", "Dimanche22heures", "dimanche22heure", "Dimanche 22heure", "Dimanche10hdusoir", "Dimanche10heuresdusoir", "Dimanche10heuredusoir"],
                     "page"     : "65"
                 },
                 {
@@ -963,12 +963,12 @@
                 },
                 {
                     "question" : "Sauf cas d'urgence, quelle est la durée de conduite maximale journalière autorisée en tenant compte des dérogations possibles ?",
-                    "reponse"  : ["10 heures", "10 h", "10 heure", "10h", "10heures", "10heure"],
+                    "reponse"  : ["10 heures", "10h", "10heures", "10heure"],
                     "page"     : "153"
                 },
                 {
                     "question" : "Lors d'un contrôle des temps de conduite et de repos sur la route, en plus de la journée en cours, sur quelle période devez-vous pouvoir présenter les données ?",
-                    "reponse"  : ["Les 28 jours précédents ou 28 jours", "28 jours", "28jours", "les 28 jours précédents", "les 28jour précédent", "les 28 jour precedent", "les 28 jours precedents"],
+                    "reponse"  : ["Les 28 jours précédents ou 28 jours", "28jours", "28jour", "28j", "28joursprécédents", "28joursprécédent", "28jourprécédents", "28jourprécédent", "28joursprécedents", "28joursprécedent", "28jourprécedents", "28jourprécedent", "28joursprecédents", "28joursprecédent", "28jourprecédents", "28jourprecédent", "28joursprecedents", "28joursprecedent", "28jourprecedents", "28jourprecedent", "les28joursprécédents", "les28joursprécédent", "les28jourprécédents", "les28jourprécédent", "les28joursprécedents", "les28joursprécedent", "les28jourprécedents", "les28jourprécedent", "les28joursprecédents", "les28joursprecédent", "les28jourprecédents", "les28jourprecédent", "les28joursprecedents", "les28joursprecedent", "les28jourprecedents", "les28jourprecedent", "28jprécédents", "28jprécédent", "28jprécédents", "28jprécédent", "28jprécedents", "28jprécedent", "28jprécedents", "28jprécedent", "28jprecédents", "28jprecédent", "28jprecédents", "28jprecédent", "28jprecedents", "28jprecedent", "28jprecedents", "28jprecedent", "les28jprécédents", "les28jprécédent", "les28jprécédents", "les28jprécédent", "les28jprécedents", "les28jprécedent", "les28jprécedents", "les28jprécedent", "les28jprecédents", "les28jprecédent", "les28jprecédents", "les28jprecédent", "les28jprecedents", "les28jprecedent", "les28jprecedents", "les28jprecedent"],
                     "page"     : "158"
                 },
                 {
@@ -979,7 +979,7 @@
                 },
                 {
                     "question" : "Le contrôle et le remplissage du circuit de refroidissement s'effectuent plutôt moteur chaud ou moteur froid ?",
-                    "reponse"  : ["Moteur à froid", "moteur a froid", "a froid", "froid", "à froid"],
+                    "reponse"  : ["Moteur à froid", "moteurafroid", "afroid", "froid", "àfroid", "moteuràfroid"],
                     "page"     : "190"
                 },
                 {
@@ -989,7 +989,7 @@
                 },
                 {
                     "question" : "Vous chargez du sable dans un véhicule isolé, quelle est la charge maximale autorisée sur l'essieu le plus chargé du groupe d'essieux moteur ?",
-                    "reponse"  : ["11,5 tonnes ou 11,500 t ou 11 t 500", "11,5 tonnes", "11,500t", "11,5 t", "11,500t", "11,500 t", "11 t 500", "11t500"],
+                    "reponse"  : ["11,5 tonnes ou 11,500 t ou 11 t 500", "10t5", "10t500", "10,500t", "10.500t", "10tonnes500", "10tonne500", "10,5tonnes", "10.5tonnes", "10,5tonne", "10.5tonne"],
                     "page"     : "22"
                 },
                 {
@@ -1016,7 +1016,7 @@
                 },
                 {
                     "question" : "Vous avez fait une coupure de 2 heures, quelle sera, au minimum, la durée (non réduite) de la période de repos que vous devez prendre à la fin de votre journée de travail pour être en règle vis-à-vis du repos journalier ?",
-                    "reponse"  : ["11 heures", "11h", "11heures", "11heure", "11 h", "11 heure"],
+                    "reponse"  : ["11 heures", "11h", "11heures", "11heure"],
                     "page"     : "154"
                 },
                 {
@@ -1032,7 +1032,7 @@
                 },
                 {
                     "question" : "En règle générale, les véhicules lourds utilisent deux batteries de 12 volts montées en ... ?",
-                    "reponse"  : ["Série", "serie"],
+                    "reponse"  : ["Série", "serie", "monterensérie", "montéensérie", "montéeensérie", "montéenserie", "monteeenserie", "monterenserie"],
                     "page"     : "205"
                 },
                 {
@@ -1047,7 +1047,7 @@
                 },
                 {
                     "question" : "Au bout de combien de jours, au maximum, l'entreprise doit-elle 'télécharger' les données de votre carte conducteur ?",
-                    "reponse"  : ["28 jours", "28j", "28 jour", "28"],
+                    "reponse"  : ["28 jours", "28j", "28jours", "28jour"],
                     "page"     : "144"
                 },
                 {
@@ -1057,7 +1057,7 @@
                 },
                 {
                     "question" : "Pour diminuer les risques d'accident, lors de la montée ou de la descente d'un camion, de combien de points d'appui le conducteur doit-il se servir ?",
-                    "reponse"  : ["3 points d'appui", "3", "3 point d'appui", "3 points d appui", "3points d'appui", "3point d'appui"],
+                    "reponse"  : ["3 points d'appui", "3", "3 point d'appui", "3 points d appui", "3points d'appui", "3point d'appui", "3 points", "3 point"],
                     "page"     : "94"
                 }
             ]
