@@ -49,7 +49,7 @@
                     "page"     : "115"
                 },
                 {
-                    "question" : "Les accidents corporels entre un poid lourd et une voiture se produisent en majorité dans les intersections. Vrai ou Faux ?",
+                    "question" : "Les accidents corporels entre un poids lourd et une voiture se produisent en majorité dans les intersections. Vrai ou Faux ?",
                     "reponse"  : "Faux",
                     "page"     : "164"
                 }
@@ -599,7 +599,7 @@
                     "question" : "Ce signal concerne uniquement les véhicules affectés au transport de marchandises excédant 3500 kg de PTAC ?",
                     "reponse"  : "Non",
                     "page"     : "55",
-                    "img"      : { "src" : "03_01_40.png", "alt" : "Interdiction tourner à gauche poid lourd" }
+                    "img"      : { "src" : "03_01_40.png", "alt" : "Interdiction tourner à gauche poids lourd" }
                 },
                 {
                     "question" : "Vous conduisez un véhicule de 38 tonnes de PTRA. En règle générale, quand débute l'interdiction de circulation en fin de semaine ?",
@@ -660,7 +660,7 @@
                     "page"     : "83"
                 },
                 {
-                    "question" : "Mon camion a un PTRA de 40 tonnes et un PV (poid vide) de 10 tonnes. Si le camion est vide, ai-je le droit d'atteler une remorque dont le poids réel est de 15 tonnes ?",
+                    "question" : "Mon camion a un PTRA de 40 tonnes et un PV (poids vide) de 10 tonnes. Si le camion est vide, ai-je le droit d'atteler une remorque dont le poids réel est de 15 tonnes ?",
                     "reponse"  : "Non",
                     "page"     : "21"
                 },
@@ -713,7 +713,7 @@
                     "page"     : "83"
                 },
                 {
-                    "question" : "Mon camion à un PTRA de 40 tonnes et un PV (poid vide) de 10 tonnes. Si le camion est vide, ai-je le droit d'atteler une remorque dont le poids réel est de 13 tonnes  ?",
+                    "question" : "Mon camion à un PTRA de 40 tonnes et un PV (poids vide) de 10 tonnes. Si le camion est vide, ai-je le droit d'atteler une remorque dont le poids réel est de 13 tonnes  ?",
                     "reponse"  : "Oui",
                     "page"     : "21"
                 },
