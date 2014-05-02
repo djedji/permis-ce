@@ -103,7 +103,7 @@
                 },
                 {
                     "question" : "Quand je circule en Espagne, quel numéro de téléphone est-il conseillé d'utiliser pour appeler les secours à partir d'un portable ?",
-                    "reponse"  : "112",
+                    "reponse"  : ["Le 112", "le112", "112", "lenumero112", "lenuméro112"],
                     "page"     : "170"
                 }
             ],
