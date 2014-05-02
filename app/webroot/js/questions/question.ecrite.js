@@ -106,6 +106,21 @@ App.prototype.format_time_for_cookie = function() {
     return r;
 };
 
+App.prototype.format_response_user = function(respUser) {
+    var r = "";
+    if(respUser)  {
+        var respUser_arr = respUser.split(' '); 
+        var lgtRespUser = respUser_arr.length;
+        for(var i = 0; i < lgtRespUser; i++) {
+            respUser_arr[i] = respUser_arr[i].toLowerCase();
+            respUser_arr[i] = respUser_arr[i].trim();
+            r += respUser_arr[i];
+        } 
+    }
+    console.log(r);
+    return r;
+}
+
 // Compare response User to database
 App.prototype.compare_response = function() { // elem = inputRespUser
     var self = this;
@@ -120,8 +135,7 @@ App.prototype.compare_response = function() { // elem = inputRespUser
     for(var index in defaultResponse) {
 //        console.log(responseUser[index])
         respUser = responseUser[index] || "nothing";
-        respUser = respUser.toLowerCase();
-        respUser = respUser.trim();
+        respUser = self.format_response_user(respUser);
 
         defaultResp = defaultResponse[index];
 
