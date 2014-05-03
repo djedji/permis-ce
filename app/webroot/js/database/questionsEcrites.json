@@ -560,7 +560,7 @@
                 },
                 {
                     "question" : "En transport public, à bord de votre véhicule, vous devez posséder l'original ou une copie conforme de la licence communautaire de transport ?",
-                    "reponse"  : ["Une copie conforme", "copieconforme", "lacopieconformedelalicencecommunautaire", "unecopieconformedelalicencecommunautaire"],
+                    "reponse"  : ["Une copie conforme", "copieconforme", "lacopieconformedelalicencecommunautaire", "unecopieconformedelalicencecommunautaire", "copieconformedelalicencecommunautaire"],
                     "page"     : "118"
                 },
                 {
