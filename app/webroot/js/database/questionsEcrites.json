@@ -237,7 +237,7 @@
                 },
                 {
                     "question" : "Le circuit d'alimentation d'un moteur diesel se compose, entre autres éléments, de deux pompes : l'une dites pompe d'injection haute pression, l'autre dite pompe ... ?",
-                    "reponse"  : ["D'alimentaion", "alimentation", "d'alimentation", "d alimentation", "pomped'alimentation", "pomped alimentation", "pompedalimentation"],
+                    "reponse"  : ["D'alimentaion", "alimentation", "d'alimentation", "dalimentation", "pomped'alimentation", "pompedalimentation", "pompedalimentation"],
                     "page"     : "188"
                 },
                 {
@@ -279,7 +279,7 @@
                 },
                 {
                     "question" : "Si le véhicule que je conduis est soumis à la taxe à l'essieu, lors d'un contrôle routier, faut-il présenter l'original ou la photocopie de l'attestation de paiement ?",
-                    "reponse"  : ["L'original", "original", "l original"],
+                    "reponse"  : ["L'original", "original", "loriginal"],
                     "page"     : "119"
                 },
                 {
@@ -820,7 +820,7 @@
                 },
                 {
                     "question" : "En principe, le ralentisseur hydraulique est situé sur ... ?",
-                    "reponse"  : [ "L'arbre de transmission", "l'arbredetransmission", "l arbredetransmission", "arbredetransmission", "transmission", "latransmission"],
+                    "reponse"  : [ "L'arbre de transmission", "l'arbredetransmission", "larbredetransmission", "arbredetransmission", "transmission", "latransmission"],
                     "page"     : "203"
                 },
                 {
@@ -878,7 +878,7 @@
                 },
                 {
                     "question" : "Comment appelle-t-on les transports exécutés à titre onéreux pour le compte d'un client ?",
-                    "reponse"  : ["Publics ou Compte d'autrui", "transportpublic", "transportpublics", "transportpourlecompted autrui", "transportpourlecompted'autrui", "pourlecompted'autrui", "pourlecompted autrui", "compted'autrui", "compted autrui", "public", "publics"],
+                    "reponse"  : ["Publics ou Compte d'autrui", "transportpublic", "transportpublics", "transportpourlecomptedautrui", "transportpourlecompted'autrui", "pourlecompted'autrui", "pourlecomptedautrui", "compted'autrui", "comptedautrui", "public", "publics"],
                     "page"     : "114"
                 },
                 {
@@ -989,7 +989,7 @@
                 },
                 {
                     "question" : "Vous chargez du sable dans un véhicule isolé, quelle est la charge maximale autorisée sur l'essieu le plus chargé du groupe d'essieux moteur ?",
-                    "reponse"  : ["11,5 tonnes ou 11,500 t ou 11 t 500", "10t5", "10t500", "10,500t", "10.500t", "10tonnes500", "10tonne500", "10,5tonnes", "10.5tonnes", "10,5tonne", "10.5tonne"],
+                    "reponse"  : ["11,5 tonnes ou 11,500 t ou 11 t 500", "11t5", "11t500", "11,500t", "11.500t", "11tonnes500", "11tonne500", "11,5tonnes", "11.5tonnes", "11,5tonne", "11.5tonne"],
                     "page"     : "22"
                 },
                 {
@@ -1057,7 +1057,7 @@
                 },
                 {
                     "question" : "Pour diminuer les risques d'accident, lors de la montée ou de la descente d'un camion, de combien de points d'appui le conducteur doit-il se servir ?",
-                    "reponse"  : ["3 points d'appui", "3", "3pointd'appui", "3pointsd'appui", "3pointsd appui", "3pointd appui", "3points", "3point"],
+                    "reponse"  : ["3 points d'appui", "3", "3pointd'appui", "3pointsd'appui", "3pointsdappui", "3pointdappui", "3points", "3point"],
                     "page"     : "94"
                 }
             ]
