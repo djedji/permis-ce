@@ -141,7 +141,7 @@
                 },
                 {
                     "question" : "Qu'aspire le moteur diesel lors du premier temps appelé admission ?",
-                    "reponse"  : ["De l'air", "air", "del'air", "delair"],
+                    "reponse"  : ["De l'air", "air", "del'air", "del air"],
                     "page"     : "186"
                 },
                 {
@@ -237,7 +237,7 @@
                 },
                 {
                     "question" : "Le circuit d'alimentation d'un moteur diesel se compose, entre autres éléments, de deux pompes : l'une dites pompe d'injection haute pression, l'autre dite pompe ... ?",
-                    "reponse"  : ["D'alimentaion", "alimentation", "d'alimentation", "dalimentation"],
+                    "reponse"  : ["D'alimentaion", "alimentation", "d'alimentation", "d alimentation"],
                     "page"     : "188"
                 },
                 {
@@ -820,7 +820,7 @@
                 },
                 {
                     "question" : "En principe, le ralentisseur hydraulique est situé sur ... ?",
-                    "reponse"  : [ "L'arbre de transmission", "l'arbredetransmission", "larbredetransmission", "arbredetransmission", "transmission"],
+                    "reponse"  : [ "L'arbre de transmission", "l'arbredetransmission", "l arbredetransmission", "arbredetransmission", "transmission" "latransmission"],
                     "page"     : "203"
                 },
                 {
@@ -878,7 +878,7 @@
                 },
                 {
                     "question" : "Comment appelle-t-on les transports exécutés à titre onéreux pour le compte d'un client ?",
-                    "reponse"  : ["Publics ou Compte d'autrui", "transportpublic", "transportpublics", "transportpourlecomptedautrui", "transportpourlecompted'autrui", "pourlecompted'autrui", "pourlecomptedautrui", "compted'autrui", "comptedautrui", "public", "publics"],
+                    "reponse"  : ["Publics ou Compte d'autrui", "transportpublic", "transportpublics", "transportpourlecompted autrui", "transportpourlecompted'autrui", "pourlecompted'autrui", "pourlecompted autrui", "compted'autrui", "compted autrui", "public", "publics"],
                     "page"     : "114"
                 },
                 {
@@ -1042,7 +1042,7 @@
                 },
                 {
                     "question" : "Quelle est la longueur maximale autorisée d'un ensemble porte-voitures ?",
-                    "reponse"  : ["20,35 mètres", "20,35m", "20,35 m", "20,35 metres", "20,35 mètre", "20,35metres", "20,35mètre"],
+                    "reponse"  : ["20,35 mètres", "20,35m", "20m35", "20,35mètres", "20,35mètre", "20,35metres", "20,35metre"],
                     "page"     : "17"
                 },
                 {
@@ -1057,7 +1057,7 @@
                 },
                 {
                     "question" : "Pour diminuer les risques d'accident, lors de la montée ou de la descente d'un camion, de combien de points d'appui le conducteur doit-il se servir ?",
-                    "reponse"  : ["3 points d'appui", "3", "3 point d'appui", "3 points d appui", "3points d'appui", "3point d'appui", "3 points", "3 point"],
+                    "reponse"  : ["3 points d'appui", "3", "3pointd'appui", "3pointsd'appui", "3pointsd appui", "3pointd appui", "3points", "3point"],
                     "page"     : "94"
                 }
             ]
