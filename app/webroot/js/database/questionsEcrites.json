@@ -237,7 +237,7 @@
                 },
                 {
                     "question" : "Le circuit d'alimentation d'un moteur diesel se compose, entre autres éléments, de deux pompes : l'une dites pompe d'injection haute pression, l'autre dite pompe ... ?",
-                    "reponse"  : ["D'alimentaion", "alimentation", "d'alimentation", "d alimentation"],
+                    "reponse"  : ["D'alimentaion", "alimentation", "d'alimentation", "d alimentation", "pomped'alimentation", "pomped alimentation", "pompedalimentation"],
                     "page"     : "188"
                 },
                 {
@@ -279,7 +279,7 @@
                 },
                 {
                     "question" : "Si le véhicule que je conduis est soumis à la taxe à l'essieu, lors d'un contrôle routier, faut-il présenter l'original ou la photocopie de l'attestation de paiement ?",
-                    "reponse"  : ["L'original", "original", "loriginal"],
+                    "reponse"  : ["L'original", "original", "l original"],
                     "page"     : "119"
                 },
                 {
@@ -820,7 +820,7 @@
                 },
                 {
                     "question" : "En principe, le ralentisseur hydraulique est situé sur ... ?",
-                    "reponse"  : [ "L'arbre de transmission", "l'arbredetransmission", "l arbredetransmission", "arbredetransmission", "transmission" "latransmission"],
+                    "reponse"  : [ "L'arbre de transmission", "l'arbredetransmission", "l arbredetransmission", "arbredetransmission", "transmission", "latransmission"],
                     "page"     : "203"
                 },
                 {
