@@ -2,10 +2,10 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-#css_dir = "css/home"
-#sass_dir = "scss/home"
-css_dir = "css/pages/questionsEcrites"
-sass_dir = "scss/pages/questionsEcrites"
+css_dir = "css/home"
+sass_dir = "scss/home"
+#css_dir = "css/pages/questionsEcrites"
+#sass_dir = "scss/pages/questionsEcrites"
 #css_dir = "css/pages/questionsOrales"
 #sass_dir = "scss/pages/questionsOrales"
 images_dir = "img"

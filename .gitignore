@@ -1,18 +1,20 @@
 # User specific & automatically generated files #
 #################################################
-app/Config/database.php
-app/Config/email.php
-app/Config/core.php
-app/Config/bootstrap.php
-
-app/tmp/cache/persistent/.
+/app/Config/database.php
+/app/Config/email.php
+/app/Config/email.php.default
+/app/Config/core.php
+/app/Config/bootstrap.php
+/app/tmp/*
+/.gitignore
 /lib/*
 /plugins/*
 /vendors/*
 /build/*
 /dist/*
 /tags/*
-/.idea
+/.idea/*
+
 
 # OS generated files #
 ######################

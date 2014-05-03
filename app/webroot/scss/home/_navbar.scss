@@ -25,8 +25,9 @@
             @include btn-blue();
             @include border-radius(0 0 6px 6px);
             display: inline-block;
-            font-size: 18px;
-            font-weight: 400;
+			font-family: arial, sans-serif;
+            font-size: 15px;
+            font-weight: normal;
             height: 29px;
             line-height: 1.33;
             margin: 0;
