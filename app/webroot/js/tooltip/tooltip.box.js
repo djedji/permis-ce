@@ -39,7 +39,7 @@
 
         $contTooltip.css( { "left" : window_center + 'px', 'display' : 'block', "width" : params.width + 'px', 'top' : params.posTop + 'px' } );
         $overlay.stop().animate({ 'opacity' : .8 }, 300, 'linear');
-        $animateContainer.stop().animate( { 'top' : 0 + 'px' }, 600, 'easeOutCirc', function() {
+        $animateContainer.stop().animate( { 'top' : 0 + 'px' }, 1000, 'easeOutCirc', function() {
             if(params.callbackAfterAnim) params.callbackAfterAnim();
         });
 
