@@ -21,14 +21,16 @@
         params = $.extend({}, defaults, params);
 
         var tpl_tooltip = '<div class="containers-tooltipFind"><div class="container-tooltipFind"><div>';
+        
         tpl_tooltip += params.tpl + tpl_endTooltip;
-
+        
         $body.append(tpl_overlay);
         $body.append(tpl_tooltip);
 
         $overlay = $(".overlay-tooltipFind");
         $contTooltip = $(".containers-tooltipFind");
         $animateContainer = $(".container-tooltipFind");
+
         $('.current-chapitre').html('Chapitre n ° ' + params.numCurrentChapitre);
         if(params.btnClose) $btnClose = $(".btn-closeTooltipFind");
         var window_center = ($(window).width() / 2) - (params.width / 2);
@@ -37,7 +39,7 @@
 
         $contTooltip.css( { "left" : window_center + 'px', 'display' : 'block', "width" : params.width + 'px', 'top' : params.posTop + 'px' } );
         $overlay.stop().animate({ 'opacity' : .8 }, 300, 'linear');
-        $animateContainer.stop().animate( { 'top' : 0 + 'px' }, 600, 'easeOutCirc', function() {
+        $animateContainer.stop().animate( { 'top' : 0 + 'px' }, 1000, 'easeOutCirc', function() {
             if(params.callbackAfterAnim) params.callbackAfterAnim();
         });
 
