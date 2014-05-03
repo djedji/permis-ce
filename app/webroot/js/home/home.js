@@ -40,7 +40,7 @@ $(document).ready(function() {
         if(!$.isEmptyObject(valueCookie)) {
             for(var index in valueCookie) {
                 if(valueCookie[index].n != '-1') {
-                    if(valueCookie[index].b >= 8) {
+                    if(valueCookie[index].b >= 10) {
                         $($fiche[index]).addClass( 'done' );
                     } else {
                         $($fiche[index]).addClass( 'mistake' );
