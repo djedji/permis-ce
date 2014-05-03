@@ -117,7 +117,6 @@ App.prototype.format_response_user = function(respUser) {
             r += respUser_arr[i];
         } 
     }
-    console.log(r);
     return r;
 }
 
@@ -357,11 +356,12 @@ App.prototype.init = function() {
         $next.trigger("blur");
     }
 
-    function focus_input_respUser($self, num) { // num = input user tabIndex non input user vrai index
+    function focus_input_respUser($self, num, ajustPosInput) { // num = input user tabIndex non input user vrai index
         var start_index = self.global_obj.startIndex;
         var $firstInputRespUser = $respUser.eq(0);
         self.global_obj.numCurrentInputRespUser = num;
-        ajust_pos_input($self);
+        if(ajustPosInput)
+            ajust_pos_input($self);
 
         // start application si num = start_index et l'application n'est pas déjà démarré
         if(num == start_index && (!self.global_obj.isStarted) ) {
@@ -391,16 +391,18 @@ App.prototype.init = function() {
             }
 
             if(self.global_obj.isStarted) {
-                if(self.global_obj.inputUserVisited.indexOf(num)) self.global_obj.inputUserVisited.push(num);
+                if(self.global_obj.inputUserVisited.indexOf(num) == -1) self.global_obj.inputUserVisited.push(num);
+                
             }
         }
     }
 
     // click on input response user
-    $respUser.click(function() {
+    $respUser.click(function(event) {
+        event.stopImmediatePropagation();
         var $self = $(this);
         var num = $self.attr('tabindex');
-        focus_input_respUser($self, num);
+        focus_input_respUser($self, num, false);
     });
 
     $respUser.focusin(function() {
@@ -410,12 +412,12 @@ App.prototype.init = function() {
 
         if( self.global_obj.tabActive ) {
             self.global_obj.tabActive = null;
-            focus_input_respUser($self, num);
+            focus_input_respUser($self, num, true);
         }
 
         if( self.global_obj.enterActive ) {
             self.global_obj.enterActive = null;
-            focus_input_respUser($self, num);
+            focus_input_respUser($self, num, true);
         }
     });
 
