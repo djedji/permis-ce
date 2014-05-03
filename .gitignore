@@ -2,7 +2,6 @@
 #################################################
 /app/Config/database.php
 /app/Config/email.php
-/app/Config/email.php.default
 /app/Config/core.php
 /app/Config/bootstrap.php
 /app/tmp/*
