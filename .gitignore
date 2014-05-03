@@ -6,7 +6,7 @@
 /app/Config/core.php
 /app/Config/bootstrap.php
 /app/tmp/*
-/.gitignore
+
 /lib/*
 /plugins/*
 /vendors/*
