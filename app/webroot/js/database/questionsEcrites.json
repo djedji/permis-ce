@@ -491,7 +491,7 @@
                 },
                 {
                     "question" : "Comment s'appelle le document qui doit accompagner la marchandise lors de tout transport pour compte d'autrui ?",
-                    "reponse"  : ["La lettre de voiture", "lettredevoiture", "lalettredevoiture],
+                    "reponse"  : ["La lettre de voiture", "lettredevoiture", "lalettredevoiture"],
                     "page"     : "121"
                 },
                 {
