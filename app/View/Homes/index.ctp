@@ -3,7 +3,7 @@
 <?php $this->start('navbar'); ?>
     <div class="navbar-top-home">
         <div>
-            <button type="button" id="btn-find">FIND</button>
+            <button type="button" id="btn-find">CHAPITRES</button>
             <button type="button" id="btn-score">SCORE</button>
             <button type="button" id="btn-reset">RESET</button>
         </div>
