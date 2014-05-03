@@ -142,6 +142,8 @@ App.prototype.compare_response = function() { // elem = inputRespUser
             lgt = defaultResp.length;
             for(i = 0; i < lgt; i++) {
                 defaultResp[i] = defaultResp[i].trim();
+                // console.log("Réponse user : " + respUser)
+                // console.log("Default réponse : " + defaultResp[i].toLowerCase())
                 if(respUser == defaultResp[i].toLowerCase()) {
                     bonneReponse++;
                     flag = true;
@@ -166,7 +168,8 @@ App.prototype.compare_response = function() { // elem = inputRespUser
             $inputDefaultResp.eq(index).val(defaultResp).addClass('op-default');
 
             defaultResp = defaultResp.toLowerCase();
-
+// console.log("Réponse user dans else : " + respUser)
+// console.log("Default réponse dans else : " + defaultResp)
             if(respUser == defaultResp) {
                 bonneReponse++;
                 $inputRespUser.eq(index).addClass('bg-success');
