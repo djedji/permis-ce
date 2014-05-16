@@ -1,4 +1,4 @@
-<?php echo $this->Html->css('pages/questionsEcrites/app', array('inline' => false)); ?>
+<?php $this->Html->css('pages/questionsEcrites/app', array('inline' => false)); ?>
 
 <?php $this->start('navbar'); ?>
     <table class="navbar-top-page table">
@@ -21,54 +21,80 @@
         <table class="table">
             <thead>
             <tr>
-                <th style="width: 10px;text-align: center"></th>
-                <th style="width: 720px;"></th>
-                <th style="width: 300px;"></th>
-                <th style="width: 110px;"></th>
+                <th style="width: 54px;"></th>
+                <th style="width: 651px;"></th>
+                <th style="width: 290px;"></th>
+                <th style="width: 104px;"></th>
             </tr>
             </thead>
             <tbody>
                 <?php $i = 1; ?>
                 <?php foreach ($fiches as $fiche): ?>
-                    <tr>
-                        <td class="table-num">
-                            <span><?php echo $i; ?></span>
-                        </td>
-                        <td>
-                            <?php $flag_img = false; ?>
-                            <?php if(isset($fiche->img)): ?>
+                    <?php if($i == 1): ?>
+                        <tr>
+                            <td class="table-num">
+                                <span><?php echo $i; ?></span>
+                            </td>
+                            <td>
+                                <?php $flag_img = false; ?>
+                                <?php if(isset($fiche->img)): ?>
+                                        <?php $flag_img = true; ?>
+                                        <span class="table-img-panneau"><?php echo $this->Html->image($fiche->img->src, array('alt' => $fiche->img->alt)); ?></span>
+                                <?php endif; ?>
+                                <?php
+                                    if($flag_img) {
+                                        $flag_img = false;
+                                        echo '<span style="padding-left:78px;display:block;">' . html_entity_decode($fiche->question) . '</span>';
+                                    } else {
+                                        echo html_entity_decode($fiche->question);
+                                    }
+                                ?>
+                            </td>
+                            <td class="table-response <?php if($i == 1) { echo ' start-q-e'; } ?>">
+                                <input type="text" name="responseUser" class="response-user form-control" tabindex="<?php echo $i; ?>">
+                                <input type="text" name="defaultResponse" class="default-response" readonly/>
+                            </td>
+                            <td class="txtac">
+                                Page : <span style="color: #118EF8; font-weight:bold;"><?php echo $fiche->page; ?></span>
+                            </td>
+                        </tr>
+                        <?php $i++; ?>
+                    <?php else: ?>
+                        <tr class="op3">
+                            <td class="table-num">
+                                <span><?php echo $i; ?></span>
+                            </td>
+                            <td>
+                                <?php $flag_img = false; ?>
+                                <?php if(isset($fiche->img)): ?>
                                     <?php $flag_img = true; ?>
                                     <span class="table-img-panneau"><?php echo $this->Html->image($fiche->img->src, array('alt' => $fiche->img->alt)); ?></span>
-                            <?php endif; ?>
-                            <?php
+                                <?php endif; ?>
+                                <?php
                                 if($flag_img) {
                                     $flag_img = false;
                                     echo '<span style="padding-left:78px;display:block;">' . html_entity_decode($fiche->question) . '</span>';
                                 } else {
                                     echo html_entity_decode($fiche->question);
                                 }
-                            ?>
-                        </td>
-                        <td class="table-response <?php if($i == 1) { echo ' start-q-e'; } ?>">
-                            <?php if($i == 1): ?>
-                                <input type="text" name="responseUser" class="response-user form-control op-default pulse" tabindex="<?php echo $i; ?>">
+                                ?>
+                            </td>
+                            <td class="table-response <?php if($i == 1) { echo ' start-q-e'; } ?>">
+                                <input type="text" name="responseUser" class="response-user form-control" tabindex="<?php echo $i; ?>">
                                 <input type="text" name="defaultResponse" class="default-response" readonly/>
-                            <?php else: ?>
-                                <input type="text" name="responseUser" class="response-user form-control input-disabled" tabindex="<?php echo $i; ?>">
-                                <input type="text" name="defaultResponse" class="default-response" readonly/>
-                            <?php endif; ?>
-                        </td>
-                        <td>
-                            Page : <span style="color: #118EF8; font-weight:bold;"><?php echo $fiche->page; ?></span>
-                        </td>
-                    </tr>
-                    <?php $i++; ?>
+                            </td>
+                            <td class="txtac">
+                                Page : <span style="color: #118EF8; font-weight:bold;"><?php echo $fiche->page; ?></span>
+                            </td>
+                        </tr>
+                        <?php $i++; ?>
+                    <?php endif; ?>
                 <?php endforeach; ?>
             <tr class="table-reponse">
                 <td></td>
                 <td id="score"><span>0</span><span>0</span><span class="num">Score : <b>-- / 10</b></span></td>
                 <td>
-                    <button style="width:130px;margin-right: 6px;" type="button" id="btn-toggleResp" class="btn-page-q-e" tabindex="11">Voir Réponses</button>
+                    <button style="width:130px;margin-right: 10px;" type="button" id="btn-toggleResp" class="btn-page-q-e" tabindex="11">Voir Réponses</button>
                     <?php if($numCurrentFiche < 20): ?>
                         <a tabindex="12" style="width:120px;" class="btn-page-q-e" href="<?php echo $this->Html->url(array('controller' => 'questionsEcrites', 'action' => 'index', 'slug' => 'fiche', 'id' => ( (($numCurrentFiche+1) < 20) ? ($numCurrentFiche+1) : 20 ) )); ?>">Suivante <span class="glyphicon glyphicon-chevron-right" style="font-size: 14px;"></span></a>
                     <?php endif; ?>
@@ -101,5 +127,5 @@
 </div>
 <?php $this->end(); ?>
 
-<?php $this->Html->script('questions/question.ecrite', array('inline' => false)); ?>
+<?php $this->Html->script('questions/questions.ecrites', array('inline' => false)); ?>
 

@@ -1,4 +1,4 @@
-<?php echo $this->Html->css('pages/questionsOrales/app', array('inline' => false)); ?>
+<?php $this->Html->css('pages/questionsOrales/app', array('inline' => false)); ?>
 
 <?php $this->start('navbar'); ?>
 <table class="navbar-top-page table">

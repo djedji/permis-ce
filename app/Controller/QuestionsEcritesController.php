@@ -3,11 +3,9 @@
 
     class QuestionsEcritesController extends AppController {
 
-        public $uses = array('AppModel');
-
-        public function index($slug, $id) {
+        public function index($slug = null, $id = null) {
             if($id) {
-                $fiches = $this->AppModel->questionsEcrites();
+                $fiches = $this->questionsEcrites;
                 $nbFiches = count($fiches);
                 if($id <= $nbFiches) {
                     $ficheName = 'Fiche n° ' . $id;
@@ -24,7 +22,7 @@
 
         public function ajax() {
             if($this->request->is('ajax')) {
-                $fiches = $this->AppModel->questionsEcrites();
+                $fiches = $this->questionsEcrites;
                 $this->autoLayout = null;
                 $this->autoRender = null;
                 $numFiche = $this->request->query['numFiche'];
@@ -38,7 +36,7 @@
                     echo json_encode(array("numFicheError" => $numFiche));
                 }
             } else {
-                echo json_encode(array("ajaxError" => true));
+                $this->redirect('/');
             }
         }
     }

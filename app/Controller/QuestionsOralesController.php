@@ -4,11 +4,10 @@ App::uses('AppController', 'Controller');
 
 class QuestionsOralesController extends AppController {
 
-    public $uses = array('AppModel');
 
     public function index($slug, $id) {
         if($id) {
-            $fiches = $this->AppModel->questionsOrales();
+            $fiches = $this->questionsOrales;
             $nbFiches = count($fiches);
             if($id <= $nbFiches) {
                 $ficheName = 'Fiche n° ' . $id;

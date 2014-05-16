@@ -1,10 +1,11 @@
-<?php echo $this->Html->css('home/app'); ?>
+<?php $this->Html->css('home/app', array('inline' => false)); ?>
 
 <?php $this->start('navbar'); ?>
     <div class="navbar-top-home">
         <div>
             <button type="button" id="btn-find">CHAPITRES</button>
             <button type="button" id="btn-score">SCORE</button>
+            <button type="button" id="btn-refaire" <?php if(empty($fichesEchouees)) echo 'class="no-mistake"'; ?>>ECHOU&Eacute;ES</button>
             <button type="button" id="btn-reset">RESET</button>
         </div>
     </div>

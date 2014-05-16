@@ -31,6 +31,10 @@ input[type="radio"]:focus {
 /* == mon css                     */
 /* ----------------------------- */
 
+.op3 {
+    opacity: .3;
+}
+
 .bck-black {
     background: black;
     color: white;

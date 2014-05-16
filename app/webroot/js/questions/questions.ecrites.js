@@ -1,306 +1,517 @@
-$(document).ready(function() {
-    var _timestamp = new Date().getTime();
-    var _currentTimeStamp;
-    var $btnResponse = $("#btn-toggleResp");
-    var $responseUser = $('.response-user');
-    var $score = $("span > .num", "#score");
-    var $reponseIn = $('.default-response');
-    var reponseUser = document.getElementsByClassName('response-user');
-    var resIn, resOut = [];
-    var _nbFiches;
-    var newFiche = true;
-    var pattern = /fiche\-([0-9]+)/i;
-    var currentIndexFiche = window.location.pathname;
-    var matches = currentIndexFiche.match(pattern);
-    var _windowHasEventKeyup = true, sauvegarde_index = [];
+function App() {}
 
+App.prototype.global_obj = {
+    "nbFiches" : 20, // défini statiquement le nombre de fiches totals pour éviter un calcul
+    "startIndex" : 1,
+    "currentIndexFiche" : null,
+    "$htmlBody" : $("html, body"),
+    "$tableTbodyTr" : $(".table > tbody > tr"),
+    "$allInput" : $(".table > tbody > tr > td > input"),
 
-    function write_cookie(valCookie) {
-        var readCookie = read_cookie(valCookie);
-        $.cookie.json = true;
-        $.cookie('fiches', readCookie, { "path" : "/" });
+    // a réinitialiser
+    "isStarted" : null,
+    "currentTabIndex" : null,
+    "numCurrentInputRespUser" : null,
+    "arrResponseUser" : [],
+    "arrNumRespUser" : [],
+    "arrScore" : [],
+    "inputUserVisited" : [],
+    "windowHasEventKeyup" : false,
+    "responseMistake" : null,
+    "fichesMistake" : [],
+
+    "$score" : $("#score > span"),
+    "$respUser" : $(".response-user"),
+    "$defaultResp" : $(".default-response"),
+    "arrDefaultResp" : [],
+    "lgtDefaultResp" : 0,
+    "$timeFiche" : $(".time-q-e"),
+    "$btnToggleResponse" : $("#btn-toggleResp"),
+    "$opacityTr" : $(".op3"),
+    "timer" : null,
+    "timer_minute" : null,
+    "timer_second" : null,
+    "tabActive" : null,
+    "enterActive" : null
+};
+
+App.prototype.write_cookie_echouees = function() {
+    var self = this;
+    var i = 0;
+    var readCookie = $.cookie('fichesEchouees');
+
+    // si cookie exist faire mise à jour
+    if(readCookie) {
+        self.update_cookie_fichesEchouees(readCookie);
     }
 
-    function read_cookie(valCookie) {
-        $.cookie.json = true;
-        var valueCookie = $.cookie('fiches');
-        var i, r = [];
-
-        if($.isEmptyObject(valueCookie)) {
-            for(i = 0; i < _nbFiches; i++) {
-                if(i == (currentIndexFiche-1)) {
-                    r.push(valCookie);
-                } else {
-                    r.push({'n':'-1','m':'-1','b':'-1','s':'-1'});
-                }
-            }
-        } else {
-            for(i = 0; i < _nbFiches; i++) {
-                if( (valueCookie[i].numFiche != '-1') && (i != (currentIndexFiche-1)) ) {
-                    r.push(valueCookie[i]);
-                } else {
-                    if(i == (currentIndexFiche-1)) r.push(valCookie);
-                    else r.push({'n':'-1','m':'-1','b':'-1','s':'-1'});
-                }
-            }
+    // si cookie n'exist pas alors écrire cookie
+    else {
+        self.global_obj.fichesMistake = [];
+        for(i = 0; i < self.global_obj.nbFiches; i++) {
+            self.global_obj.fichesMistake.push(["0,0,0,0,0,0,0,0,0,0"]);
         }
 
-        return r;
+        self.global_obj.fichesMistake[(self.global_obj.currentIndexFiche - 1)] = self.global_obj.responseMistake;
+
+        self.global_obj.fichesMistake = self.global_obj.fichesMistake.join(';');
+
+        $.cookie('fichesEchouees', self.global_obj.fichesMistake, { "path" : "/" });
+    }
+};
+
+App.prototype.update_cookie_fichesEchouees = function(valCookie) {
+    var self = this;
+    var numCurrentFiche = self.global_obj.currentIndexFiche - 1;
+    var value_cookie = valCookie.split(';');
+
+    value_cookie[numCurrentFiche] = self.global_obj.responseMistake;
+    value_cookie = value_cookie.join(';');
+
+    $.cookie('fichesEchouees', value_cookie, { "path" : "/" });
+};
+
+App.prototype.write_cookie = function(valCookie) { // valCookie = string 'num,mr,time'
+    var self = this;
+    // vérif si cookie exist and read data
+    var readCookie = self.read_cookie(valCookie);
+    readCookie = readCookie.join(';');
+    $.cookie('fiches', readCookie, { "path" : "/" });
+};
+
+App.prototype.read_cookie = function(valCookie) { // valCookie = string 'num,mr,time'
+    var self = this;
+    var valueCookie = $.cookie('fiches');
+    var i, r = [];
+
+    if(valueCookie) {
+        r = self.update_cookie(valCookie, valueCookie); // valueCookie = string
+    } else {
+        for(i = 0; i < self.global_obj.nbFiches; i++) {
+            if(i == (self.global_obj.currentIndexFiche-1)) {
+                r.push(valCookie);
+            } else {
+                // n = numéro fiche, n = mauvaise réponse, n = time
+                r.push('n,n,n');
+            }
+        }
     }
 
-//    // bug click button response/supprimer
-//    $btnResponse.mouseenter(function() {
-//        $(this).css( { 'background':  '#2f9de9' } );
-//    })
-//        .mouseleave(function() {
-//            $(this).css( { 'background':  '#2F8AD4' } );
-//        });
+    return r;
+};
 
-    function start_window_keyup() {
+App.prototype.update_cookie = function(valCookie, valueCookie) { // valCookie = string 'num,mr,time'
+    var self = this, i = 0;
+    valueCookie = valueCookie.split(';');
+    valueCookie[self.global_obj.currentIndexFiche - 1] = valCookie;
+    return valueCookie;
+};
+
+App.prototype.start_timer = function() {
+    var self = this;
+    var minute, second;
+    var min = self.global_obj.timer_minute;
+    var sec = self.global_obj.timer_second;
+    var r;
+
+    self.global_obj.timer = setTimeout(function() {
+        ++sec;
+        if(sec == 60) { min++; sec = 0 }
+        minute = (min < 10) ? '0' + min + ' min ' : min + ' min ';
+        second = (sec < 10) ? '0' + sec + ' s' : sec + ' s';
+        self.global_obj.timer_minute = min;
+        self.global_obj.timer_second = sec;
+        r = minute + second;
+        self.global_obj.$timeFiche.html(r);
+        if(min <= 7) self.start_timer();
+    }, 1000);
+};
+
+// format time pour stockage cookie
+App.prototype.format_time_for_cookie = function() {
+    var self = this;
+    var minute = self.global_obj.timer_minute;
+    var second = self.global_obj.timer_second;
+    var r;
+    if( (!minute) && (!second) ) {
+        r = 'n';
+    } else {
+        minute = (minute < 10) ? '0' + minute + '.' : minute + '.';
+        second = (second < 10) ? '0' + second : second;
+        r = minute + second;
+    }
+    return r;
+};
+
+App.prototype.format_response_user = function(respUser) {
+    var r = "";
+    if(respUser)  {
+        var respUser_arr = respUser.split(' '); 
+        var lgtRespUser = respUser_arr.length;
+        for(var i = 0; i < lgtRespUser; i++) {
+            respUser_arr[i] = respUser_arr[i].toLowerCase();
+            respUser_arr[i] = respUser_arr[i].trim();
+            r += respUser_arr[i];
+        } 
+    }
+    return r;
+};
+
+// Compare response User to database
+App.prototype.compare_response = function() { // elem = inputRespUser
+    var self = this;
+    var defaultResp, respUser, i, lgt;
+    var defaultResponse = self.global_obj.arrDefaultResp;
+    var responseUser = self.global_obj.arrResponseUser;
+    var $inputRespUser = self.global_obj.$respUser;
+    var $inputDefaultResp = self.global_obj.$defaultResp;
+    var bonneReponse = 0, mauvaiseReponse = 0; //nbQuestions = self.global_obj.lgtDefaultResp;
+    var flag = false;
+
+    self.global_obj.responseMistake = [0,0,0,0,0,0,0,0,0,0];
+
+    for(var index in defaultResponse) {
+//        console.log(responseUser[index])
+        respUser = responseUser[index] || "nothing";
+        respUser = self.format_response_user(respUser);
+
+        defaultResp = defaultResponse[index];
+
+        if($.isArray(defaultResp)) {
+            lgt = defaultResp.length;
+            for(i = 0; i < lgt; i++) {
+                defaultResp[i] = defaultResp[i].trim();
+                if(respUser == defaultResp[i].toLowerCase()) {
+                    bonneReponse++;
+                    flag = true;
+                    break;
+                }
+            }
+
+            if(flag) {
+                flag = false;
+                $inputRespUser.eq(index).addClass('bg-success');
+            } else {
+                mauvaiseReponse++;
+                $inputRespUser.eq(index).addClass('bg-error');
+                self.global_obj.responseMistake[index] = 1;
+            }
+
+            $inputDefaultResp.eq(index).val(defaultResp[0]).addClass('op-default');
+
+        } else {
+            defaultResp = defaultResp.trim();
+
+            $inputDefaultResp.eq(index).val(defaultResp).addClass('op-default');
+
+            defaultResp = defaultResp.toLowerCase();
+            if(respUser == defaultResp) {
+                bonneReponse++;
+                $inputRespUser.eq(index).addClass('bg-success');
+            } else {
+                mauvaiseReponse++;
+                $inputRespUser.eq(index).addClass('bg-error');
+                self.global_obj.responseMistake[index] = 1;
+            }
+        }
+    }
+    self.global_obj.arrScore.push(bonneReponse, mauvaiseReponse, 'Score : <b>' + bonneReponse + ' / 10</b>');
+
+    self.write_cookie(self.global_obj.currentIndexFiche+','+mauvaiseReponse+','+self.format_time_for_cookie());
+};
+
+App.prototype.active_shortCut = function() {
+    var self = this;
+    if( (!self.global_obj.windowHasEventKeyup) ) {
+        self.global_obj.windowHasEventKeyup = true;
         $(window).on('keyup', function(event) {
-            _windowHasEventKeyup = true;
             switch(event.which) {
                 case 80 : // touch p
-                    change_page('prev');
+                    self.change_page('prev');
                     break;
                 case 83 : // touch s
-                    change_page('next');
+                    self.change_page('next');
                     break;
-                case 72 : // touch s
+                case 72 : // touch H
+                    window.location.href = './fiche-21';
+                    break;
+                case 82 : // touch R
                     window.location.href = './fiche-21';
                     break;
             }
         });
     }
+};
 
-    function change_page(flag) {
-        var url, numFiche, numFicheIsNum, nameFiche;
-        url = window.location.pathname;
-        url = url.trim();
-        url = url.split('/');
-        numFiche = url[url.length-1];
-        numFiche = numFiche.split('-');
-        nameFiche = numFiche[0];
-        numFiche = numFiche[1] || 1;
-        numFicheIsNum = $.isNumeric(numFiche);
+App.prototype.desactive_shortCut = function() {
+    var self = this;
+    self.global_obj.windowHasEventKeyup = false;
+    $(window).off('keyup');
+};
 
-        if(flag == "next") {
-            if( numFicheIsNum && (numFiche > 0) && (nameFiche == 'fiche') ) {
-                window.location.href = './fiche-' + (++numFiche);
-            }
-        } else {
-            if( numFicheIsNum && (numFiche < 20) && (nameFiche == 'fiche') ) {
-                window.location.href = './fiche-' + (--numFiche);
-            }
+App.prototype.change_page = function(direction) {
+    var url, numFiche, numFicheIsNum, nameFiche;
+    url = window.location.pathname;
+    url = url.split('/');
+    numFiche = url[url.length-1];
+    numFiche = numFiche.split('-');
+    nameFiche = numFiche[0].trim();
+    numFiche = numFiche[1] || 1;
+    numFicheIsNum = $.isNumeric(numFiche);
+
+    if(direction == 'next') {
+        if( numFicheIsNum && (numFiche > 0) && (nameFiche == 'fiche') ) {
+            window.location.href = './fiche-' + (++numFiche);
         }
     }
 
-    function init(currentFiche) {
-        $btnResponse.click(function(event) {
+    if(direction == 'prev') {
+        if( numFicheIsNum && (numFiche <= 20) && (nameFiche == 'fiche') ) {
+            window.location.href = './fiche-' + (--numFiche);
+        }
+    }
+};
+
+// initialisation tableau default response
+App.prototype.init_arr_default_response = function(data) {
+    var self = this;
+    if(data) {
+        for(var index in data) {
+            self.global_obj.arrDefaultResp.push(data[index].reponse);
+        }
+    }
+
+    self.global_obj.lgtDefaultResp = self.global_obj.arrDefaultResp.length;
+};
+
+App.prototype.json_data_ready = function(data) {
+    var self = this;
+    var $btnVoirResponse = self.global_obj.$btnToggleResponse;
+    self.init_arr_default_response(data);
+
+    if(data) {
+        $btnVoirResponse.click(function(event) {
             event.preventDefault();
-            $('.fiche-questions-ecrites').trigger('click');
             var $self = $(this);
-            $self.toggleClass('btn-resp');
+            $self.toggleClass('show-resp');
 
-            if($self.hasClass('btn-resp'))  {
+            if( $self.hasClass('show-resp') )  {
                 $self.text('Supprimer');
-                _currentTimeStamp = new Date().getTime();
-                _currentTimeStamp = format_timestamp( (_currentTimeStamp - _timestamp) );
+                clearTimeout(self.global_obj.timer);
 
-                resIn = currentFiche;
-
-                $.each($responseUser, function(index, val) {
-                    resOut.push({ "reponse" : $(this).val(), "$input" : $(this) });
+                // récupération réponse user
+                $.each(self.global_obj.$respUser,function(index, val) {
+                    self.global_obj.arrNumRespUser.push(index);
+                    self.global_obj.arrResponseUser.push($(this).val());
                 });
 
-                compareRes(resIn, resOut);
-                start_window_keyup();
+                // compare reponse user avec reponse database
+                self.compare_response();
+
+                // affichage de la partie bonne reponse mauvaise reponse score
+                $.each(self.global_obj.arrScore, function(index, val) {
+                    self.global_obj.$score.eq(index).html(val);
+                });
+
+                self.active_shortCut();
+
+                // ecrire le cookie pour les questions echouees
+                self.write_cookie_echouees();
+
             } else {
-                $('html, body').stop().animate({ 'scrollTop' : 0 }, 900, 'easeOutQuart');
+            // suppression du contenu des input et réinitialisation de l'application
+                self.global_obj.isStarted = null;
+                self.global_obj.currentTabIndex = null;
+                self.global_obj.numCurrentInputRespUser = null;
+                self.global_obj.arrResponseUser = [];
+                self.global_obj.arrNumRespUser = [];
+                self.global_obj.arrScore = [];
+                self.global_obj.inputUserVisited = [];
+                self.global_obj.windowHasEventKeyup = false;
+
+                self.global_obj.$htmlBody.stop().animate({ 'scrollTop' : 0 }, 900, 'easeOutQuart');
                 $self.text('Voir Réponses');
-                resIn = null;
-                resOut = [];
 
-                $.each($score, function(index, val) {
-                    if(index != 2) {
-                        $(this).text('_');
+                $.each(self.global_obj.$allInput, function(index, val) {
+                    var $that = $(this);
+                    if(index == 0) {
+                        $that.removeClass('bg-success bg-error').val("");
                     } else {
-                        $(this).text('_ / 10');
+                        if($that.hasClass('response-user')) {
+                            $that.removeClass('op-default bg-success bg-error').addClass('input-disabled').val("");
+                        } else {
+                            $that.removeClass('op-default bg-success bg-error').val("");
+                        }
                     }
                 });
-                $responseUser.removeClass('bg-success bg-error');
 
-                $.each($reponseIn, function(index, val) {
-                    $(this).val('');
-                    $(reponseUser[index]).val('');
+                // remise à zéro de la partie bonne reponse mauvaise reponse score
+                $.each(self.global_obj.$score, function(index, val) {
+                    if(index != 2) {
+                        $(this).html("0");
+                    } else {
+                        $(this).html("Score : <b>-- / 10</b>");
+                    }
                 });
-                _timeStamp = new Date().getTime();
 
-                newFiche = true;
+                self.active_shortCut();
             }
         });
     }
+};
 
-    function compareRes(resIn, resOut) {
-        var resTempIn, resTempOut, $elem, i, lgt;
-        var bonneReponse = 0, mauvaiseReponse = 0, score, nbQuestions = resIn.length;
-        var flag = false;
+App.prototype.init = function() {
+    var self = this;
+    var $respUser = self.global_obj.$respUser;
 
-        for(var index in resIn) {
-            resTempIn = resIn[index].reponse;
-            resTempOut = resOut[index].reponse;
-            resTempOut = resTempOut.trim();
-            $reponseIn.eq(index).val(resTempIn[0]);
-            resTempOut = resTempOut.toLowerCase();
-
-            $elem = resOut[index].$input;
-
-            if($.isArray(resTempIn)) {
-                lgt = resTempIn.length;
-                for(i = 0; i < lgt; i++) {
-                    resTempIn[i] = resTempIn[i].trim();
-                    if(resTempOut == resTempIn[i].toLowerCase()) {
-                        bonneReponse++;
-                        flag = true;
-                        break;
-                    }
-                }
-
-                if(flag) {
-                    flag = false;
-                    $elem.addClass('bg-success');
-                } else {
-                    mauvaiseReponse++;
-                    $elem.addClass('bg-error');
-                }
-            } else {
-                resTempIn = resTempIn.trim();
-
-                $reponseIn.eq(index).val(resTempIn);
-
-                if(resTempOut == resTempIn.toLowerCase()) {
-                    bonneReponse++;
-                    $elem.addClass('bg-success');
-                } else {
-                    mauvaiseReponse++;
-                    $elem.addClass('bg-error');
-                }
-            }
-        }
-
-        score = nbQuestions - mauvaiseReponse;
-
-        $.each($score, function(index, val) {
-            switch(index) {
-                case 0 :
-                    $(this).text(bonneReponse);
-                    break;
-                case 1 :
-                    $(this).text(mauvaiseReponse);
-                    break;
-                case 2 :
-                    $(this).text(score + ' / ' + nbQuestions);
-                    break;
-            }
-        });
-
-        // write cookie with { fiches : [ { 'numFiche' : 0, 'mauvaiseReponse' : 0, 'bonneReponse' : 0, 'score' : 0, 'total' : 0 } ] }
-
-        write_cookie({'n':currentIndexFiche,'m':mauvaiseReponse,'b':bonneReponse,'s':score,'t':_currentTimeStamp});
-    }
-
-    function format_timestamp(timestamp) {
-        var t = timestamp / 1000;
-        var hours = parseInt( t / 3600 ) % 24;
-        var minutes = parseInt( t / 60 ) % 60;
-        var seconds = Math.floor(t % 60);
-        //var result = (hours < 10 ? "0" + hours : hours) + " h " + (minutes < 10 ? "0" + minutes : minutes) + " min " + (seconds  < 10 ? "0" + seconds : seconds) + " s ";
-        return (minutes < 10 ? "0" + minutes : minutes) + "." + (seconds  < 10 ? "0" + seconds : seconds);
-    }
-
-    if(matches) {
-        setTimeout(function() {
-            $.getJSON('./questionsEcrites', function() {
-
-            })
-                .always(function(data) {
-                    currentIndexFiche = matches[1];
-                    var currentFiche = data[(currentIndexFiche - 1)];
-                    _nbFiches = data.length;
-                    init(currentFiche);
-                });
-        }, 1000);
-    }
-
-
-    //==========================================================================
-    // Gestion btn clavier enter in input for next
-    //==========================================================================
-
-    (function() {
-
-        function ajust_pos_input(that) {
-            var $self = that;
+    function ajust_pos_input($self) {
+        if(self.global_obj.isStarted) {
             var $window = $(window);
             var posMiddle = ($(window).height() / 2) + (($(window).height() / 2) / 2);
             var posTopTarget = $self.offset().top;
             var windowScrollTop = $window.scrollTop();
             if(posTopTarget > posMiddle) {
-//                $('html, body').animate( { 'scrollTop' : (windowScrollTop+80) + 'px' }, 100, 'linear');
                 $(window).scrollTop(windowScrollTop+140);
             }
         }
+    }
 
-        function push_sauvegardeIndex($self, lgt_responseUser, focus_bool) {
-            var $window = $(window);
-            var numElem = $self.attr('tabindex');
+    function next_inputUser_touch_enter(num) { // num = input user tabindex
+        var $next = self.global_obj.$tableTbodyTr;
+        $next = $next.eq(num).find("input.response-user");
+        $next.focus();
+    }
 
-            if(_windowHasEventKeyup) { $window.off('keyup'); _windowHasEventKeyup = false; }
+    function touchEnter_focus_btnResponse() {
+        var $next = self.global_obj.$tableTbodyTr;
+        $next = $next.eq(9).find("input.response-user");
+        $next.trigger("blur");
+    }
 
+    function focus_input_respUser($self, num, ajustPosInput) { // num = input user tabIndex non input user vrai index
+        var start_index = self.global_obj.startIndex;
+        var $firstInputRespUser = $respUser.eq(0);
+        var $opacityTr = self.global_obj.$opacityTr;
+
+        self.global_obj.numCurrentInputRespUser = num;
+        if(ajustPosInput)
             ajust_pos_input($self);
-//            $responseUser.eq(numElem).focus();
-            if(focus_bool) $responseUser.eq(numElem).focus();
-//            else $responseUser.eq(--numElem).focus();
-console.log($responseUser.eq(numElem));
-            if(sauvegarde_index.indexOf(numElem) == -1 && (numElem <= $responseUser.length)) {
-                sauvegarde_index.push(numElem);
-                console.log(sauvegarde_index)
-                if( sauvegarde_index.length == lgt_responseUser ) {
-                    sauvegarde_index = [];
-                    newFiche = false;
-                    $btnResponse.trigger('click');
-                }
+
+        // start application si num = start_index et l'application n'est pas déjà démarré
+        if(num == start_index && (!self.global_obj.isStarted) ) {
+//            console.log('start');
+            self.desactive_shortCut();
+            self.global_obj.timer_minute = 0;
+            self.global_obj.timer_second = 0;
+            self.global_obj.isStarted = true;
+
+            // si class bg-error alors remove
+            $firstInputRespUser.removeClass( "bg-error" );
+
+            // opacity tr
+            $opacityTr.stop().animate( { "opacity" : 1 }, 600, "linear", function() {
+                $(this).removeClass( "op3" );
+            });
+
+            // push current num input
+            self.global_obj.inputUserVisited.push(num);
+
+            // 1 - start timer
+            self.global_obj.$timeFiche.html('00 min 00 s');
+            self.start_timer();
+
+            // 2 - ajust opacity reponse user to .9
+            //$respUser.removeClass('input-disabled').addClass( 'op-default');
+        } else {
+            if( (!$firstInputRespUser.hasClass("bg-error")) && (!self.global_obj.isStarted) ) {
+                $firstInputRespUser.addClass( "bg-error" );
+            }
+
+            if(self.global_obj.isStarted) {
+                if(self.global_obj.inputUserVisited.indexOf(num) == -1) self.global_obj.inputUserVisited.push(num);
+                
             }
         }
+    }
 
-        $responseUser.keydown(function(event) {
-            var $self = $(this);
-            var lgt_responseUser = $responseUser.length;
+    // click on input response user
+    $respUser.click(function(event) {
+        event.stopImmediatePropagation();
+        var $self = $(this);
+        var num = $self.attr('tabindex');
+        focus_input_respUser($self, num, false);
+    });
 
-            if(newFiche) {
-                if(event.which == 13) {
-                    push_sauvegardeIndex($self, lgt_responseUser, true);
+    $respUser.focusin(function() {
+        var num;
+        var $self = $(this);
+        num = $self.attr('tabindex');
+
+        if( self.global_obj.tabActive ) {
+            self.global_obj.tabActive = null;
+            focus_input_respUser($self, num, true);
+        }
+
+        if( self.global_obj.enterActive ) {
+            self.global_obj.enterActive = null;
+            focus_input_respUser($self, num, true);
+        }
+    });
+
+    $(document).keydown(function(event) {
+        switch(event.which) {
+            case 9 : // tabulation
+                if(self.global_obj.inputUserVisited.length == self.global_obj.lgtDefaultResp) {
+                    self.global_obj.inputUserVisited = [];
+                    self.global_obj.tabActive = null;
+                    self.global_obj.$btnToggleResponse.trigger("click");
+                } else {
+                    self.global_obj.tabActive = true;
                 }
-
-                if(event.which == 9) {
-                    push_sauvegardeIndex($self, lgt_responseUser);
+            break;
+            case 13 : // touch entrer
+                if(self.global_obj.isStarted) {
+                    if(self.global_obj.inputUserVisited.length == self.global_obj.lgtDefaultResp) {
+                        touchEnter_focus_btnResponse();
+                        self.global_obj.inputUserVisited = [];
+                        self.global_obj.enterActive = null;
+                        self.global_obj.$btnToggleResponse.trigger("click");
+                    } else {
+                        self.global_obj.enterActive = true;
+                        next_inputUser_touch_enter(self.global_obj.numCurrentInputRespUser);
+                    }
                 }
-            }
-        });
+            break;
+        }
+    });
+};
 
-        $responseUser.click(function(event) {
-            var $self = $(this);
-            if($self.attr("tabindex") == 1) {
-                start_keybord = true;
-            }
-            if(_windowHasEventKeyup) { $(window).off('keyup'); _windowHasEventKeyup = false; }
-        });
+$(document).ready(function() {
+    var pattern = /fiche\-([0-9]+)/i;
+    var pathName = window.location.pathname;
+    var matches = pathName.match(pattern);
+    var urlNumFiche = null;
+    var app = new App(); // start application avant les datas json
+    var nbFiches = app.global_obj.nbFiches;
+    var currentIndexFicheAjax;
+    app.global_obj.arrResponseUser = [];
+    app.active_shortCut();
 
-    })();
+    if(matches) {
+        urlNumFiche = matches[1] | 0;
+        if( urlNumFiche && (urlNumFiche <= nbFiches) ) {
+            app.global_obj.currentIndexFiche = matches[1];
+            currentIndexFicheAjax = app.global_obj.currentIndexFiche - 1;
+            app.init();
+            $.getJSON('./ajax-questionsEcrites', { "numFiche" : currentIndexFicheAjax }, function() {
 
-    //================================================================================
-    // Gestion clavier touch h pour home and touch s for suivant and p for précédente
-    //================================================================================
-
-    start_window_keyup();
+            })
+                .done(function(data) {
+                    app.json_data_ready(data);
+                })
+                .fail(function() {
+                    app.json_data_ready(null);
+                });
+        }
+    }
 });

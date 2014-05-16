@@ -19,9 +19,9 @@
         height: 29px;
         margin: 0 auto;
         position: relative;
-        width: 474px;
+        width: 643px;
 
-        & > button {
+        & > button, & > a {
             @include btn-blue();
             @include border-radius(0 0 6px 6px);
             display: inline-block;
@@ -34,6 +34,10 @@
             padding: 0;
             width: 155px;
             border-top: none;
+        }
+
+        & > a {
+            line-height: 1.94;
         }
     }
 }

@@ -29,21 +29,45 @@ $(document).ready(function() {
     })();
 
     //=================================================================
+    // btn refaire
+    //=================================================================
+    (function() {
+        var $btnRefaire = $("#btn-refaire");
+        $btnRefaire.click(function(event) {
+            var $self = $(this);
+            if($self.hasClass('no-mistake')) {
+                event.preventDefault();
+                $self.addClass('animated shake');
+                setTimeout(function() {
+                    $self.removeClass('animated shake');
+                }, 600);
+            } else {
+                window.location.href = "./questions-echouees";
+            }
+        });
+
+    })();
+
+    //=================================================================
     // tooltip btn reset et score navbar
     //=================================================================
 
     (function() {
-        $.cookie.json = true;
-        var valueCookie = $.cookie('fiches');
+//        $.cookie.json = true;
+        var valueCookie = $.cookie('fiches'), valCookieFiche;
         var $fiche = $(".link-home-q-e");
 
-        if(!$.isEmptyObject(valueCookie)) {
+        if(valueCookie) {
+            // split valueCookie, value Cookie = numfiche ou -1, mauvaise réponse ou -1, time ou -1
+            valueCookie = valueCookie.split(';');
+
             for(var index in valueCookie) {
-                if(valueCookie[index].n != '-1') {
-                    if(valueCookie[index].b >= 10) {
-                        $($fiche[index]).addClass( 'done' );
+                if(valueCookie[index][0] != 'n') {
+                    valCookieFiche = valueCookie[index].split(',');
+                    if(valCookieFiche[1] == 0) {
+                        $fiche.eq(index).addClass( 'done' );
                     } else {
-                        $($fiche[index]).addClass( 'mistake' );
+                        $fiche.eq(index).addClass( 'mistake' );
                     }
                 }
             }
@@ -81,6 +105,7 @@ $(document).ready(function() {
                             $('.btnYes-resetTooltip').click(function(event) {
                                 event.preventDefault();
                                 $.removeCookie('fiches', { 'path' : '/' });
+                                $.removeCookie('fichesEchouees', { 'path' : '/' });
                                 $containerTooltip.slideUp(function() {
                                     $overlay.fadeOut(function() {
                                         window.location = './';
@@ -113,8 +138,39 @@ $(document).ready(function() {
             var tpl_score_end = '';
             var score_total = 0, score_partial = 0;
             var i = 0, temp_timing;
+            var numFiche, badResp, goodResp, time;
 
-            if($.isEmptyObject(valueCookie)) {
+            if($.isArray(valueCookie)) {
+                // value Cookie = numfiche ou -1, mauvaise reponse ou -1, time ou -1
+                i = 0;
+                for(var index in valueCookie) {
+                    if(valueCookie[index][0] != 'n') {
+                        numFiche = valCookieFiche[0];
+                        badResp = valCookieFiche[1];
+                        time = valCookieFiche[2];
+                        goodResp = 10 - badResp;
+                        i++;
+                        tpl_score += '<tr>';
+                        tpl_score += '<td><span class="pst-gray">'+numFiche+'</span></td>';
+                        if(badResp == 0) tpl_score += '<td><span class="pst-default">--</span></td>';
+                        else tpl_score += '<td><span class="pst-red">'+badResp+'</span></td>';
+                        if(goodResp == 0) tpl_score += '<td><span class="pst-default">--</span></td>';
+                        else tpl_score += '<td><span class="pst-green">'+goodResp+'</span></td>';
+                        if(goodResp == 0) tpl_score += '<td><span class="pst-default">--</span></td>';
+                        else tpl_score += '<td><span class="pst-blue">'+goodResp+'</span></td>';
+                        if(time == 'n') {
+                            tpl_score += '<td><span class="pst-timing"> 00 min 00 s</span></td>';
+                        } else {
+                            temp_timing = time.split('.');
+                            tpl_score += '<td><span class="pst-timing">' + temp_timing[0] + ' min ' + temp_timing[1] + ' s</span></td>';
+                        }
+
+                        tpl_score += '</tr>';
+                        score_total += goodResp;
+                        score_partial = i * 10;
+                    }
+                }
+            } else {
                 for(i = 0; i < 2; i++) {
                     tpl_score += '<tr>';
                     tpl_score += '<td><span class="pst-default">--</span></td>';
@@ -123,31 +179,6 @@ $(document).ready(function() {
                     tpl_score += '<td><span class="pst-default">--</span></td>';
                     tpl_score += '<td><span class="pst-default">--</span></td>';
                     tpl_score += '</tr>';
-                }
-            } else {
-                i = 0;
-                for(var index in valueCookie) {
-                    if(valueCookie[index].n != '-1') {
-                        i++;
-                        tpl_score += '<tr>';
-                        tpl_score += '<td><span class="pst-gray">'+valueCookie[index].n+'</span></td>';
-                        if(valueCookie[index].m == 0) tpl_score += '<td><span class="pst-default">--</span></td>';
-                        else tpl_score += '<td><span class="pst-red">'+valueCookie[index].m+'</span></td>';
-                        if(valueCookie[index].b == 0) tpl_score += '<td><span class="pst-default">--</span></td>';
-                        else tpl_score += '<td><span class="pst-green">'+valueCookie[index].b+'</span></td>';
-                        if(valueCookie[index].s == 0) tpl_score += '<td><span class="pst-default">--</span></td>';
-                        else tpl_score += '<td><span class="pst-blue">'+valueCookie[index].s+'</span></td>';
-                        if(valueCookie[index].t == -1) {
-                            tpl_score += '<td><span class="pst-timing"> 00 min 00 s</span></td>';
-                        } else {
-                            temp_timing = valueCookie[index].t.split('.');
-                            tpl_score += '<td><span class="pst-timing">' + temp_timing[0] + ' min ' + temp_timing[1] + ' s</span></td>';
-                        }
-
-                        tpl_score += '</tr>';
-                        score_total += valueCookie[index].s;
-                        score_partial = i * 10;
-                    }
                 }
             }
 

@@ -2,12 +2,14 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "css/home"
-sass_dir = "scss/home"
-#css_dir = "css/pages/questionsEcrites"
-#sass_dir = "scss/pages/questionsEcrites"
+#css_dir = "css/home"
+#sass_dir = "scss/home"
+css_dir = "css/pages/questionsEcrites"
+sass_dir = "scss/pages/questionsEcrites"
 #css_dir = "css/pages/questionsOrales"
 #sass_dir = "scss/pages/questionsOrales"
+#css_dir = "css/pages/questionsEchouees"
+#sass_dir = "scss/pages/questionsEchouees"
 images_dir = "img"
 javascripts_dir = "js"
 output_style = :compressed

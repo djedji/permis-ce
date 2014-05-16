@@ -1,0 +1,110 @@
+2014-05-12 03:57:49 Error: Fatal Error (4): syntax error, unexpected '$nbFiches' (T_VARIABLE) in [C:\wamp\www\phpstorm\permis-ce\app\Controller\HomesController.php, line 13]
+2014-05-12 03:57:49 Error: [FatalErrorException] syntax error, unexpected '$nbFiches' (T_VARIABLE)
+Request URL: /phpstorm/permis-ce/
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\php...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\php...', 13, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\php...', 13, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-12 03:59:27 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\wamp\www\phpstorm\permis-ce\app\Controller\HomesController.php, line 12]
+2014-05-12 03:59:27 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /phpstorm/permis-ce/
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\php...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\php...', 12, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\php...', 12, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-12 05:51:11 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\phpstorm\permis-ce\lib\Cake\Controller\Controller.php, line 437]
+2014-05-12 05:51:11 Error: [FatalErrorException] Cannot access empty property
+Request URL: /phpstorm/permis-ce/
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\wamp\www\php...', 437)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\wamp\www\php...', 437, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\wamp\www\php...', 437, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-12 06:34:59 Error: Fatal Error (1): Cannot use object of type stdClass as array in [C:\wamp\www\phpstorm\permis-ce\app\Controller\HomesController.php, line 68]
+2014-05-12 06:34:59 Error: [FatalErrorException] Cannot use object of type stdClass as array
+Request URL: /phpstorm/permis-ce/
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\wamp\www\php...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\wamp\www\php...', 68, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\wamp\www\php...', 68, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-12 06:36:22 Error: Fatal Error (1): Cannot use object of type stdClass as array in [C:\wamp\www\phpstorm\permis-ce\app\Controller\HomesController.php, line 68]
+2014-05-12 06:36:22 Error: [FatalErrorException] Cannot use object of type stdClass as array
+Request URL: /phpstorm/permis-ce/
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\wamp\www\php...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\wamp\www\php...', 68, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\wamp\www\php...', 68, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-12 06:36:33 Error: Fatal Error (1): Cannot use object of type stdClass as array in [C:\wamp\www\phpstorm\permis-ce\app\Controller\HomesController.php, line 68]
+2014-05-12 06:36:33 Error: [FatalErrorException] Cannot use object of type stdClass as array
+Request URL: /phpstorm/permis-ce/
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\wamp\www\php...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\wamp\www\php...', 68, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\wamp\www\php...', 68, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-12 17:14:57 Error: Fatal Error (1): Call to undefined method QuestionsEcritesController::questionsEcrites() in [C:\wamp\www\phpstorm\permis-ce\app\Controller\QuestionsEcritesController.php, line 8]
+2014-05-12 17:14:57 Error: [FatalErrorException] Call to undefined method QuestionsEcritesController::questionsEcrites()
+Request URL: /phpstorm/permis-ce/questions-ecrites/fiche-6
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\php...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\php...', 8, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\php...', 8, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-13 01:32:32 Error: Fatal Error (1): Call to undefined method View::css() in [C:\wamp\www\phpstorm\permis-ce\app\View\QuestionsEchouees\index.ctp, line 1]
+2014-05-13 01:32:32 Error: [FatalErrorException] Call to undefined method View::css()
+Request URL: /phpstorm/permis-ce/questions-echouees
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\php...', 1)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\php...', 1, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\php...', 1, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-13 09:12:45 Error: Fatal Error (1): Call to undefined method View::script() in [C:\wamp\www\phpstorm\permis-ce\app\View\QuestionsEchouees\index.ctp, line 19]
+2014-05-13 09:12:45 Error: [FatalErrorException] Call to undefined method View::script()
+Request URL: /phpstorm/permis-ce/questions-echouees
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\php...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\php...', 19, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\php...', 19, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-13 16:49:47 Error: Fatal Error (1): Unsupported operand types in [C:\wamp\www\phpstorm\permis-ce\app\Controller\QuestionsEchoueesController.php, line 55]
+2014-05-13 16:49:47 Error: [FatalErrorException] Unsupported operand types
+Request URL: /phpstorm/permis-ce/questions-echouees
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\wamp\www\php...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\wamp\www\php...', 55, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\wamp\www\php...', 55, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-13 16:54:01 Error: Fatal Error (4): syntax error, unexpected 'foreach' (T_FOREACH) in [C:\wamp\www\phpstorm\permis-ce\app\Controller\QuestionsEchoueesController.php, line 57]
+2014-05-13 16:54:01 Error: [FatalErrorException] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /phpstorm/permis-ce/questions-echouees
+Stack Trace:
+#0 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\php...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\php...', 57, Array)
+#2 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\php...', 57, Array)
+#3 C:\wamp\www\phpstorm\permis-ce\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
