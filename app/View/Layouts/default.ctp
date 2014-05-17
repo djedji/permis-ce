@@ -11,7 +11,7 @@
     <?php echo $this->Html->css('fixe-bootstrap'); ?>
 
     <?php echo $this->fetch('css'); ?>
-    <?php echo $this->Html->script('//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js'); ?>
+    <?php echo $this->Html->script('jquery/jquery.js'); ?>
 
     <?php echo $this->Html->script('lib/jquery.cookie'); ?>
 
