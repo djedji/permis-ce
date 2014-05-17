@@ -44,10 +44,11 @@ $(document).ready(function() {
     function next_page(dataPagination) {
         var indexFiche = (currentIndexFiche - 1) + "";
         var numCurrentPosition = dataPagination.indexOf(indexFiche);
-        numCurrentPosition++;
+        ++numCurrentPosition;
         indexFiche = dataPagination[numCurrentPosition] || false;
-        if( indexFiche != false ) {
-            indexFiche++;
+        console.log('next page');
+        if( indexFiche !== false ) {
+            ++indexFiche;
             window.location.href = ROOT + '/fiche-' + indexFiche;
         } else {
             window.location.href = ROOT;
@@ -58,10 +59,11 @@ $(document).ready(function() {
         var fiche;
         var indexFiche = (currentIndexFiche - 1) + "";
         var numCurrentPosition = dataPagination.indexOf(indexFiche);
-        numCurrentPosition--;
+        --numCurrentPosition;
         indexFiche = dataPagination[numCurrentPosition] || false;
-        if( indexFiche != false ) {
-            indexFiche++;
+        console.log(indexFiche);
+        if( indexFiche !== false ) {
+            ++indexFiche;
             window.location.href = ROOT + '/fiche-' + indexFiche;
         } else {
             window.location.href = ROOT;
@@ -69,9 +71,12 @@ $(document).ready(function() {
     }
 
     function active_shortcut() {
-        if(!$.isArray(dataPagination)) {
-            dataPagination = dataPagination.split('');
+
+        if( !($.isArray(dataPagination)) ) {
+            dataPagination = dataPagination.trim();
+            dataPagination = dataPagination.split(',');
         }
+
         $window.on('keyup', function(event) {
             switch(event.which) {
                 case 80 : // touch p

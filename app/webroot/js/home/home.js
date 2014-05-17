@@ -60,7 +60,6 @@ $(document).ready(function() {
         if(valueCookie) {
             // split valueCookie, value Cookie = numfiche ou -1, mauvaise réponse ou -1, time ou -1
             valueCookie = valueCookie.split(';');
-
             for(var index in valueCookie) {
                 if(valueCookie[index][0] != 'n') {
                     valCookieFiche = valueCookie[index].split(',');
@@ -139,12 +138,14 @@ $(document).ready(function() {
             var score_total = 0, score_partial = 0;
             var i = 0, temp_timing;
             var numFiche, badResp, goodResp, time;
+            var valCookieFiche;
 
             if($.isArray(valueCookie)) {
                 // value Cookie = numfiche ou -1, mauvaise reponse ou -1, time ou -1
                 i = 0;
                 for(var index in valueCookie) {
                     if(valueCookie[index][0] != 'n') {
+                        valCookieFiche = valueCookie[index].split(',');
                         numFiche = valCookieFiche[0];
                         badResp = valCookieFiche[1];
                         time = valCookieFiche[2];

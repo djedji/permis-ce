@@ -5,7 +5,7 @@
 
         public $indexFichesEchouees;
         public $paginationJS;
-        public $paginationPhP;
+        public $paginationPHP;
 
         public function index($slug = null, $id = null) {
             $nbFiches = 20;
@@ -21,8 +21,10 @@
                     Cache::write('currentFicheEchouee', $fiches);
                     $maxFiches = count($fichesEchouees);
                     $paginationJS = $this->paginationJS;
-                    $paginationPhP = $this->paginationPhP;
-                    $this->set(compact('numCurrentFiche', 'fiches', 'maxFiches', 'paginationJS', 'paginationPhP'));
+                    $paginationJS = implode(',', $paginationJS);
+                    $nextQuestions = $this->next_questions($id);
+                    $prevQuestions = $this->prev_questions($id);
+                    $this->set(compact('numCurrentFiche', 'fiches', 'maxFiches', 'paginationJS', 'nextQuestions', 'prevQuestions'));
                     $this->render('fiche');
                 }
 
@@ -46,14 +48,14 @@
 
         public function format_fiches_mistake($cacheFiches) {
             $this->indexFichesEchouees = array();
-            $this->paginationJS = '';
-            $this->paginationPhP = array();
+            $this->paginationJS = array();
+            $this->paginationPHP = array();
 
             foreach($cacheFiches as $k => $fiche) {
                 array_push($this->indexFichesEchouees, 0);
                 if(!empty($fiche[10])) {
-                    $this->paginationJS .= $k . '';
-                    array_push($this->paginationPhP, $k);
+                    array_push($this->paginationJS, $k);
+                    array_push($this->paginationPHP, $k);
                     $indexFichesEchouees = array();
                     array_push($indexFichesEchouees, $fiche[10]);
                     array_pop($cacheFiches[$k]);
@@ -65,6 +67,30 @@
             }
 
             return $cacheFiches;
+        }
+
+        public function next_questions($id) {
+            $pos = array_search(--$id, $this->paginationPHP);
+            $r = null;
+            if($pos !== false) {
+                if(isset($this->paginationPHP[++$pos])) {
+                    $r = $this->paginationPHP[$pos];
+                    ++$r;
+                }
+            }
+            return $r;
+        }
+
+        public function prev_questions($id) {
+            $pos = array_search(--$id, $this->paginationPHP);
+            $r = null;
+            if($pos !== false) {
+                if(isset($this->paginationPHP[--$pos])) {
+                    $r = $this->paginationPHP[$pos];
+                    ++$r;
+                }
+            }
+            return $r;
         }
     }
 

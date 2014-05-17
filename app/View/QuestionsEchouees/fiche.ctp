@@ -3,11 +3,11 @@
 <?php $this->start('navbar'); ?>
 <table class="navbar-top-page table">
     <thead>
-    <tr>
-        <th><a <?php if($numCurrentFiche == 1) echo 'class="link-disabled"'; ?> href="<?php echo ($numCurrentFiche == 1) ? $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index')) : $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index', 'slug' => 'fiche', 'id' => ($numCurrentFiche-1)));?>"><span class="glyphicon glyphicon-chevron-left" style="font-size: 14px;"></span> Fiche Précédente</a></th>
-        <th class="txtac"><a id="pathname" href="<?php echo $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index')); ?>">Retour <span class="glyphicon glyphicon-home"></span></a></th>
-        <th class="txtar"><a <?php if($numCurrentFiche >= $maxFiches) echo 'class="link-disabled"'; ?> href="<?php echo (($numCurrentFiche+1) < $maxFiches) ? $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index', 'slug' => 'fiche', 'id' => ($numCurrentFiche+1))) : $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index'));?>">Fiche Suivante <span class="glyphicon glyphicon-chevron-right" style="font-size: 14px;"></span></a></th>
-    </tr>
+        <tr>
+            <th><a <?php if($prevQuestions == null) echo 'class="link-disabled"'; ?> href="<?php echo ($prevQuestions != null) ?$this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index', 'slug' => 'fiche', 'id' => $prevQuestions)): $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index'));?>"><span class="glyphicon glyphicon-chevron-left" style="font-size: 14px;"></span> Fiche Précédente</a></th>
+            <th class="txtac"><a id="pathname" href="<?php echo $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index')); ?>">Retour <span class="glyphicon glyphicon-home"></span></a></th>
+            <th class="txtar"><a <?php if($nextQuestions == null) echo 'class="link-disabled"'; ?> href="<?php echo ($nextQuestions != null) ? $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index', 'slug' => 'fiche', 'id' => $nextQuestions)) : $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index'));?>">Fiche Suivante <span class="glyphicon glyphicon-chevron-right" style="font-size: 14px;"></span></a></th>
+        </tr>
     </thead>
 </table>
 <?php $this->end(); ?>
@@ -84,11 +84,11 @@
         <div class="col-xs-12 layout">
             <table class="navbar-bottom-page table">
                 <thead>
-                <tr>
-                    <th><a <?php if($numCurrentFiche == 1) echo 'class="link-disabled"'; ?> href="<?php echo ($numCurrentFiche == 1) ? $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index')) : $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index', 'slug' => 'fiche', 'id' => ($numCurrentFiche-1)));?>"><span class="glyphicon glyphicon-chevron-left" style="font-size: 14px;"></span> Fiche Précédente</a></th>
-                    <th class="txtac"><a href="<?php echo $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index')); ?>">Retour <span class="glyphicon glyphicon-home"></span></a></th>
-                    <th class="txtar"><a <?php if($numCurrentFiche >= $maxFiches) echo 'class="link-disabled"'; ?> href="<?php echo (($numCurrentFiche+1) < $maxFiches) ? $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index', 'slug' => 'fiche', 'id' => ($numCurrentFiche+1))) : $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index'));?>">Fiche Suivante <span class="glyphicon glyphicon-chevron-right" style="font-size: 14px;"></span></a></th>
-                </tr>
+                    <tr>
+                        <th><a <?php if($prevQuestions == null) echo 'class="link-disabled"'; ?> href="<?php echo ($prevQuestions != null) ?$this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index', 'slug' => 'fiche', 'id' => $prevQuestions)): $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index'));?>"><span class="glyphicon glyphicon-chevron-left" style="font-size: 14px;"></span> Fiche Précédente</a></th>
+                        <th class="txtac"><a id="pathname" href="<?php echo $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index')); ?>">Retour <span class="glyphicon glyphicon-home"></span></a></th>
+                        <th class="txtar"><a <?php if($nextQuestions == null) echo 'class="link-disabled"'; ?> href="<?php echo ($nextQuestions != null) ? $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index', 'slug' => 'fiche', 'id' => $nextQuestions)) : $this->Html->url(array('controller' => 'questionsEchouees', 'action' => 'index'));?>">Fiche Suivante <span class="glyphicon glyphicon-chevron-right" style="font-size: 14px;"></span></a></th>
+                    </tr>
                 </thead>
             </table>
         </div>
